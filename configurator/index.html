@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Pera-swarm | Configurator</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous"></head>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">  
+</head>
+<body>
+
+    <div class="container p-5">
+
+        <div class="row pb-3">
+            <div class="mx-auto">
+                You can use this page to generate access links to online visualization tools.
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-body">
+                <h5 class="card-title">Settings</h5>
+                <div class="row">
+                    <div class="col col-md-6 col-sm-12">
+                        <form>
+                            <div class="form-group">
+                                <label for="txtHost">Host</label>
+                                <input type="text" class="form-control" id="txtHost" placeholder="" value="webservices.ceykod.com">
+                            </div>
+                            <div class="row pb-2">
+                                <div class="col col-md-6">
+                                    <label for="txtPort">Port</label>
+                                    <input type="number" min="1000" max="9999" class="form-control" id="txtPort" placeholder="" value="8883">
+                                </div>
+
+                                <div class="col col-md-6">
+                                    <label for="txtChannel">Channel</label>
+                                    <input type="text" class="form-control" id="txtChannel" placeholder="vXX" value="v1">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtUser">User Name</label>
+                                <input type="text" class="form-control" id="txtUser" placeholder="Username of the MQTT broker" value="swarm_user">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtPass">Password</label>
+                                <input type="password" class="form-control" id="txtPass" placeholder="Password of the MQTT broker" value="swarm_usere15">
+                            </div>
+
+                            <div class="">
+                                <button id="btnGenerate" type="button" class="btn btn-primary m-auto">Generate URLs</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col col-md-6 col-sm-12">
+                        <div class="container d-flex align-items-center h-100">
+                            <div id="divResult" class="container d-none-0">
+                                <h5>Access Links:</h5>
+
+                                <div class="card mb-2">
+                                    <div class="card-body">
+                                        3D Visualizer<br>
+                                        <a id="linkAR" href="#" target="_blank" class="card-link access-link d-none">
+                                            https://pera-swarm.ce.pdn.ac.lk/visualizer/
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">AR Visualizer<br>
+                                        <a id="linkAR" href="#" target="_blank" class="card-link access-link d-none">
+                                            https://pera-swarm.ce.pdn.ac.lk/visualizer-ar/
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+
+        $('#btnGenerate').click(()=>{
+            const endpoint = 'http://webservices.ceykod.com/pera-swarm/login/';
+
+            const host = $('#txtHost').val();
+            const port = $('#txtPort').val();
+            const channel = $('#txtChannel').val();
+            const user = $('#txtUser').val();
+            const password = $('#txtPass').val();
+
+            const postData = {
+                host: host,
+                port: port,
+                path: '/mqtt',
+                channel: channel,
+                user: user,
+                pass: password,
+            }
+            // console.log(JSON.stringify(postData));
+
+            $.ajax({
+                type: "post",
+                url: endpoint,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                cache: false,
+                async: false,
+                data: JSON.stringify(postData),
+                success: function(resp){
+                    if(resp.status == "Success"){
+                        console.log(resp)
+                        const token  = resp.token;
+
+                        const link3D = `https://pera-swarm.ce.pdn.ac.lk/visualizer/?key=${token}`;
+                        const linkAR = `https://pera-swarm.ce.pdn.ac.lk/visualizer-ar/?key=${token}`;
+
+                        $('.access-link').removeClass('d-none');
+                        $('#link3D').attr('href', link3D);
+                        $('#linkAR').attr('href', linkAR);
+
+
+                    }else{
+                        alert('An unknow error happened !');
+                    }
+                },
+                error: function(xhr, status, error) {
+                    alert(xhr.toString());
+                }
+            });
+        });
+    });
+    </script>
+</body>
+</html>
