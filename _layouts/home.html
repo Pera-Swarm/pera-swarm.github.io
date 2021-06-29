@@ -1,0 +1,55 @@
+---
+layout: wrappers_table
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+    {% include meta.html %}
+
+    <title>{{ page.title }}</title>
+
+    {% include header.html %}
+    <link href="{{ '/assets/css/home.css' | relative_url }}" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container blog-header py-3">
+        <div class="row flex-nowrap0 align-items-center">
+            <div class="col-sm-2 col-xs-4 pt-1">
+                <img class="mx-auto d-block img-fluid p-2" src="{{ '/assets/img/crest.png' | prepend: site.baseurl }}" alt="Logo">
+            </div>
+            <div class="col-sm-10 col-xs-8">
+                <div class="p-2">
+                    <a class="blog-header-logo text-dark text-decoration-none" href="#">
+                        Pera Swarm <br>
+                        <small class="small">
+                            Department of Computer Engineering, University of Peradeniya, Sri Lanka
+                        </small>
+                    </a>
+                </div>
+            </div>
+            <div class="col-2 d-flex justify-content-end align-items-center">
+                <a class="d-none btn btn-sm btn-outline-secondary" href="http://www.ce.pdn.ac.lk" target="_blank">Department Site</a>
+            </div>
+        </div>
+    </header>
+    {% include navbar.html %}
+
+    <main role="main" class="container pt-5 vh-50">
+        <div class="vh-50">
+            {{ content }}
+        </div>
+    </main>
+
+    {% include footer.html %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <script src="/assets/js/holder.min.js"></script>
+</body>
+</html>
