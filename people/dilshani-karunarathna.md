@@ -3,6 +3,7 @@ layout: page_people
 title: People
 permalink: /people/dilshani-karunarathna/
 parent: People
+nav_order: 2
 
 display_name: Dilshani Karunarathna
 position: Undergraduate Student
