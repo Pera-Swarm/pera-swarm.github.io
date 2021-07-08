@@ -1,8 +1,9 @@
 ---
 layout: home
-title: Pera-swarm
+title: Welcome
 permalink: /home/
 ---
+{% include page_tree_builder.html pages=site.html_pages -%}
 
 <div class="container">
     <h3>News</h3>
@@ -11,28 +12,43 @@ permalink: /home/
     <h3>Publications</h3>
     <p>Publications related to Pera-Swarm will be displayed here.</p>
 
+    <h3>Projects</h3>
+    <p>Projects related to Pera-Swarm will be displayed here.</p>
+
 
     <h3>People</h3>
 
+    {%- assign item_list = pages_list | where: "parent", "People" -%}
+    {%- assign faculty = item_list | where: "type", "Faculty" -%}
+    {%- assign external = item_list | where: "type", "External Collaborators" -%}
+    {%- assign undergrads = item_list | where: "type", "Undergraduate Research Student" -%}
+
     <h4>Faculty</h4>
     <ul>
-        <li></li>
+        {% for people in faculty %}
+        <li  class="list-unstyled pt-2 pb-3">
+            {% include people.html people=people %}
+        </li>
+        {% endfor -%}
     </ul>
 
-    <h4>External Collaborators</h4>
-    <ul>
-        <li></li>
-    </ul>
+    <!-- <h4>External Collaborators</h4> -->
+    <!-- <ul> -->
+    <!-- <li></li> -->
+    <!-- </ul> -->
 
-    <h4>Graduate Research Students</h4>
-    <ul>
-        <li></li>
-    </ul>
+    <!-- <h4>Graduate Research Students</h4> -->
+    <!-- <ul> -->
+    <!-- </ul> -->
 
     <h4>Undergraduate Research Students</h4>
     <ul>
-        <li></li>
+        {% for people in undergrads %}
+        <li  class="list-unstyled pt-2 pb-3">
+            {% include people.html people=people %}
+        </li>
+        {% endfor -%}
     </ul>
-    
+
 
 </div>

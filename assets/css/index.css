@@ -21,6 +21,10 @@ h1, h2, h3, h4, h5, h6
   }
 }
 
+.navbar-dark{
+    background-color: #343a40!important;
+}
+
 .nav-scroller {
   position: relative;
   z-index: 2;
