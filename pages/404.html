@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: blank
 title: 404
 permalink: /404
 nav_exclude: true
@@ -7,15 +7,15 @@ search_exclude: true
 sitemap: false
 ---
 
-<div class="d-flex align-self-center text-center vh-100">
-    <div class="container pt-5">
-        <div class="display-2">
+<div class="d-flex text-center vh-100">
+    <div class="container align-self-center">
+        <div class="display-1">
             404
         </div>
-        <h1 class="pb-5">Page not found</h1>
-        <p>
+        <h1 class="pb-3">Page not found</h1>
+        <p class="pb-5">
             The page you requested could not be found.<br>
-            Please visit <a href="{{ '/' | absolute_url }}">site's home page</a>.
+            Please visit site's <a href="{% link pages/home.html %}">home page</a>.
         </p>
     </div>
 </div>

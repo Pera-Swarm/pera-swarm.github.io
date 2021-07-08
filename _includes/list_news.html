@@ -1,0 +1,21 @@
+{%- assign news_list = pages_list | where: "parent", "News" -%}
+{% for news in news_list %}
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2">
+            {{ news.published_date }}
+        </div>
+        <div class="col">
+            <h5>
+                {{ news.title }}
+                <span class="text-muted small">
+                    <!-- &middot; {{ news.author }} -->
+                </span>
+            </h5>
+            <p>{{ news.description }}</p>
+        </div>
+    </div>
+
+</div>
+
+{% endfor -%}

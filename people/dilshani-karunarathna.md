@@ -7,7 +7,7 @@ nav_order: 2
 
 display_name: Dilshani Karunarathna
 position: Undergraduate Student
-avatar: /people/avatar/blank.jpg
+avatar: /people/avatar/dilshani-karunarathna.jpg
 type: Undergraduate Research Student
 
 eNumber: E/15/173

@@ -3,3 +3,12 @@
         <a class="text-decoration-none" href="#">Back to top</a>
     </p>
 </footer>
+
+{% if page.gallery == true %}
+<script src="{{ '/assets/js/lightgallery-all.min.js' | relative_url }}"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#lightgallery').lightGallery({share: false, download: false});
+    });
+</script>
+{% endif -%}

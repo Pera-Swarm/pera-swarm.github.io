@@ -2,53 +2,47 @@
 layout: home
 title: Welcome
 permalink: /home/
+navbar_active: Home
 ---
 {% include page_tree_builder.html pages=site.html_pages -%}
 
 <div class="container">
-    <h3>News</h3>
-    <p>News related to Pera-Swarm will be displayed here.</p>
+    <!-- News -->
+    <h2 class="home-h2">
+        News
+        <a class="h5 text-muted text-link text-decoration-none" href="{% link news/index.html %}">
+            <i class="fa fa-link ms-2" aria-hidden="true"></i>
+        </a>
+    </h2>
+    {% include list_news.html %}
 
-    <h3>Publications</h3>
-    <p>Publications related to Pera-Swarm will be displayed here.</p>
+    <!-- Publications -->
+    <h2 class="home-h2">
+        Publications
+        <a class="h5 text-muted text-link text-decoration-none" href="{% link publications/index.html %}">
+            <i class="fa fa-link ms-2" aria-hidden="true"></i>
+        </a>
+    </h2>
+    {% include list_publications.html %}
 
-    <h3>Projects</h3>
-    <p>Projects related to Pera-Swarm will be displayed here.</p>
+    <!-- Projects -->
+    <h2 class="home-h2">
+        Projects
+        <a class="h5 text-muted text-link text-decoration-none" href="{% link projects/index.html %}">
+            <i class="fa fa-link ms-2" aria-hidden="true"></i>
+        </a>
+    </h2>
+    {% include list_projects.html %}
 
+    <!-- People -->
+    <h2 class="home-h2">
+        People
+        <a class="h5 text-muted text-link text-decoration-none" href="{% link people/index.html %}">
+            <i class="fa fa-link ms-2" aria-hidden="true"></i>
+        </a>
+    </h2>
 
-    <h3>People</h3>
-
-    {%- assign item_list = pages_list | where: "parent", "People" -%}
-    {%- assign faculty = item_list | where: "type", "Faculty" -%}
-    {%- assign external = item_list | where: "type", "External Collaborators" -%}
-    {%- assign undergrads = item_list | where: "type", "Undergraduate Research Student" -%}
-
-    <h4>Faculty</h4>
-    <ul>
-        {% for people in faculty %}
-        <li  class="list-unstyled pt-2 pb-3">
-            {% include people.html people=people %}
-        </li>
-        {% endfor -%}
-    </ul>
-
-    <!-- <h4>External Collaborators</h4> -->
-    <!-- <ul> -->
-    <!-- <li></li> -->
-    <!-- </ul> -->
-
-    <!-- <h4>Graduate Research Students</h4> -->
-    <!-- <ul> -->
-    <!-- </ul> -->
-
-    <h4>Undergraduate Research Students</h4>
-    <ul>
-        {% for people in undergrads %}
-        <li  class="list-unstyled pt-2 pb-3">
-            {% include people.html people=people %}
-        </li>
-        {% endfor -%}
-    </ul>
+    {% include list_people.html %}
 
 
 </div>

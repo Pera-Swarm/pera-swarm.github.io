@@ -1,0 +1,31 @@
+{%- assign item_list = pages_list | where: "parent", "People" -%}
+{%- assign faculty = item_list | where: "type", "Faculty" -%}
+{%- assign external = item_list | where: "type", "External Collaborators" -%}
+{%- assign undergrads = item_list | where: "type", "Undergraduate Research Student" -%}
+
+<h4 class="people-h4">Faculty</h4>
+<ul class="list-unstyled">
+    {% for people in faculty %}
+    <li class="pt-2 pb-3">
+        {% include people_individual.html people=people %}
+    </li>
+    {% endfor -%}
+</ul>
+
+<!-- <h4 class="people-h4">External Collaborators</h4> -->
+<!-- <ul> -->
+<!-- <li></li> -->
+<!-- </ul> -->
+
+<!-- <h4 class="people-h4">Graduate Research Students</h4> -->
+<!-- <ul> -->
+<!-- </ul> -->
+
+<h4 class="people-h4">Undergraduate Research Students</h4>
+<ul class="list-unstyled">
+    {% for people in undergrads %}
+    <li class="pt-2 pb-3">
+        {% include people_individual.html people=people %}
+    </li>
+    {% endfor -%}
+</ul>

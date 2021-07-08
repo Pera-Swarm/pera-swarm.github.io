@@ -15,8 +15,16 @@ layout: wrappers_table
     {% include navbar.html %}
     <div class="container vh-75">
         <div class="container  col-sm-12 col-md-10 col-lg-10 mx-auto mt-3 py-2">
+            <nav aria-label="breadcrumb" class="pb-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% link pages/home.html %}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{% link people/index.html %}">People</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ page.display_name }}</li>
+                </ol>
+            </nav>
+
             <div class="row d-flex border-bottom">
-                <div class="col-sm-2">
+                <div class="col-sm-2 col-xs-4">
                     <img class="img-thumbnail" src="{{ page.avatar | relative_url }}" alt="{{ page.name }}">
                 </div>
                 <div class="col d-flex align-items-end">
@@ -29,41 +37,44 @@ layout: wrappers_table
                 </div>
             </div>
 
-            <div class="row p-5">
-                <!-- Email -->
-                {% if page.email_faculty -%}
-                <a class="text-dark text-decoration-none text-link pt-2" href="mailto:{{ page.email_faculty }}">
-                    <i class='fa fa-envelope mx-2' aria-hidden='true'></i>{{ page.email_faculty }}
-                </a>
-                {% endif -%}
+            <div class="row">
 
-                <!-- Github -->
-                {% if page.github -%}
-                <a class="text-dark text-decoration-none text-link pt-2" href="{{ page.github }}">
-                    <i class='fa fa-github mx-2' aria-hidden='true'></i>{{ page.github }}
-                </a>
-                {% endif -%}
+                <div class="col-sm-12 col-10 mx-auto pt-4">
+                    <!-- Email -->
+                    {% if page.email_faculty -%}
+                    <a class="text-dark text-decoration-none text-link pt-2" target="_blank" href="mailto:{{ page.email_faculty }}">
+                        <i class='fa fa-envelope mx-2' aria-hidden='true'></i>{{ page.email_faculty }}
+                    </a><br>
+                    {% endif -%}
 
-                <!-- Linkedin -->
-                {% if page.linkedin -%}
-                <a class="text-dark text-decoration-none text-link pt-2" href="{{ page.linkedin }}">
-                    <i class='fa fa-linkedin mx-2' aria-hidden='true'></i>{{ page.linkedin }}
-                </a>
-                {% endif -%}
+                    <!-- Github -->
+                    {% if page.github -%}
+                    <a class="text-dark text-decoration-none text-link pt-2" target="_blank" href="{{ page.github }}">
+                        <i class='fa fa-github mx-2' aria-hidden='true'></i>{{ page.github }}
+                    </a><br>
+                    {% endif -%}
 
-                <!-- Researchgate -->
-                {% if page.researchgate -%}
-                <a class="text-dark text-decoration-none text-link pt-2" href="{{ page.researchgate }}">
-                    <i class='fa fa-globe  mx-2' aria-hidden='true'></i>{{ page.researchgate }}
-                </a>
-                {% endif -%}
+                    <!-- Linkedin -->
+                    {% if page.linkedin -%}
+                    <a class="text-dark text-decoration-none text-link pt-2" target="_blank" href="{{ page.linkedin }}">
+                        <i class='fa fa-linkedin mx-2' aria-hidden='true'></i>{{ page.linkedin }}
+                    </a><br>
+                    {% endif -%}
 
-                <!-- Website -->
-                {% if page.website -%}
-                <a class="text-dark text-decoration-none text-link pt-2" href="{{ page.website }}">
-                    <i class='fa fa-globe  mx-2' aria-hidden='true'></i>{{ page.website }}
-                </a>
-                {% endif -%}
+                    <!-- Researchgate -->
+                    {% if page.researchgate -%}
+                    <a class="text-dark text-decoration-none text-link pt-2" target="_blank" href="{{ page.researchgate }}">
+                        <i class='fa fa-globe  mx-2' aria-hidden='true'></i>{{ page.researchgate }}
+                    </a><br>
+                    {% endif -%}
+
+                    <!-- Website -->
+                    {% if page.website -%}
+                    <a class="text-dark text-decoration-none text-link pt-2" target="_blank" href="{{ page.website }}">
+                        <i class='fa fa-globe  mx-2' aria-hidden='true'></i>{{ page.website }}
+                    </a><br>
+                    {% endif -%}
+                </div>
             </div>
 
             <div class="row">

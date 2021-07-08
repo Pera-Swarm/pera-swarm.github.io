@@ -6,6 +6,12 @@ h1, h2, h3, h4, h5, h6
 }
 */
 
+h2{
+    padding-top: 12px;
+    padding-bottom: 6px;
+    margin-bottom: 18px;
+}
+
 .text-link:hover{
     color: #006f9e!important;
     text-decoration: underline!important;
@@ -28,7 +34,8 @@ h1, h2, h3, h4, h5, h6
 }
 
 .navbar-dark{
-    background-color: #343a40!important;
+    /* background-color: #343a40!important; */
+    /* background-color: #4b5863 !important; */
 }
 
 .nav-scroller {
