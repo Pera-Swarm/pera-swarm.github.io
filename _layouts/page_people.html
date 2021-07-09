@@ -24,12 +24,12 @@ layout: wrappers_table
             </nav>
 
             <div class="row d-flex border-bottom">
-                <div class="col-sm-2 col-xs-4">
+                <div class="col-sm-3 col-xs-4">
                     <img class="img-thumbnail" src="{{ page.avatar | relative_url }}" alt="{{ page.name }}">
                 </div>
                 <div class="col d-flex align-items-end">
-                    <div class="">
-                        <h2>{{ page.display_name }}</h2>
+                    <div>
+                        <h2 style="padding-bottom: 2px; margin-bottom: 2px;">{{ page.display_name }}</h2>
                         {% if page.position -%}
                         <span class="text-muted">{{ page.position }}</span>
                         {% endif -%}

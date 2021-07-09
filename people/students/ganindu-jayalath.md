@@ -3,12 +3,12 @@ layout: page_people
 title: People
 permalink: /people/ganindu-jayalath/
 parent: People
-nav_order: 3
+nav_order: 4
 
 display_name: Ganindu Jayalath
 position: Undergraduate Student
 avatar: /people/avatar/ganindu-jayalath.jpg
-type: Undergraduate Research Student
+type: Undergraduate Student
 
 eNumber: E/15/142
 email_faculty: ganindudananja@gmail.com

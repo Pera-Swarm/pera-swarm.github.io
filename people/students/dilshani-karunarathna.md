@@ -8,7 +8,7 @@ nav_order: 2
 display_name: Dilshani Karunarathna
 position: Undergraduate Student
 avatar: /people/avatar/dilshani-karunarathna.jpg
-type: Undergraduate Research Student
+type: Undergraduate Student
 
 eNumber: E/15/173
 email_faculty: e15173@gmail.com

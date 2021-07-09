@@ -8,7 +8,7 @@ nav_order: 1
 display_name: Nuwan Jaliyagoda
 position: Undergraduate Student
 avatar: /people/avatar/nuwan-jaliyagoda.jpg
-type: Undergraduate Research Student
+type: Undergraduate Student
 
 eNumber: E/15/140
 email_faculty: nuwanjaliyagoda@eng.pdn.ac.lk
