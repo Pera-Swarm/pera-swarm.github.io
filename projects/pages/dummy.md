@@ -22,6 +22,12 @@ galery_images:
 team: true
 team_members:
     - {name: 'Nuwan Jaliyagoda'}
+    - {name: 'Dilshani Karunarathna'}
+
+supervisors: true
+supervisor_members:
+    - {name: 'Dr. Isuru Nawinne'}
+    - {name: 'Prof. Roshan G. Ragel'}
 
 resources: true
 resource_list:
