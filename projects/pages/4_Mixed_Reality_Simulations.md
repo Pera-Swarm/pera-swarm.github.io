@@ -17,7 +17,6 @@ galery_images:
     - {url: '/projects/gallery/mixed-reality-simulator/0.jpg', caption: ''}
     - {url: '/projects/gallery/mixed-reality-simulator/1.jpg', caption: ''}
     - {url: '/projects/gallery/mixed-reality-simulator/2.jpg', caption: ''}
-    - {url: '/projects/gallery/mixed-reality-simulator/3.jpg', caption: 'Robots in the testbed'}
     - {url: '/projects/gallery/mixed-reality-simulator/4.jpg', caption: 'Robots in the testbed'}
     - {url: '/projects/gallery/mixed-reality-simulator/5.png', caption: ''}
 

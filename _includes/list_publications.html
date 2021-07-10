@@ -2,30 +2,29 @@
 {% for pub in pub_list %}
 <div class="container pt-2 b-2">
     {% for author in pub.authors_list %}
-    <span>{{ author.name }}</span>
-    {% if forloop.last %}{% else %},{% endif %}
+    <span>{{ author.name }}</span>{% if forloop.last -%}{% else %},{% endif -%}
     {% endfor -%}
-
-    <b>{{ pub.paper_title }}</b>,
+    &nbsp;
+    <b>"{{ pub.paper_title }}"</b>,
     <span>{{ pub.published_at }}</span>
     <br>
 
     <span class="ms-3">
         [
         {% if pub.doi -%}
-        <a class="text-link px-2 text-decoration-none" href="{{ pub.doi }}">DOI</a>
+        <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.doi }}">DOI</a>
         {% endif -%}
 
         {% if pub.pdf -%}
-        <a class="text-link px-2 text-decoration-none" href="{{ pub.pdf }}">PDF</a>
+        <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.pdf }}">PDF</a>
         {% endif -%}
 
         {% if pub.presentation -%}
-        <a class="text-link px-2 text-decoration-none" href="{{ pub.presentation }}">Presentation</a>
+        <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.presentation }}">Presentation</a>
         {% endif -%}
 
         {% if pub.source_code -%}
-        <a class="text-link px-2 text-decoration-none" href="{{ pub.source_code }}">Source Code</a>
+        <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.source_code }}">Source Code</a>
         {% endif -%}
         ]
     </span>
