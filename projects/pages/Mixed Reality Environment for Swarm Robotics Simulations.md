@@ -14,13 +14,13 @@ link_caption: View More
 
 gallery: true
 galery_images:
-    - {url: '/projects/gallery/MREnvironmentForSwarmRoboticsSimulations/1.jpg', caption: 'A Screenshot of the Mixed-Reality Visualizer'}
+    - {url: '/projects/gallery/MREnvironmentForSwarmRoboticsSimulations/1.png', caption: 'A Screenshot of the Mixed-Reality Visualizer'}
 
 team: true
 team_members:
     - {name: 'Nuwan Jaliyagoda'}
     - {name: 'Dilshani Karunarathna'}
-    - {name: 'Ganidu Jayalath'}
+    - {name: 'Ganindu Jayalath'}
 
 supervisors: true
 supervisor_members:
