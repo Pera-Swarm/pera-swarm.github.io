@@ -1,8 +1,8 @@
 ---
 layout: page_project
 title: Application of Swarm Intelligence in Multi-Robot Systems
-description: "A small description about the project"
-permalink: /projects/dummy/
+description: "Application of swarm intelligence with general purpose robots."
+permalink: /projects/ApplicationOfSwarmIntelligenceInMulti-RobotSystems/
 parent: Projects
 navbar_active: Projects
 nav_order: 1
@@ -32,7 +32,7 @@ resource_list:
 
 ---
 
-The relatively expensive nature of the commercially available swarm robot packages made us realize that making them by ourselves is the better choice. Since the primary aim of this project is to create a swarm of robots that are capable of doing simple tasks like following a leader or finding a path by avoiding obstacles. 
+The relatively expensive nature of the commercially available swarm robot packages made us realize that making them by ourselves is the better choice. Since the primary aim of this project is to create a swarm of robots that are capable of doing simple tasks like following a leader or finding a path by avoiding obstacles.
 
 Technology can change with needs. So spending money on a particular technology can be a waste. Thus, it was decided to design and build customized robots that suit our purpose within this project’s first phase and later use them within the second phase.
 
