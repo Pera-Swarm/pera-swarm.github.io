@@ -14,8 +14,8 @@ link_caption: View More
 
 gallery: true
 galery_images:
-    - {url: '/projects/gallery/GUIForControllingAndSupervising/1.jpg', caption: 'Main Components of the Robot'}
-    - {url: '/projects/gallery/GUIForControllingAndSupervising/2.jpg', caption: 'A Screenshot of the GUI'}
+    - {url: '/projects/gallery/GUIForControllingAndSupervising/1.png', caption: 'Main Components of the Robot'}
+    - {url: '/projects/gallery/GUIForControllingAndSupervising/2.png', caption: 'A Screenshot of the GUI'}
 
 team: true
 team_members:
