@@ -1,25 +1,28 @@
 ---
 layout: page_project
-title: Obstacle Bots for Swarm Robots Project
+title: "Obstacle Bots for Swarm Robots"
 description: "Obstacle bots for the existing swarm research project of the Department of Computer Engineering, University of Peradeniya. These robots can create a challenging patterns using movements in a self-created potential surface with collision-avoiding."
-permalink: /projects/ObstacleBotsForSwarmRobots/
+permalink: /projects/obstacle-bots-for-swarm-robots/
 parent: Projects
 navbar_active: Projects
 nav_order: 5
 
-thumb: /projects/thumbs/blank.jpg
+thumb: /projects/thumbs/obstacle-bots-for-swarm-robots.jpg
 
-link_url: Sample URL
-link_caption: View More
+link_url: https://cepdnaclk.github.io/e16-3yp-obstacle-bots-for-swarm-robots/
+link_caption: Project Blog
 
 gallery: true
 galery_images:
-    - {url: '/projects/gallery/ObstacleBotsForSwarmRobots/1.jpg', caption: ''}
+    - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/2.jpg', caption: 'PCB Design'}
+    - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/3.jpg', caption: 'CAD Design'}
+    - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/1.jpg', caption: 'Final Robot'}
 
 team: true
 team_members:
-    - {name: 'Nuwan Jaliyagoda'}
-    - {name: 'Dilshani Karunarathna'}
+    - {name: 'Dinindu Thilakarathna'}
+    - {name: 'Heshan Dissanayake'}
+    - {name: 'Rusiru Thushara'}
 
 supervisors: true
 supervisor_members:
@@ -28,9 +31,9 @@ supervisor_members:
     - {name: 'Mr. Ziyan Maraikar'}
     - {name: 'Dr. Upul Jayasinghe'}
 
-resources: true
+resources: false
 resource_list:
-    - {text: 'Sample URL', url: 'https://example.com' }
+    - {text: 'Page', url: '#' }
 
 ---
 

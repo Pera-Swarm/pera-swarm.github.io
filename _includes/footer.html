@@ -1,7 +1,14 @@
-<footer class="blog-footer mt-5" style="background-color: lightgray!important;">
-    <p>
-        <a class="text-decoration-none" href="#">Back to top</a>
-    </p>
+<footer class="mt-5 pt-4 pb-2 bg-dark">
+<div class="container">
+<p class="m-2 text-center text-white">
+     Department of Comuputer Engineering - University of Peradeniya
+     <br>
+     <span style="color: #9f9b9b; font-size: small">
+         Last Update: {{ site.time | date: '%d-%m-%Y' }} &middot;
+         <a class="text-decoration-none" style="color: #9f9b9b" href="{% link pages/sitemap.html %}">Sitemap</a>
+     </span>
+</p>
+</div>
 </footer>
 
 {% if page.gallery == true %}

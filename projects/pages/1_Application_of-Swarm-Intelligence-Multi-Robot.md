@@ -1,34 +1,32 @@
 ---
 layout: page_project
-title: Application of Swarm Intelligence in Multi-Robot Systems
+title: "Application of Swarm Intelligence in Multi-Robot Systems"
 description: "Application of swarm intelligence with general purpose robots."
-permalink: /projects/ApplicationOfSwarmIntelligenceInMulti-RobotSystems/
+permalink: /projects/application-of-swarm-intelligence-in-multi-robot-systems/
 parent: Projects
 navbar_active: Projects
 nav_order: 1
 
 thumb: /projects/thumbs/blank.jpg
 
-link_url: Sample URL
-link_caption: View More
+link_url: https://projects.ce.pdn.ac.lk/4yp/e13/application-of-swarm-intelligence-in-multi-robot-systems
+link_caption: Project Page
 
-gallery: true
+gallery: false
 galery_images:
-    - {url: '/projects/gallery/ApplicationOfSwarmIntelligenceInMulti-RobotSystems/1.jpg', caption: ''}
+    - {url: '#', caption: ''}
 
-team: true
+team: false
 team_members:
-    - {name: 'Nuwan Jaliyagoda'}
-    - {name: 'Dilshani Karunarathna'}
+    - {name: ''}
 
-supervisors: true
+supervisors: false
 supervisor_members:
-    - {name: 'Dr. Isuru Nawinne'}
-    - {name: 'Prof. Roshan G. Ragel'}
+    - {name: ''}
 
-resources: true
+resources: false
 resource_list:
-    - {text: 'Sample URL', url: 'https://example.com' }
+    - {text: 'Resources', url: '#' }
 
 ---
 
@@ -38,6 +36,4 @@ Technology can change with needs. So spending money on a particular technology c
 
 The goal of the first phase is to create five working robots that are equipped with all the instruments and sensors that would help them survive and perform in a swarm environment. Within the second phase the robots that were made during the first phases were used to implement the swarm intelligence into them.
 
-By using the library that was built during the second phase, we were able to communicate with
-the robots and to use them to do a simple task like moving in the same direction while
-communicating between each other.
+By using the library that was built during the second phase, we were able to communicate with the robots and to use them to do a simple task like moving in the same direction while communicating between each other.

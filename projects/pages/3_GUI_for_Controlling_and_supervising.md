@@ -1,21 +1,23 @@
 ---
 layout: page_project
-title: A GUI for Controlling and Supervising Multiple Robots Remotely Project
+title: "A GUI for Controlling and Supervising Multiple Robots Remotely"
 description: "General purpose swarm robots with a GUI to monitor and control them remotely"
-permalink: /projects/GUIForControllingAndSupervising/
+permalink: /projects/gui-for-controlling-and-supervising-multiple-robots/
 parent: Projects
 navbar_active: Projects
 nav_order: 3
 
-thumb: /projects/thumbs/blank.jpg
+thumb: /projects/thumbs/gui-for-controlling.jpg
 
-link_url: Sample URL
-link_caption: View More
+link_url: https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely/
+link_caption: Project Blog
 
 gallery: true
 galery_images:
-    - {url: '/projects/gallery/GUIForControllingAndSupervising/1.png', caption: 'Main Components of the Robot'}
-    - {url: '/projects/gallery/GUIForControllingAndSupervising/2.png', caption: 'A Screenshot of the GUI'}
+    - {url: '/projects/gallery/gui-for-controlling/1.jpg', caption: 'Hardware robot'}
+    - {url: '/projects/gallery/gui-for-controlling/2.jpg', caption: 'Robots in the testbed'}
+    - {url: '/projects/gallery/gui-for-controlling/3.jpg', caption: 'Hardware robots'}
+    - {url: '/projects/gallery/gui-for-controlling/4.png', caption: 'A Screenshot of the GUI'}
 
 team: true
 team_members:
@@ -30,7 +32,10 @@ supervisor_members:
 
 resources: true
 resource_list:
-    - {text: 'Sample URL', url: 'https://example.com' }
+    - {text: 'Project Repository', url: 'https://github.com/cepdnaclk/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely' }
+    - {text: 'Project Page', url: 'https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely' }
+    - {text: 'Technical Design', url: 'https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely/pdf/Technical_Design.pdf' }
+    - {text: 'User Manual', url: 'https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely/pdf/User_Manual.pdf' }
 
 ---
 

@@ -1,0 +1,64 @@
+---
+layout: default
+title: Sitemap
+permalink: /sitemap/
+navbar_active: Sitemap
+---
+{% include page_tree_builder.html pages=site.html_pages -%}
+
+<nav aria-label="breadcrumb" class="pb-3">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% link pages/home.html %}">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Sitemap</li>
+    </ol>
+</nav>
+<h2>Sitemap</h2>
+
+<!-- Publications -->
+<!-- <h4 class="pt-2">Publications</h4> -->
+<!-- <ul> -->
+<!-- {%- assign pub_list = pages_list | where: "parent", "Publications" -%} -->
+<!-- {% for pub in pub_list %} -->
+<!-- <li><a href="{{ pub.permalink }}">{{ pub.title }}</a></li> -->
+<!-- {% endfor -%} -->
+<!-- </ul> -->
+
+<!-- Projects -->
+<h4 class="pt-2">Projects</h4>
+<ul>
+    {%- assign project_list = pages_list | where: "parent", "Projects" | reverse -%}
+    {% for proj in project_list %}
+    <li><a href="{{ proj.permalink }}">{{ proj.title }}</a></li>
+    {% endfor -%}
+</ul>
+
+<!-- Repositories -->
+<h4 class="pt-2">Repositories</h4>
+<ul>
+    {%- assign repo_list = pages_list | where: "parent", "Repository" -%}
+    {% for repo in repo_list %}
+    <li><a href="{{ proj.permalink }}">{{ repo.title }}</a></li>
+    {% endfor -%}
+</ul>
+
+<!-- People -->
+<h4 class="pt-2">People</h4>
+<ul>
+    {%- assign item_list = pages_list | where: "parent", "People" -%}
+    {%- assign faculty = item_list | where: "type", "Faculty" -%}
+    {%- assign external = item_list | where: "type", "External Collaborators" -%}
+    {%- assign undergrads = item_list | where: "type", "Undergraduate Student" -%}
+
+    {% for people in faculty %}
+    <li><a href="{{ proj.permalink }}">{{ people.display_name }}</a></li>
+    {% endfor -%}
+
+    {% for people in external %}
+    <li><a href="{{ proj.permalink }}">{{ people.display_name }}</a></li>
+    {% endfor -%}
+
+    {% for people in undergrads %}
+    <li><a href="{{ proj.permalink }}">{{ people.display_name }}</a></li>
+    {% endfor -%}
+
+</ul>

@@ -14,7 +14,7 @@ email_personal: #
 
 github: #
 linkedin: https://www.linkedin.com/in/upuljm/
-website: #
+website: http://www.ce.pdn.ac.lk/upul/
 researchgate: https://www.researchgate.net/profile/Upul-Jayasinghe
 scholar: https://scholar.google.com/citations?user=9nBn4b0AAAAJ
 

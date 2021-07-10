@@ -1,35 +1,32 @@
 ---
 layout: page_project
-title: A Programming Framework for Robot Swarms Project
+title: "A Programming Framework for Robot Swarms Project"
 description: ""
-permalink: /projects/ProgrammingFrameworkforRobotSwarms/
+permalink: /projects/programming-framework-for-robot-swarms/
 parent: Projects
 navbar_active: Projects
 nav_order: 2
 
 thumb: /projects/thumbs/blank.jpg
 
-link_url: Sample URL
-link_caption: View More
+link_url: https://ce-pdn-ac-lk.com/cewiki/projects:2020_group_9_swarm_robotics
+link_caption: Project Page - Department Wiki
 
 gallery: true
 galery_images:
-    - {url: '/projects/gallery/ProgrammingFrameworkforRobotSwarms/1.png', caption: 'Coloured object identification and reaching concensus
-'}
+    - {url: '/projects/gallery/programming-framework-for-robot-swarms/1.png', caption: 'Coloured object identification and reaching concensus'}
 
-team: true
+team: false
 team_members:
-    - {name: 'Nuwan Jaliyagoda'}
-    - {name: 'Dilshani Karunarathna'}
+    - {name: ''}
 
-supervisors: true
+supervisors: false
 supervisor_members:
-    - {name: 'Dr. Isuru Nawinne'}
-    - {name: 'Prof. Roshan G. Ragel'}
+    - {name: ''}
 
-resources: true
+resources: false
 resource_list:
-    - {text: 'Sample URL', url: 'https://example.com' }
+    - {text: 'Sample URL', url: '#' }
 
 ---
 

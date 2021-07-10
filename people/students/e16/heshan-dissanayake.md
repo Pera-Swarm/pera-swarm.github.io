@@ -15,7 +15,7 @@ email_faculty: e16088@eng.pdn.ac.lk
 email_personal: #
 
 github: https://github.com/HeshanDissanayake
-linkedin: https://www.linkedin.com/in/heshan-dissanayake/
+linkedin: https://www.linkedin.com/in/heshan-dissanyake-7aa3a714b/
 website: #
 researchgate: #
 
