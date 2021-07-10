@@ -6,7 +6,7 @@ parent: People
 
 display_name: Mr. Ziyan Maraikar
 position: Senior Lecturer
-avatar: /people/avatar/isuru-nawinne.jpg
+avatar: /people/avatar/ziyan-maraikar.jpg
 type: Faculty
 
 email_faculty: ziyanm@eng.pdn.ac.lk
