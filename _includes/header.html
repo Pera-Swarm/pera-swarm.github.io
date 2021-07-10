@@ -13,5 +13,8 @@
 
 {% if page.gallery == true %}
 <link rel="stylesheet" href="{{ '/assets/css/lightgallery.css' | relative_url }}">
+{% endif -%}
 
+{% if site.ga_tracking != nil -%}
+{% include analytics.html -%}
 {% endif -%}
