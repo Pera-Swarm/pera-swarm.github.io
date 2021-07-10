@@ -14,7 +14,7 @@ link_caption: View More
 
 gallery: true
 galery_images:
-    - {url: '/projects/gallery/ProgrammingFrameworkforRobotSwarms/1.jpg', caption: 'Coloured object identification and reaching concensus
+    - {url: '/projects/gallery/ProgrammingFrameworkforRobotSwarms/1.png', caption: 'Coloured object identification and reaching concensus
 '}
 
 team: true
