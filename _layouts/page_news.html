@@ -15,30 +15,21 @@ layout: wrappers_table
     {% include navbar.html %}
     <div class="container vh-75">
         <div class="container  col-sm-12 col-md-10 col-lg-10 mx-auto mt-3 py-2">
+            <nav aria-label="breadcrumb" class="pb-3">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="{% link pages/home.html %}">Home</a></li>
+                    <li class="breadcrumb-item"><a href="{% link news/index.html %}">News</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ page.title }}</li>
+                </ol>
+            </nav>
 
-            <h2>{{ page.title }}</h2>
-
-            {% if page.thumb != "/projects/thumbs/blank.jpg" -%}
-            <div class="col-lg-4 col-md-6 col-sm-8 mx-auto mb-4">
-                <img class="img-fluid" src="{{ page.thumb | relative_url }}" alt="image" style0="max-width: 360px;"/>
-            </div>
-            {% endif -%}
+            <span class="h3 pb-0">{{ page.title }}</span><br>
+            <span class="text-muted">{{ page.published_date }}</span>
+            <hr>
 
             <div class="row pt-3">
                 {{ content }}
 
-                {% if page.link_url != "#" %}
-                <div class="container text-center px-2 mt-3">
-                    <a class="btn btn-primary me-2 mb-3" target="_blank" href="{{ page.link_url }}">
-                        <i class="fa fa-globe me-2"></i>
-                        {% if page.link_caption %}
-                        <span>{{ page.link_caption }}</span>
-                        {% else %}
-                        <span>View More</span>
-                        {% endif %}
-                    </a>
-                </div>
-                {% endif %}
             </div>
             {% if page.gallery == true %}
             <div class="mt-5 mb-3">
