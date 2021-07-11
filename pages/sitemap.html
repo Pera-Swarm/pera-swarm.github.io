@@ -37,7 +37,18 @@ navbar_active: Sitemap
 <ul>
     {%- assign repo_list = pages_list | where: "parent", "Repository" -%}
     {% for repo in repo_list %}
-    <li><a href="{{ proj.permalink }}">{{ repo.title }}</a></li>
+    <li><a href="{{ repo.permalink }}">{{ repo.title }}</a></li>
+    {% endfor -%}
+</ul>
+
+<!-- News -->
+<h4 class="pt-2">News</h4>
+<ul>
+    {%- assign news_list = pages_list | where: "parent", "News" | reverse -%}
+    {% for news in news_list %}
+    {% if news.title != "Dummy News" -%}
+    <li><a href="{{ news.permalink }}">{{ news.title }}</a></li>
+    {% endif -%}
     {% endfor -%}
 </ul>
 
