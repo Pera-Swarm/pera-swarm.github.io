@@ -48,7 +48,7 @@ sitemap: false
                         </div>
 
                         <div class="">
-                            <button id="btnGenerate" type="button" class="btn btn-primary m-auto">Generate URLs</button>
+                            <button id="btnGenerate" type="button" class="btn btn-primary m-auto">Generate Access Links</button>
                         </div>
                     </form>
                 </div>
@@ -73,6 +73,9 @@ sitemap: false
                                     </a>
                                 </div>
                             </div>
+
+                            <h5>Access Key:</h5>
+                            <div class="small border container p-2" id="accessToken">N/A</div>
 
                         </div>
                     </div>
@@ -122,7 +125,7 @@ sitemap: false
                         $('.access-link').removeClass('d-none');
                         $('#link3D').attr('href', link3D);
                         $('#linkAR').attr('href', linkAR);
-
+                        $('#accessToken').text(token);
 
                     }else{
                         alert('An unknow error happened !');
