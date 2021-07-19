@@ -6,8 +6,8 @@
 <h4 class="people-h4">Faculty</h4>
 <ul>
     {% for people in faculty %}
-    <li class="pt-2 pb-3">
-        {% include people_individual.html people=people %}
+    <li class="pt-2 {% if include.contact != false -%} pb-3 {% endif -%}">
+        {% include people_individual.html people=people contact=include.contact  %}
     </li>
     {% endfor -%}
 </ul>
@@ -24,8 +24,8 @@
 <h4 class="people-h4">Undergraduate Students</h4>
 <ul>
     {% for people in undergrads %}
-    <li class="pt-2 pb-3">
-        {% include people_individual.html people=people %}
+    <li class="pt-2 {% if include.contact != false -%} pb-3 {% endif -%}">
+        {% include people_individual.html people=people contact=include.contact %}
     </li>
     {% endfor -%}
 </ul>
