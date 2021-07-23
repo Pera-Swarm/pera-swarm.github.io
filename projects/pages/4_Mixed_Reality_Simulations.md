@@ -1,11 +1,11 @@
 ---
 layout: page_project
 title: "Mixed Reality Environment for Swarm Robotics Simulations"
-description: "An Open-source Mixed-Reality Simulator and a Visualizer to simulate Swarm Intelligence behaviors"
+description: "An open-source Mixed-Reality Simulator and a Visualizer to simulate Swarm Intelligence behaviors"
 permalink: /projects/mr-environment-for-swarm-robotics-simulations/
 parent: Projects
 navbar_active: Projects
-nav_order: 4
+nav_order: 5
 
 thumb: /projects/thumbs/mixed-reality-simulator.jpg
 

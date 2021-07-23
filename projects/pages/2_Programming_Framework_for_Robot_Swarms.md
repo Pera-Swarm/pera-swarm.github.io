@@ -1,7 +1,7 @@
 ---
 layout: page_project
 title: "A Programming Framework for Robot Swarms Project"
-description: ""
+description: "Pair-behaviors, neighbor-cluster behaviors for aggregation and pattern formation global behaviors"
 permalink: /projects/programming-framework-for-robot-swarms/
 parent: Projects
 navbar_active: Projects

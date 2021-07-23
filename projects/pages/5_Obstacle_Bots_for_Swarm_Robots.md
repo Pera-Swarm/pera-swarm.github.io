@@ -5,7 +5,7 @@ description: "Obstacle bots for the existing swarm research project of the Depar
 permalink: /projects/obstacle-bots-for-swarm-robots/
 parent: Projects
 navbar_active: Projects
-nav_order: 5
+nav_order: 4
 
 thumb: /projects/thumbs/obstacle-bots-for-swarm-robots.jpg
 

@@ -16,5 +16,14 @@
         "subtitle": "",
         "interval": 5000,
         "dark": true
+    },
+    {
+        "display": true,
+        "image": "/assets/img/slide_3.jpg",
+        "alt": "Robots while assemblying",
+        "title": "",
+        "subtitle": "",
+        "interval": 5000,
+        "dark": true
     }
 ]

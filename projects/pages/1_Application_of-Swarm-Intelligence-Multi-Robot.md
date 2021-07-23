@@ -1,7 +1,7 @@
 ---
 layout: page_project
 title: "Application of Swarm Intelligence in Multi-Robot Systems"
-description: "Application of swarm intelligence with general purpose robots."
+description: "Application of swarm intelligence with general purpose robots"
 permalink: /projects/application-of-swarm-intelligence-in-multi-robot-systems/
 parent: Projects
 navbar_active: Projects
