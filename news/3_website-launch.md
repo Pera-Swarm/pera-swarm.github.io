@@ -6,7 +6,7 @@ description: "The official website of the Pera-Swarm project will be launched on
 permalink: /news/website-launch/
 parent: News
 navbar_active: News
-nav_order: 2
+nav_order: 3
 
 link_url: #
 link_caption: View More
