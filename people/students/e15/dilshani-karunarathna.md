@@ -11,7 +11,7 @@ avatar: /people/avatar/dilshani-karunarathna.jpg
 type: Undergraduate Student
 
 eNumber: E/15/173
-email_faculty: e15173@gmail.com
+email_faculty: e15173@eng.pdn.ac.lk
 email_personal: dinelkadilshani95@gmail.com
 
 github: https://github.com/DDilshani
