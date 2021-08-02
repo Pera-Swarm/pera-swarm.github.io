@@ -1,0 +1,29 @@
+---
+layout: null
+---
+{% include page_tree_builder.html pages=site.html_pages -%}
+{%- assign item_list = pages_list | where: "parent", "People" -%}
+{%- assign faculty = item_list | where: "type", "Faculty" -%}
+{%- assign external = item_list | where: "type", "External Collaborators" -%}
+{%- assign undergrads = item_list | where: "type", "Undergraduate Student" -%}
+[
+    {% for p in item_list -%}
+    {
+        "name": "{{ p.display_name }}",
+        "type": "{{ p.type }}",
+        "avatar": "{{ site.url }}/{{ p.avatar }}",
+        "eNumber": "{{ p.eNumber }}",
+
+        "contacts":{
+            "email_faculty": "{{ p.email_faculty }}",
+            "email_personal": "{{ p.email_personal }}",
+        },
+        "profiles":{
+            "github": "{{ p.github }}",
+            "linkedin": "{{ p.linkedin }}",
+            "website": "{{ p.website }}",
+            "researchgate": "{{ p.researchgate }}"
+        }
+    }{% if forloop.last %}{% else %},{% endif %}
+    {% endfor -%}
+]
