@@ -13,7 +13,6 @@ layout: null
         "type": "{{ p.type }}",
         "avatar": "{{ site.url }}/{{ p.avatar }}",
         "eNumber": "{{ p.eNumber }}",
-
         "contacts":{
             "email_faculty": "{{ p.email_faculty }}",
             "email_personal": "{{ p.email_personal }}",
