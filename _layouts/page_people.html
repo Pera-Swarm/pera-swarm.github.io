@@ -9,10 +9,20 @@ layout: wrappers_table
     <title>{{ page.display_name }} | Pera-Swarm </title>
     {% include header.html %}
 
+    {%- if page.profile -%}
+    <meta http-equiv = "refresh" content = "0; url = {{ page.profile }}" />
+    {%- endif -%}
 </head>
 
 <body>
     {% include navbar.html %}
+
+    {%- if page.profile -%}
+    <div class="container pt-5" style="height: 80vh;">
+        <p>Redirecting...<br><br>Please click <a href="{{ page.profile}}">here</a> if the browser is not automatically redirected.</p>
+        <br><br>
+    </div>
+    {%- else -%}
     <div class="container vh-75">
         <div class="container  col-sm-12 col-md-10 col-lg-10 mx-auto mt-3 py-2">
             <nav aria-label="breadcrumb" class="pb-3">
@@ -83,5 +93,7 @@ layout: wrappers_table
 
         </div>
     </div>
+    {%- endif -%}
+
     {% include footer.html %}
 </body>

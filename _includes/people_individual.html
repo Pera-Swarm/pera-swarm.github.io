@@ -1,6 +1,10 @@
 
 <b>
+    {% if include.contact != false -%}
     {{ people.display_name }}
+    {% else -%}
+    <a href="{{ people.profile }}" target="_blank">{{ people.display_name }}</a>
+    {% endif -%}
 </b>
 
 <br>
