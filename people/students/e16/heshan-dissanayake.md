@@ -7,16 +7,13 @@ nav_order: 7
 
 display_name: Heshan Dissanayake
 position: Undergraduate Student
-avatar: /people/avatar/heshan-dissanayake.jpg
+avatar: https://people.ce.pdn.ac.lk/images/students/e16/e16088.jpg
 type: Undergraduate Student
 
 eNumber: E/16/088
 email_faculty: e16088@eng.pdn.ac.lk
 email_personal: #
 
-github: https://github.com/HeshanDissanayake
-linkedin: https://www.linkedin.com/in/heshan-dissanyake-7aa3a714b/
-website: #
-researchgate: #
+profile: https://people.ce.pdn.ac.lk/students/e16/088/
 
 ---

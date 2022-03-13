@@ -1,43 +1,22 @@
 
 <b>
-    <!-- <i class="fa fa fa-circle-o"></i> -->
     {{ people.display_name }}
 </b>
 
-<a class="text-muted text-link text-decoration-none" href="{{ people.permalink }}">
-    <i class="fa fa-link ms-2" aria-hidden="true"></i>
-</a>
 <br>
 {% if include.contact != false -%}
 <span class="ms-3">
+    {% if people.profile -%}
+    <span class="mx-1"><a class="text-muted text-link text-decoration-none" href="{{ people.profile }}">
+        <i class='fa fa-globe mx-2' aria-hidden='true'></i>Profile
+    </a></span>
+    {% endif -%}
+
     {% if people.email_faculty -%}
-    <span class="mx-1"><a class="text-muted text-link text-decoration-none" href="mailto:${member.email}">
+    <span class="mx-1"><a class="text-muted text-link text-decoration-none" href="mailto:{{ people.email_faculty }}">
         <i class='fa fa-envelope mx-2' aria-hidden='true'></i>{{ people.email_faculty }}
     </a></span>
     {% endif -%}
 
-    {% if people.github -%}
-    <span class="mx-1"><a class="text-muted text-link text-decoration-none" href="{{ people.github }}">
-        <i class='fa fa-github mx-2' aria-hidden='true'></i>GitHub
-    </a></span>
-    {% endif -%}
-
-    {% if people.website -%}
-    <span class="mx-1"><a class="text-muted text-link text-decoration-none" href="{{ people.website }}">
-        <i class='fa fa-globe mx-2' aria-hidden='true'></i>Website
-    </a></span>
-    {% endif -%}
-
-    {% if people.linkedin -%}
-    <span class="mx-1"><a class="text-muted text-link text-decoration-none" href="{{ people.linkedin }}">
-        <i class='fa fa-linkedin mx-2' aria-hidden='true'></i>Linkedin
-    </a></span>
-    {% endif -%}
-
-    {% if people.researchgate -%}
-    <span class="mx-1"><a class="text-muted text-link text-decoration-none" href="{{ people.researchgate }}">
-        <i class='fa fa-globe mx-2' aria-hidden='true'></i>Researchgate
-    </a></span>
-    {% endif -%}
 </span>
 {% endif -%}

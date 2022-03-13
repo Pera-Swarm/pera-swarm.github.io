@@ -6,16 +6,12 @@ parent: People
 
 display_name: Dr. Isuru Nawinne
 position: Senior Lecturer
-avatar: /people/avatar/isuru-nawinne.jpg
+avatar: https://people.ce.pdn.ac.lk/images/staff/academic-staff/isuru-nawinne.png
 type: Faculty
 
 email_faculty: isurunawinne@eng.pdn.ac.lk
 email_personal: #
 
-github: #
-linkedin: https://lk.linkedin.com/in/isuru-nawinne-73302833
-website: http://www.ce.pdn.ac.lk/academic-staff/isuru-nawinne/
-researchgate: https://www.researchgate.net/profile/Isuru-Nawinne
-scholar: #
+profile: https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/
 
 ---

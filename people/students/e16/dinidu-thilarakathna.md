@@ -7,16 +7,12 @@ nav_order: 5
 
 display_name: Dinindu Thilakarathna
 position: Undergraduate Student
-avatar: /people/avatar/dinindu-thilakarathna.jpg
+avatar: https://people.ce.pdn.ac.lk/images/students/e16/e16366.jpg
 type: Undergraduate Student
 
 eNumber: E/16/366
 email_faculty: e16366@eng.pdn.ac.lk
 email_personal: #
 
-github: https://github.com/dininduwm
-linkedin: https://www.linkedin.com/in/dinindu-thilakarathna/
-website: https://dinindu.me
-researchgate: #
-
+profile: https://people.ce.pdn.ac.lk/students/e16/366/
 ---

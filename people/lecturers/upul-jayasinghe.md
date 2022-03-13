@@ -6,16 +6,12 @@ parent: People
 
 display_name: Dr. Upul Jayasinghe
 position: Senior Lecturer
-avatar: /people/avatar/upul-jayasinghe.jpg
+avatar: https://people.ce.pdn.ac.lk/images/staff/academic-staff/upul-jayasinghe.jpg
 type: Faculty
 
 email_faculty: upuljm@pdn.ac.lk
 email_personal: #
 
-github: #
-linkedin: https://www.linkedin.com/in/upuljm/
-website: http://www.ce.pdn.ac.lk/upul/
-researchgate: https://www.researchgate.net/profile/Upul-Jayasinghe
-scholar: https://scholar.google.com/citations?user=9nBn4b0AAAAJ
+profile: https://people.ce.pdn.ac.lk/staff/academic/upul-jayasinghe/
 
 ---
