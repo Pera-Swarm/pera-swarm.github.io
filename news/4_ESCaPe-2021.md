@@ -20,7 +20,7 @@ video:
     url: "https://www.youtube.com/embed/cO88sCxr0qo?start=9570"
 ---
 
-The project, <a href="{% link projects/pages/4_Mixed_Reality_Simulations.md %}">Mixed Reality Environment for Swarm Robotics Simulations</a> was presented in the ESCaPe 2021 - Engineering Students Project Symposium and Conference, and received the **"Best Research Presentation"** award.
+The project, <a href="{% link projects/pages/4_Mixed_Reality_Simulations.md %}">Mixed Reality Environment for Swarm Robotics Simulations</a> was presented in the ESCaPe 2021 - Engineering Students’ Conference at Peradeniya, and received the **"Best Research Presentation"** award.
 
 
 <div class="container row pt-3 pb-5">
