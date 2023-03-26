@@ -17,4 +17,4 @@ published_date: 2021-04-18
 
 Final presentation of the project *"Mixed Reality based Simulation Platform for Swarm Robotic"* done by a group of E15 students, as there Final Year Research happened on 18th of April, 2021 via Zoom.
 
-Project details available in <a href="{% link projects/pages/4_Mixed_Reality_Simulations.md %}">here</a>
+Project details available in <a href="{% link projects/pages/5_Mixed_Reality_Simulations.md %}">here</a>
