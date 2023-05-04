@@ -1,12 +1,9 @@
-{% include page_tree_builder.html pages=site.html_pages -%}
-{%- assign people = pages_list | where: "display_name", member.name -%}
-{%- assign person = people[0] -%}
-
+{%- assign person = member[1] -%}
 <div class='col-lg-2 col-md-3 col-sm-4'>
     <div class='' style='width:100%'>
-        <img class='w-100' src='{{ person.avatar | relative_url }}' alt='{{ person.display_name }}'>
-        <a class="text-decoration-none text-link text-dark text-center" href="{{ person.permalink }}">
-            <p class='pt-2'><b>{{ person.display_name }}</b><br></p>
+        <img class='w-100' src='{{ person.profile_image | relative_url }}' alt='{{ person.display_name }}'>
+        <a class="text-decoration-none text-link text-dark text-center" href="{{ person.profile_url }}">
+            <p class='pt-2'><b>{{ person.name }}</b><br></p>
         </a>
     </div>
 </div>

@@ -9,20 +9,14 @@ nav_order: 1
 
 thumb: /projects/thumbs/blank.jpg
 
-link_url: https://projects.ce.pdn.ac.lk/4yp/e13/application-of-swarm-intelligence-in-multi-robot-systems
+link_url: https://projects.ce.pdn.ac.lk/4yp/e13/application-of-swarm-intelligence-in-multi-robot-systems/
 link_caption: Project Page
+
+api_url: "#"
 
 gallery: false
 galery_images:
     - {url: '#', caption: ''}
-
-team: false
-team_members:
-    - {name: ''}
-
-supervisors: false
-supervisor_members:
-    - {name: ''}
 
 resources: false
 resource_list:

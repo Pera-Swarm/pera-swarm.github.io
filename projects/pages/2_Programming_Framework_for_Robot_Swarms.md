@@ -12,17 +12,11 @@ thumb: /projects/thumbs/blank.jpg
 link_url: https://ce-pdn-ac-lk.com/cewiki/projects:2020_group_9_swarm_robotics
 link_caption: Project Page - Department Wiki
 
+api_url: "#"
+
 gallery: true
 galery_images:
     - {url: '/projects/gallery/programming-framework-for-robot-swarms/1.png', caption: 'Coloured object identification and reaching concensus'}
-
-team: false
-team_members:
-    - {name: ''}
-
-supervisors: false
-supervisor_members:
-    - {name: ''}
 
 resources: false
 resource_list:

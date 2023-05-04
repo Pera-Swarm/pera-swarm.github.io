@@ -12,24 +12,13 @@ thumb: /projects/thumbs/obstacle-bots-for-swarm-robots.jpg
 link_url: https://cepdnaclk.github.io/e16-3yp-obstacle-bots-for-swarm-robots/
 link_caption: Project Blog
 
+api_url: https://api.ce.pdn.ac.lk/projects/v1/3yp/E16/obstacle-bots-for-swarm-robots/
+
 gallery: true
 galery_images:
     - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/2.jpg', caption: 'PCB Design'}
     - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/3.jpg', caption: 'CAD Design'}
     - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/1.jpg', caption: 'Final Robot'}
-
-team: true
-team_members:
-    - {name: 'Dinindu Thilakarathna'}
-    - {name: 'Heshan Dissanayake'}
-    - {name: 'Rusiru Thushara'}
-
-supervisors: true
-supervisor_members:
-    - {name: 'Dr. Isuru Nawinne'}
-    - {name: 'Prof. Roshan G. Ragel'}
-    - {name: 'Mr. Ziyan Maraikar'}
-    - {name: 'Dr. Upul Jayasinghe'}
 
 resources: false
 resource_list:
