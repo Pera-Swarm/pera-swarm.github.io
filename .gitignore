@@ -7,3 +7,5 @@
 _site
 Gemfile.lock
 .idea
+_data/projects.json
+.DS_Store

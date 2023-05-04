@@ -12,22 +12,11 @@ thumb: /projects/thumbs/swarm-intelligence-programming-framewor.jpg
 link_url: https://cepdnaclk.github.io/e16-4yp-swarm-intelligence-programming-framework/
 link_caption: Project Blog
 
+api_url: https://api.ce.pdn.ac.lk/projects/v1/4yp/E16/swarm-intelligence-programming-framework/
+
 gallery: false
 galery_images:
     - {url: '#', caption: ''}
-
-team: false
-team_members:
-    - {name: 'S.M. Ekanayaka'}
-    - {name: 'H.M.K. Madushanka'}
-    - {name: 'A.L.H.E. Perera'}
-
-supervisors: false
-supervisor_members:
-    - {name: 'Dr. Isuru Nawinne'}
-    - {name: 'Prof. Roshan G. Ragel'}
-    - {name: 'Dr. Mahanama Wickramasinghe'}
-    - {name: 'Dr. Sithumini Ekanayake'}
 
 resources: false
 resource_list:

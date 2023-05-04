@@ -12,23 +12,14 @@ thumb: /projects/thumbs/gui-for-controlling.jpg
 link_url: https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely/
 link_caption: Project Blog
 
+api_url: https://api.ce.pdn.ac.lk/projects/v1/3yp/E15/A-GUI-for-controlling-and-supervising-multiple-robots-remotely/
+
 gallery: true
 galery_images:
     - {url: '/projects/gallery/gui-for-controlling/1.jpg', caption: 'Hardware robot'}
     - {url: '/projects/gallery/gui-for-controlling/2.jpg', caption: 'Robots in the testbed'}
     - {url: '/projects/gallery/gui-for-controlling/3.jpg', caption: 'Hardware robots'}
     - {url: '/projects/gallery/gui-for-controlling/4.png', caption: 'A Screenshot of the GUI'}
-
-team: true
-team_members:
-    - {name: 'Nuwan Jaliyagoda'}
-    - {name: 'Dilshani Karunarathna'}
-    - {name: 'Pasan Tennakoon'}
-
-supervisors: true
-supervisor_members:
-    - {name: 'Dr. Isuru Nawinne'}
-    - {name: 'Prof. Roshan G. Ragel'}
 
 resources: true
 resource_list:

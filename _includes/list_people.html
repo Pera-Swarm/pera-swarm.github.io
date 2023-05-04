@@ -1,31 +1,37 @@
-{%- assign item_list = pages_list | where: "parent", "People" -%}
-{%- assign faculty = item_list | where: "type", "Faculty" -%}
-{%- assign external = item_list | where: "type", "External Collaborators" -%}
-{%- assign undergrads = item_list | where: "type", "Undergraduate Student" -%}
+<div class="pb-4">
+    <h3>Contributors as team members</h3>
 
-<h4 class="people-h4">Faculty</h4>
-<ul>
-    {% for people in faculty %}
-    <li class="pt-2 {% if include.contact != false -%} pb-3 {% endif -%}">
-        {% include people_individual.html people=people contact=include.contact  %}
-    </li>
-    {% endfor -%}
-</ul>
+    <div class="container py-4 px-lg-5">
+        <div class="row justify-content-start">
+            {% for p in site.data.team %}
+            <div class='col-lg-2 col-md-3 col-sm-4'>
+                <div class='' style='width:100%'>
+                    <img class='w-100' src='{{ p[1].profile_image | relative_url }}' alt='{{ p[1].display_name }}'>
+                    <a class="text-decoration-none text-link text-dark text-center" href="{{ p[1].profile_url }}">
+                        <p class='pt-2'><b>{{ p[1].name }}</b><br></p>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
-<!-- <h4 class="people-h4">External Collaborators</h4> -->
-<!-- <ul> -->
-<!-- <li></li> -->
-<!-- </ul> -->
+<div class="pb-4">
+    <h3>Contributors as project supervisors</h3>
 
-<!-- <h4 class="people-h4">Graduate Research Students</h4> -->
-<!-- <ul> -->
-<!-- </ul> -->
-
-<h4 class="people-h4">Undergraduate Students</h4>
-<ul>
-    {% for people in undergrads %}
-    <li class="pt-2 {% if include.contact != false -%} pb-3 {% endif -%}">
-        {% include people_individual.html people=people contact=include.contact %}
-    </li>
-    {% endfor -%}
-</ul>
+    <div class="container py-4 px-lg-5">
+        <div class="row">
+            {% for p in site.data.supervisors %}
+            <div class='col-lg-2 col-md-3 col-sm-4'>
+                <div class='' style='width:100%'>
+                    <img class='w-100' src='{{ p[1].profile_image | relative_url }}' alt='{{ p[1].display_name }}'>
+                    <a class="text-decoration-none text-link text-dark text-center" href="{{ p[1].profile_url }}">
+                        <p class='pt-2'><b>{{ p[1].name }}</b><br></p>
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

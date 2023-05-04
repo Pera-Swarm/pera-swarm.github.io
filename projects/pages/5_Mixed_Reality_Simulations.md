@@ -12,6 +12,8 @@ thumb: /projects/thumbs/mixed-reality-simulator.jpg
 link_url: https://cepdnaclk.github.io/e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics/
 link_caption: Project Page
 
+api_url: https://api.ce.pdn.ac.lk/projects/v1/4yp/E15/Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics/
+
 gallery: true
 galery_images:
     - {url: '/projects/gallery/mixed-reality-simulator/0.jpg', caption: ''}
@@ -19,17 +21,6 @@ galery_images:
     - {url: '/projects/gallery/mixed-reality-simulator/2.jpg', caption: ''}
     - {url: '/projects/gallery/mixed-reality-simulator/4.jpg', caption: 'Robots in the testbed'}
     - {url: '/projects/gallery/mixed-reality-simulator/5.png', caption: ''}
-
-team: true
-team_members:
-    - {name: 'Nuwan Jaliyagoda'}
-    - {name: 'Dilshani Karunarathna'}
-    - {name: 'Ganindu Jayalath'}
-
-supervisors: true
-supervisor_members:
-    - {name: 'Dr. Isuru Nawinne'}
-    - {name: 'Prof. Roshan G. Ragel'}
 
 resources: false
 resource_list:
