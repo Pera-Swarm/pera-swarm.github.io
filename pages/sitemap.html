@@ -52,24 +52,11 @@ navbar_active: Sitemap
     {% endfor -%}
 </ul>
 
-<!-- People -->
-<h4 class="pt-2">People</h4>
+<!-- Other -->
+<h4 class="pt-2">Other</h4>
 <ul>
-    {%- assign item_list = pages_list | where: "parent", "People" -%}
-    {%- assign faculty = item_list | where: "type", "Faculty" -%}
-    {%- assign external = item_list | where: "type", "External Collaborators" -%}
-    {%- assign undergrads = item_list | where: "type", "Undergraduate Student" -%}
-
-    {% for people in faculty %}
-    <li><a href="{{ proj.permalink }}">{{ people.display_name }}</a></li>
-    {% endfor -%}
-
-    {% for people in external %}
-    <li><a href="{{ proj.permalink }}">{{ people.display_name }}</a></li>
-    {% endfor -%}
-
-    {% for people in undergrads %}
-    <li><a href="{{ proj.permalink }}">{{ people.display_name }}</a></li>
-    {% endfor -%}
-
+    <li><a href="{{ '/people/' | relative_url }}">People</a></li>
+    <!-- <li><a href="{{ '/gallery/' | relative_url }}">Gallery</a></li> -->
+    <li><a href="{{ '/contacts/' | relative_url }}">Contact Us</a></li>
+    <li><a href="{{ '/join-us/' | relative_url }}">Join Us</a></li>
 </ul>

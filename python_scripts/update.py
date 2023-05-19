@@ -47,7 +47,7 @@ for p in project_index:
 
 # Sort details 
 team_sorted = {k: v for k, v in sorted(team.items())}
-supervisors_sorted = {k: v for k, v in sorted(supervisors.items())}
+supervisors_sorted = {k: v for k, v in sorted(supervisors.items(), key=lambda kv: supervisors[kv[0]]['name'])}
 
 # Write the details 
 filename = "../_data/team.json"

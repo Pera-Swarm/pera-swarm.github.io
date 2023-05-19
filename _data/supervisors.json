@@ -32,28 +32,6 @@
         "researchgate": "https://www.researchgate.net/profile/Mahanama-Wickramsinghe",
         "google_scholar": "https://scholar.google.com/citations?hl=en&user=kuoZpZEAAAAJ"
     },
-    "nuwanjaliyagoda@eng.pdn.ac.lk": {
-        "name": "Nuwan Jaliyagoda",
-        "email": "nuwanjaliyagoda@eng.pdn.ac.lk",
-        "profile_url": "https://people.ce.pdn.ac.lk//students/e15/140",
-        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/nuwan.jpg",
-        "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/nuwanjaliyagoda",
-        "website": "#",
-        "linkedin": "#",
-        "researchgate": "#",
-        "google_scholar": "#"
-    },
-    "roshanr@eng.pdn.ac.lk": {
-        "name": "Prof. Roshan G. Ragel",
-        "email": "roshanr@eng.pdn.ac.lk",
-        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
-        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
-        "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/roshanr",
-        "website": "http://roshan.ragel.net/",
-        "linkedin": "https://www.linkedin.com/in/roshanragel/",
-        "researchgate": "https://www.researchgate.net/profile/Roshan-Ragel",
-        "google_scholar": "https://scholar.google.com/citations?user=UTYj8usAAAAJ&hl=en"
-    },
     "sithuminie@eng.pdn.ac.lk": {
         "name": "Dr. Sithumini Ekanayake",
         "email": "sithuminie@eng.pdn.ac.lk",
@@ -86,5 +64,27 @@
         "linkedin": "https://www.linkedin.com/in/ziyan-maraikar-15539818a",
         "researchgate": "https://www.researchgate.net/profile/Ziyan-Maraikar-2",
         "google_scholar": "https://scholar.google.com.au/citations?user=5xf_7TAAAAAJ&hl=en"
+    },
+    "nuwanjaliyagoda@eng.pdn.ac.lk": {
+        "name": "Nuwan Jaliyagoda",
+        "email": "nuwanjaliyagoda@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk//students/e15/140",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/nuwan.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/nuwanjaliyagoda",
+        "website": "#",
+        "linkedin": "#",
+        "researchgate": "#",
+        "google_scholar": "#"
+    },
+    "roshanr@eng.pdn.ac.lk": {
+        "name": "Prof. Roshan G. Ragel",
+        "email": "roshanr@eng.pdn.ac.lk",
+        "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+        "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/roshanr",
+        "website": "http://roshan.ragel.net/",
+        "linkedin": "https://www.linkedin.com/in/roshanragel/",
+        "researchgate": "https://www.researchgate.net/profile/Roshan-Ragel",
+        "google_scholar": "https://scholar.google.com/citations?user=UTYj8usAAAAJ&hl=en"
     }
 }
