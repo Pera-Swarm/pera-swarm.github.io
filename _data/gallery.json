@@ -1,22 +1,57 @@
 [
     {
-        "url": "/assets/img/slide_1.jpg",
-        "caption": "Sample Caption"
+        "id": 1,
+        "title": "Robots",
+        "description": "",
+        "images": [
+            {
+                "url": "/assets/img/slide_1.jpg",
+                "caption": "Sample Caption"
+            },
+            {
+                "url": "/assets/img/slide_1.jpg",
+                "caption": "Sample Caption"
+            },
+            {
+                "url": "/assets/img/slide_1.jpg",
+                "caption": "Sample Caption"
+            },
+            {
+                "url": "/assets/img/slide_1.jpg",
+                "caption": "Sample Caption"
+            },
+            {
+                "url": "/assets/img/slide_1.jpg",
+                "caption": "Sample Caption"
+            }
+        ]
     },
     {
-        "url": "/assets/img/slide_1.jpg",
-        "caption": "Sample Caption"
+        "id": 2,
+        "title": "Robot Testbed",
+        "description": "",
+        "images": [
+            {
+                "url": "/assets/img/slide_1.jpg",
+                "caption": "Sample Caption"
+            }
+        ]
     },
     {
-        "url": "/assets/img/slide_1.jpg",
-        "caption": "Sample Caption"
-    },
-    {
-        "url": "/assets/img/slide_1.jpg",
-        "caption": "Sample Caption"
-    },
-    {
-        "url": "/assets/img/slide_1.jpg",
-        "caption": "Sample Caption"
+        "id": 3,
+        "title": "Experiment Recordings",
+        "description": "",
+        "images": [
+            {
+                "url": "https://img.youtube.com/vi/SR-ntrzSTFc/mqdefault.jpg",
+                "video": "https://www.youtube.com/watch?v=SR-ntrzSTFc",
+                "caption": "Find a Color Experiment"
+            },
+            {
+                "url": "https://img.youtube.com/vi/MwUPTypFgas/mqdefault.jpg",
+                "video": "https://www.youtube.com/watch?v=MwUPTypFgas",
+                "caption": "Color Ripple Experiment"
+            }
+        ]
     }
 ]
