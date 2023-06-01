@@ -18,65 +18,70 @@ sitemap: false
     <div class="card">
         <div class="card-body">
             <h5 class="card-title">Settings</h5>
-            <div class="row">
-                <div class="col col-md-6 col-sm-12">
-                    <form>
+            <form>
+                <div class="row">
+                    <div class="col col-md-6 col-sm-12">
                         <div class="form-group mb-3">
                             <label for="txtHost">Host</label>
-                            <input type="text" class="form-control" id="txtHost" placeholder="" value="webservices.ceykod.com">
+                            <input type="text" class="form-control" id="txtHost" placeholder=""
+                                value="webservices.ceykod.com">
                         </div>
                         <div class="row pb-2">
                             <div class="col col-md-6">
                                 <label for="txtPort">Port</label>
-                                <input type="number" min="1000" max="9999" class="form-control" id="txtPort" placeholder="" value="8883">
+                                <input type="number" min="1000" max="9999" class="form-control" id="txtPort"
+                                    placeholder="" value="8883">
                             </div>
-
                             <div class="col col-md-6">
                                 <label for="txtChannel">Channel</label>
                                 <input type="text" class="form-control" id="txtChannel" placeholder="vXX" value="v1">
                             </div>
                         </div>
-
+                    </div>
+                    <div class="col col-md-6 col-sm-12">
                         <div class="form-group mb-3">
                             <label for="txtUser">User Name</label>
-                            <input type="text" required class="form-control" id="txtUser" placeholder="Username of the MQTT broker" value="swarm_user">
+                            <input type="text" required="" class="form-control" id="txtUser"
+                                placeholder="Username of the MQTT broker" value="swarm_user">
                         </div>
-
                         <div class="form-group mb-3">
                             <label for="txtPass">Password</label>
-                            <input type="password" required class="form-control" id="txtPass" placeholder="Password of the MQTT broker" value="">
+                            <input type="password" required="" class="form-control" id="txtPass"
+                                placeholder="Password of the MQTT broker" value="">
                         </div>
-
                         <div class="">
-                            <button id="btnGenerate" type="button" class="btn btn-primary m-auto">Generate Access Links</button>
+                            <button id="btnGenerate" type="button" class="btn btn-primary m-auto">Generate Access
+                                Links</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
+            </form>
+            <div class="container pt-4 pb-4">
+                <div id="divResult" class="container">
+                    <h5 class="access-link d-none">Access Links:</h5>
+                    <div class="card mb-2 access-link d-none">
+                        <div class="card-body">
+                            3D Visualizer<br>
+                            <a id="link3D"
+                                href="https://pera-swarm.ce.pdn.ac.lk/visualizer/?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJjcmVhdGVkQXQiOiIyMDIzLTA2LTAxIDA1OjU1OjQ5IiwiZXhwaXJlZEF0IjoiMjAyMy0wNi0wMSAwNjo1NTo0OSIsImhvc3QiOiJ3ZWJzZXJ2aWNlcy5jZXlrb2QuY29tIiwicG9ydCI6Ijg4ODMiLCJwYXRoIjoiXC9tcXR0IiwiY2hhbm5lbCI6InYxIiwidXNlciI6InN3YXJtX3VzZXIiLCJwYXNzIjoiIn0.BFDO1zEO58Ksjuc3DqOkAuJJlY86VnmlPU8d2n_Eby-NT41C8MJOusFys386IVvVlYJGHx15G9Sda0EAWvSK-eZp-hjXSLAKdo28aca9JBzitmiQgFjlUq30t4WXuu7RypvCO3ULFICsNqW1iseMkmKw0ZZGdAxcaMNG3iLtT9w"
+                                target="_blank" class="card-link">
+                                https://pera-swarm.ce.pdn.ac.lk/visualizer/
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card access-link d-none">
+                        <div class="card-body">AR Visualizer<br>
+                            <a id="linkAR" href="#" target="_blank" class="card-link">
+                                https://pera-swarm.ce.pdn.ac.lk/visualizer-ar/
+                            </a>
+                        </div>
+                    </div>
 
-                <div class="col col-md-6 col-sm-12">
-                    <div class="container d-flex align-items-center h-100 p-2">
-                        <div id="divResult" class="container d-none-0">
-                            <h5>Access Links:</h5>
-
-                            <div class="card mb-2">
-                                <div class="card-body">
-                                    3D Visualizer<br>
-                                    <a id="link3D" href="#" target="_blank" class="card-link access-link d-none">
-                                        https://pera-swarm.ce.pdn.ac.lk/visualizer/
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">AR Visualizer<br>
-                                    <a id="linkAR" href="#" target="_blank" class="card-link access-link d-none">
-                                        https://pera-swarm.ce.pdn.ac.lk/visualizer-ar/
-                                    </a>
-                                </div>
-                            </div>
-
-                            <h5>Access Key:</h5>
-                            <div class="small border container p-2" id="accessToken">N/A</div>
-
+                    <div class="card rd-link d-none">
+                        <div class="card-body">Click here to access<br>
+                            <a id="linkRD" href="#" target="_blank" class="card-link">
+                                #
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -85,9 +90,9 @@ sitemap: false
     </div>
 </div>
 <script type="text/javascript" async>
-    $(document).ready(function(){
+    $(document).ready(function () {
 
-        $('#btnGenerate').click(()=>{
+        $('#btnGenerate').click(() => {
             const endpoint = 'https://webservices.ceykod.com/pera-swarm/login/';
 
             const host = $('#txtHost').val();
@@ -114,24 +119,29 @@ sitemap: false
                 cache: false,
                 async: false,
                 data: JSON.stringify(postData),
-                success: function(resp){
-                    if(resp.status == "Success"){
+                success: function (resp) {
+                    if (resp.status == "Success") {
                         console.log(resp)
-                        const token  = resp.token;
-
-                        const link3D = `https://pera-swarm.ce.pdn.ac.lk/visualizer/?key=${token}`;
-                        const linkAR = `https://pera-swarm.ce.pdn.ac.lk/visualizer-ar/?key=${token}`;
-
-                        $('.access-link').removeClass('d-none');
-                        $('#link3D').attr('href', link3D);
-                        $('#linkAR').attr('href', linkAR);
-                        $('#accessToken').text(token);
-
-                    }else{
-                        alert('An unknow error happened !');
+                        const token = resp.token;
+                        // Is there a rd component in the URL ? Then generate the link for it
+                        const params = new URLSearchParams(location.search);
+                        const rdURL = params.get('rd')
+                        if (rdURL != undefined) {
+                            const url = `${rdURL}/?key=${token}`;
+                            $('.rd-link').removeClass('d-none');
+                            $('#linkRD').attr('href', url);
+                            $('#linkRD').html(rdURL);
+                        } else {
+                            const link3D = `https://pera-swarm.ce.pdn.ac.lk/visualizer/?key=${token}`;
+                            const linkAR = `https://pera-swarm.ce.pdn.ac.lk/visualizer-ar/?key=${token}`;
+                            $('.access-link').removeClass('d-none');
+                            $('#link3D').attr('href', link3D);
+                            $('#linkAR').attr('href', linkAR);
+                            $('#accessToken').text(token);
+                        }
                     }
                 },
-                error: function(xhr, status, error) {
+                error: function (xhr, status, error) {
                     alert(xhr.toString());
                 }
             });
