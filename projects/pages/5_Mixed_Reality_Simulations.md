@@ -32,3 +32,5 @@ Swarm robotic experiments need a large number of robots with expensive hardware 
 In this approach, swarm behavioral experiments can be conducted with a few physical robots and an unconstrained amount of virtual robot instances. Virtual robot instances were implemented by imitating the characteristics of physical robots. The simulator application will provide the additional necessities and support interaction between realities. Moreover, existing physical robots can have virtual sensors and modules which are expensive and impossible in reality by use of Mixed Reality. This study has proven that the traditional limitations of swarm robotics can be overcome with the aid of Mixed Reality technologies in a systematic and generalized way.
 
 There is also an Open-Source library for the general swarm robotic use which is also potentially capable of more improvements and address specific swarm behavioral requirements.
+
+All the robots were build with the financial support of the  **Engineering Faculty Fund** and **ACES Project Fund** of the University of Peradeniya.

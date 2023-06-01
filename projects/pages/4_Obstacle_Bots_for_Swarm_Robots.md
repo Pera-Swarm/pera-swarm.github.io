@@ -31,3 +31,5 @@ In swarm robotics the major barrier is that the researchers have to do a lot of 
 The main goals of this project are to monitor automated obstacle bots and move them to the desired positions with a user-friendly interface by avoiding collisions.
 
 Robots are localized with an overhead camera setup in order to create very challenging patterns using movements in a self-created potential surface with collision-avoiding algorithms on optimized stochastic gradient descent and particle repulsion theory. Also these obstacles can be programmed to be static or dynamic. Dynamic obstacles can model scenarios that have a motion in the obstacle.
+
+This project was funded by the Prof. Suhada Jayasuriya Project Support Fund through PEFAA [https://pefaa.net/](https://pefaa.net/).
