@@ -16,15 +16,15 @@ published_at: "2020 Moratuwa Engineering Research Conference (MERCon)"
 doi: https://doi.org/10.1109/MERCon50084.2020.9185206
 pdf: #
 presentation: #
-source_code: #
+source_code: https://github.com/Pera-Swarm/e14-Swarm-Robots-Simulator
 
 authors: true
 authors_list:
-    - {name: 'Mahendra Dassanayaka'}
-    - {name: 'Tharuka Bandara'}
-    - {name: 'Nadun Adikari'}
-    - {name: 'Isuru Nawinne'}
-    - {name: 'Roshan Ragel'}
+    - {name: 'Mahendra Dassanayaka', profile: 'https://people.ce.pdn.ac.lk/students/e14/065/'}
+    - {name: 'Tharuka Bandara', profile: 'https://people.ce.pdn.ac.lk/students/e14/028/'}
+    - {name: 'Nadun Adikari', profile: 'https://people.ce.pdn.ac.lk/students/e14/010/'}
+    - {name: 'Isuru Nawinne', profile: 'https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/'}
+    - {name: 'Roshan Ragel', profile: 'https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/'}
 
 resources: false
 resource_list:

@@ -2,31 +2,40 @@
 {% for pub in pub_list %}
 <div class="container pt-2 b-2">
     {% for author in pub.authors_list %}
-    <span>{{ author.name }}</span>{% if forloop.last -%}{% else %},{% endif -%}
+    {% if author.profile %}
+    <span><a href="{{ author.profile }}">{{ author.name }}</a></span>
+    {% else %}
+    <span>{{ author.name }}</span>
+    {% endif %}
+
+    {% if forloop.last -%}{% else %},{% endif -%}
     {% endfor -%}
+
     &nbsp;
     <b>"{{ pub.paper_title }}"</b>,
     <span>{{ pub.published_at }}</span>
     <br>
+    <span>doi: <a class="text-muted research-doi" href="{{ pub.doi }}" target="_blank">{{ pub.doi }}</a></span>
+    <br>
 
-    <span class="ms-3">
-        [
-        {% if pub.doi -%}
-        <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.doi }}">DOI</a>
-        {% endif -%}
+    <div class="row pt-2">
+        <div class="col d-flex flex-wrap research-links">
+            {% if pub.pdf -%}
+            <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.pdf }}">[ PDF ]</a>
+            {% endif -%}
 
-        {% if pub.pdf -%}
-        <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.pdf }}">PDF</a>
-        {% endif -%}
+            {% if pub.presentation -%}
+            <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.presentation }}">[ Presentation
+                ]</a>
+            {% endif -%}
 
-        {% if pub.presentation -%}
-        <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.presentation }}">Presentation</a>
-        {% endif -%}
+            {% if pub.source_code -%}
+            <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.source_code }}">[ Source Code
+                ]</a>
+            {% endif -%}
+        </div>
+        <div class="mt-2 research-tags"></div>
+    </div>
 
-        {% if pub.source_code -%}
-        <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.source_code }}">Source Code</a>
-        {% endif -%}
-        ]
-    </span>
 </div>
 {% endfor -%}

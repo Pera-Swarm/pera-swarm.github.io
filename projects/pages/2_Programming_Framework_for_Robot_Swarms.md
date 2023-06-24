@@ -9,8 +9,8 @@ nav_order: 2
 
 thumb: /projects/thumbs/blank.jpg
 
-link_url: https://ce-pdn-ac-lk.com/cewiki/projects:2020_group_9_swarm_robotics
-link_caption: Project Page - Department Wiki
+link_url: #
+link_caption: ''
 
 api_url: "#"
 
@@ -18,9 +18,9 @@ gallery: true
 galery_images:
     - {url: '/projects/gallery/programming-framework-for-robot-swarms/1.png', caption: 'Coloured object identification and reaching concensus'}
 
-resources: false
+resources: true
 resource_list:
-    - {text: 'Sample URL', url: '#' }
+    - {text: 'GitHub Project Repository', url: 'https://github.com/Pera-Swarm/e14-Swarm-Robots-Simulator' }
 
 ---
 
