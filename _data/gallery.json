@@ -1,46 +1,97 @@
 [
     {
         "id": 1,
-        "title": "Robots",
+        "title": "Fabrication of the Swarm Robots",
         "description": "",
+        "date": "",
         "images": [
             {
-                "url": "/assets/img/slide_1.jpg",
-                "caption": "Sample Caption"
+                "url": "/gallery/fabrication/fab_1-min.jpg",
+                "caption": ""
             },
             {
-                "url": "/assets/img/slide_1.jpg",
-                "caption": "Sample Caption"
+                "url": "/gallery/fabrication/fab_2-min.jpg",
+                "caption": ""
             },
             {
-                "url": "/assets/img/slide_1.jpg",
-                "caption": "Sample Caption"
+                "url": "/gallery/fabrication/fab_3-min.jpg",
+                "caption": ""
             },
             {
-                "url": "/assets/img/slide_1.jpg",
-                "caption": "Sample Caption"
+                "url": "/gallery/fabrication/fab_4-min.jpg",
+                "caption": ""
             },
             {
-                "url": "/assets/img/slide_1.jpg",
-                "caption": "Sample Caption"
+                "url": "/gallery/fabrication/fab_5-min.jpg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/fabrication/fab_6-min.jpg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/fabrication/fab_7-min.jpg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/fabrication/fab_8-min.jpg",
+                "caption": ""
             }
         ]
     },
     {
         "id": 2,
-        "title": "Robot Testbed",
+        "title": "Testings",
         "description": "",
+        "date": "",
         "images": [
             {
-                "url": "/assets/img/slide_1.jpg",
-                "caption": "Sample Caption"
+                "url": "/gallery/testing/testing_1-min.jpg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/testing/testing_1-min.jpg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/testing/testing_1-min.jpg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/testing/testing_1-min.jpg",
+                "caption": ""
             }
         ]
     },
     {
         "id": 3,
+        "title": "Robot Testbed",
+        "description": "",
+        "date": "",
+        "images": [
+            {
+                "url": "/gallery/arena/arena_1-min.jpg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/arena/arena_1-min.jpg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/arena/arena_1-min.jpg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/arena/arena_1-min.jpg",
+                "caption": ""
+            }
+        ]
+    },
+    {
+        "id": 4,
         "title": "Experiment Recordings",
         "description": "",
+        "date": "",
         "images": [
             {
                 "url": "https://img.youtube.com/vi/SR-ntrzSTFc/mqdefault.jpg",
@@ -51,6 +102,30 @@
                 "url": "https://img.youtube.com/vi/MwUPTypFgas/mqdefault.jpg",
                 "video": "https://www.youtube.com/watch?v=MwUPTypFgas",
                 "caption": "Color Ripple Experiment"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Pera Swarm Intro Day Workshop",
+        "description": "A workshop conducted for the enthusiastic students of the Faculty of Engineering, University of Peradeniya on Swarm Robotics and possible extensions to the ongoing research projects of the department.",
+        "date": "2023-02-29",
+        "images": [
+            {
+                "url": "/gallery/intro-workshop-2023/1.jpeg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/intro-workshop-2023/1.jpeg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/intro-workshop-2023/1.jpeg",
+                "caption": ""
+            },
+            {
+                "url": "/gallery/intro-workshop-2023/1.jpeg",
+                "caption": ""
             }
         ]
     }

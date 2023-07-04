@@ -20,7 +20,8 @@ gallery: true
     {% for section in site.data.gallery %}
 
     <div class="col-12 pb-4">
-        <h4>{{ section.title }}</h4>
+        <h4>{{ section.title }} <small class="text-muted">{{ section.date }}</small></h4>
+
         <p>{{ section.description }}</p>
         <ul id="lightgallery_{{ section.id }}" class="list-unstyled row">
             {% for image in section.images %}
