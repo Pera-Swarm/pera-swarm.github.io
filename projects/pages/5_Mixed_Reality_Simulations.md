@@ -15,7 +15,7 @@ link_caption: Project Page
 api_url: https://api.ce.pdn.ac.lk/projects/v1/4yp/E15/Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics/
 
 gallery: true
-galery_images:
+gallery_images:
     - {url: '/projects/gallery/mixed-reality-simulator/0.jpg', caption: ''}
     - {url: '/projects/gallery/mixed-reality-simulator/1.jpg', caption: ''}
     - {url: '/projects/gallery/mixed-reality-simulator/2.jpg', caption: ''}

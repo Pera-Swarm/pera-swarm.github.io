@@ -15,7 +15,7 @@ link_caption: Project Page
 api_url: "#"
 
 gallery: false
-galery_images:
+gallery_images:
     - {url: '#', caption: ''}
 
 resources: false

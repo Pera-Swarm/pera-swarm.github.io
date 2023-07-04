@@ -15,7 +15,7 @@ link_caption: Project Blog
 api_url: https://api.ce.pdn.ac.lk/projects/v1/4yp/E16/swarm-intelligence-programming-framework/
 
 gallery: false
-galery_images:
+gallery_images:
     - {url: '#', caption: ''}
 
 resources: false

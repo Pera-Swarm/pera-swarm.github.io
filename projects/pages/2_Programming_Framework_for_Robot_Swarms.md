@@ -15,7 +15,7 @@ link_caption: ''
 api_url: "#"
 
 gallery: true
-galery_images:
+gallery_images:
     - {url: '/projects/gallery/programming-framework-for-robot-swarms/1.png', caption: 'Coloured object identification and reaching concensus'}
 
 resources: true

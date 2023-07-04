@@ -15,7 +15,7 @@ link_caption: Project Blog
 api_url: https://api.ce.pdn.ac.lk/projects/v1/3yp/E15/A-GUI-for-controlling-and-supervising-multiple-robots-remotely/
 
 gallery: true
-galery_images:
+gallery_images:
     - {url: '/projects/gallery/gui-for-controlling/1.jpg', caption: 'Hardware robot'}
     - {url: '/projects/gallery/gui-for-controlling/2.jpg', caption: 'Robots in the testbed'}
     - {url: '/projects/gallery/gui-for-controlling/3.jpg', caption: 'Hardware robots'}

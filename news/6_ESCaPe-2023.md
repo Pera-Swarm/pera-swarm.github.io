@@ -14,7 +14,7 @@ link_caption: View More
 author: Nuwan Jaliyagoda
 published_date: 2023-01-23
 
-resources: false
+resources: true
 resource_list:
     - {text: 'ESCaPe Official Website', url: 'https://aces.ce.pdn.ac.lk/escape/' }
 

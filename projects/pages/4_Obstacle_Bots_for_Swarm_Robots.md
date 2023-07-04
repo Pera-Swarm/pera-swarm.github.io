@@ -15,7 +15,7 @@ link_caption: Project Blog
 api_url: https://api.ce.pdn.ac.lk/projects/v1/3yp/E16/obstacle-bots-for-swarm-robots/
 
 gallery: true
-galery_images:
+gallery_images:
     - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/2.jpg', caption: 'PCB Design'}
     - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/3.jpg', caption: 'CAD Design'}
     - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/1.jpg', caption: 'Final Robot'}
