@@ -1,0 +1,54 @@
+---
+layout: default
+title: Gallery
+permalink: /gallery/
+navbar_active: Gallery
+gallery: true
+
+---
+
+<nav aria-label="breadcrumb" class="pb-3">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% link pages/home.html %}">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Gallery</li>
+    </ol>
+</nav>
+<h2>Gallery</h2>
+
+<div class="container demo-gallery p-4">
+
+    {% for section in site.data.gallery %}
+
+    <div class="col-12 pb-4">
+        <h4>{{ section.title }} <small class="text-muted">{{ section.date }}</small></h4>
+
+        <p>{{ section.description }}</p>
+        <ul id="lightgallery_{{ section.id }}" class="list-unstyled row">
+            {% for image in section.images %}
+
+            {%- if image.video -%}
+            {%- assign img_url = image.video -%}
+            {%- else -%}
+            {%- assign img_url = image.url -%}
+            {%- endif -%}
+            <li class='col-lg-3 col-md-4 col-sm-6 d-flex align-self-center pb-2 mb-2'
+                data-responsive="{{ img_url }} 800" data-src="{{ img_url }}" data-sub-html='{{ image.caption }}'>
+                <a href='javascript:void(0)'>
+                    <img class="w-100" alt='{{ image.caption }}' class='img-responsive' src="{{ image.url }}">
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <hr>
+    </div>
+    {% endfor %}
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        {% for section in site.data.gallery %}
+        $('#lightgallery_{{ section.id }}').lightGallery({ share: false, download: false });
+        {% endfor %}
+    });
+</script>
