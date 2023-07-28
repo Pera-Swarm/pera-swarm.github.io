@@ -15,6 +15,8 @@ badges:
     - https://img.shields.io/badge/License-Apache%202.0-blue.svg
 
 github: https://github.com/Pera-Swarm/localization
+docs: https://pera-swarm.ce.pdn.ac.lk/docs/localization/
+
 gh_page: #
 
 ---

@@ -16,6 +16,8 @@ badges:
     - https://img.shields.io/badge/License-MIT-blue.svg
 
 github: https://github.com/Pera-Swarm/visualizer
+docs: https://pera-swarm.ce.pdn.ac.lk/docs/visualizer/
+
 gh_page: https://pera-swarm.github.io/visualizer
 
 ---

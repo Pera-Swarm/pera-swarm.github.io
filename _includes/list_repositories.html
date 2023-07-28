@@ -24,6 +24,10 @@
                 <a href="{{ repo.github }}" target="_blank" class="card-link">Visit Repository</a>
                 {% endif -%}
 
+                {% if repo.docs -%}
+                <a href="{{ repo.docs }}" target="_blank" class="card-link">Documentation</a>
+                {% endif -%}
+
                 {% if repo.gh_page -%}
                 <a href="{{ repo.gh_page }}" target="_blank" class="card-link">Visit GitHub Page</a>
                 {% endif -%}
