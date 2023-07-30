@@ -6,36 +6,38 @@ h1, h2, h3, h4, h5, h6
 }
 */
 
-h2{
-    padding-top: 12px;
-    padding-bottom: 6px;
-    margin-bottom: 18px;
+h2 {
+  padding-top: 12px;
+  padding-bottom: 6px;
+  margin-bottom: 18px;
 }
 
-.text-link:hover{
-    color: #006f9e!important;
-    text-decoration: underline!important;
+.text-link:hover {
+  color: #006f9e !important;
+  text-decoration: underline !important;
 }
 
-.vh-50{
-    min-height: 50vh!important;
+.vh-50 {
+  min-height: 50vh !important;
 }
-.vh-75{
-    min-height: 75vh!important;
+
+.vh-75 {
+  min-height: 75vh !important;
 }
 
 .display-4 {
   font-size: 2.5rem;
 }
+
 @media (min-width: 768px) {
   .display-4 {
     font-size: 3rem;
   }
 }
 
-.navbar-dark{
-    /* background-color: #343a40!important; */
-    /* background-color: #4b5863 !important; */
+.navbar-dark {
+  /* background-color: #343a40!important; */
+  /* background-color: #4b5863 !important; */
 }
 
 .nav-scroller {
@@ -76,15 +78,27 @@ h2{
   flex: 0 0 auto;
 }
 
-.h-250 { height: 250px; }
-@media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
+.h-250 {
+  height: 250px;
 }
 
-.border-top { border-top: 1px solid #e5e5e5; }
-.border-bottom { border-bottom: 1px solid #e5e5e5; }
+@media (min-width: 768px) {
+  .h-md-250 {
+    height: 250px;
+  }
+}
 
-.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
 
 /*
  * Blog name and description
@@ -94,6 +108,7 @@ h2{
   font-size: 2rem;
   font-weight: 400;
 }
+
 .blog-description {
   font-size: 1.1rem;
   color: #999;
@@ -109,7 +124,8 @@ h2{
 .blog-pagination {
   margin-bottom: 4rem;
 }
-.blog-pagination > .btn {
+
+.blog-pagination>.btn {
   border-radius: 2rem;
 }
 
@@ -119,10 +135,12 @@ h2{
 .blog-post {
   margin-bottom: 4rem;
 }
+
 .blog-post-title {
   margin-bottom: 1rem;
   font-size: 2.0rem;
 }
+
 .blog-post-meta {
   margin-bottom: 1.25rem;
   color: #999;
@@ -138,12 +156,18 @@ h2{
   background-color: #f9f9f9;
   border-top: .05rem solid #e5e5e5;
 }
+
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
 
 
-.project-btn{
-    min-width: 150px!important;
-    float: right;
+.project-btn {
+  min-width: 150px !important;
+  float: right;
+}
+
+
+.btn-200 {
+  min-width: 200px;
 }

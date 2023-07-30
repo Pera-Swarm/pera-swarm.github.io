@@ -50,8 +50,7 @@ sitemap: false
                                 placeholder="Password of the MQTT broker" value="">
                         </div>
                         <div class="">
-                            <button id="btnGenerate" type="button" class="btn btn-primary m-auto">Generate Access
-                                Links</button>
+                            <button id="btnGenerate" type="button" class="btn btn-primary m-auto btn-200"></button>
                         </div>
                     </div>
                 </div>
@@ -76,14 +75,6 @@ sitemap: false
                             </a>
                         </div>
                     </div>
-
-                    <div class="card rd-link d-none">
-                        <div class="card-body">Click here to access<br>
-                            <a id="linkRD" href="#" target="_blank" class="card-link">
-                                #
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -91,6 +82,15 @@ sitemap: false
 </div>
 <script type="text/javascript" async>
     $(document).ready(function () {
+
+        // Is there a rd component in the URL ? Then generate the link for it
+        const params = new URLSearchParams(location.search);
+        const rdURL = params.get('rd');
+        if (rdURL != undefined) {
+            $('#btnGenerate').text("Login");
+        } else {
+            $('#btnGenerate').text("Generate Token");
+        }
 
         $('#btnGenerate').click(() => {
             const endpoint = 'https://webservices.ceykod.com/pera-swarm/login/';
@@ -123,14 +123,11 @@ sitemap: false
                     if (resp.status == "Success") {
                         console.log(resp)
                         const token = resp.token;
-                        // Is there a rd component in the URL ? Then generate the link for it
-                        const params = new URLSearchParams(location.search);
-                        const rdURL = params.get('rd')
+
                         if (rdURL != undefined) {
                             const url = `${rdURL}/?key=${token}`;
-                            $('.rd-link').removeClass('d-none');
-                            $('#linkRD').attr('href', url);
-                            $('#linkRD').html(rdURL);
+                            console.log("Redirecting to ", url)
+                            window.location.replace(url);
                         } else {
                             const link3D = `https://pera-swarm.ce.pdn.ac.lk/visualizer/?key=${token}`;
                             const linkAR = `https://pera-swarm.ce.pdn.ac.lk/visualizer-ar/?key=${token}`;
