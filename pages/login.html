@@ -92,6 +92,11 @@ sitemap: false
             $('#btnGenerate').text("Generate Token");
         }
 
+        const channel = params.get('channel');
+        if (channel != undefined) {
+            $('#txtChannel').val(channel);
+        }
+
         $('#btnGenerate').click(() => {
             const endpoint = 'https://webservices.ceykod.com/pera-swarm/login/';
 
