@@ -9,7 +9,7 @@ nav_order: 8
 
 description: "Platform IO Based Code Repository for Obstacle Robot v1"
 thumb: /repositories/thumbs/default.jpg
-project: "Mixed Reality based Simulation Platform"
+project: "Obstacle Bots for Swarm Robots"
 
 badges:
     - https://github.com/Pera-Swarm/obstacle-bot-firmware/actions/workflows/build.yml/badge.svg
