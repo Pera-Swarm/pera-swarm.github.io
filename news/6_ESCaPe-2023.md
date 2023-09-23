@@ -22,8 +22,8 @@ resource_list:
 
 The project,  <a href="{% link projects/pages/6_Swarm_Intelligence_Programming_Framework.md %}">Swarm Intelligence Programming Framework</a> was presented in the _ESCaPe 2023 - Engineering Students’ Conference and Career Fair_ at University of Peradeniya, and received the **"Best Research Presentation"** award.
 
-<div class="container row pt-3 pb-2">
+<div class="container row pt-3 pb-5">
     <div class="col-md-8 col-sm-12 col-lg-8 mx-auto">
-        <img src="/news/img/escape-2023.jpg" class="img img-thumb img-fluid">
+        <img src="/news/img/escape-2023.jpg" class="img img-thumbnail img-fluid">
     </div>
 </div>

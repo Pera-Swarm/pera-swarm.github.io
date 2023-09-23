@@ -28,4 +28,4 @@ gallery_images:
 ---
 
 
-I got a chance to conduct an "Introduction Session" for enthusiastic students of the _Faculty of Engineering, University of Peradeniya_ on **Swarm Robotics** and showed possible extensions to the ongoing research projects of the department last Saturday, 25th of Feb.
+We conducted an "Introduction Session" for enthusiastic students of the _Faculty of Engineering, University of Peradeniya_ on **Swarm Robotics** and showed possible extensions to the ongoing research projects of the department last Saturday, 25th of Feb.
