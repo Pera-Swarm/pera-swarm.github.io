@@ -1,18 +1,17 @@
-{%- assign pub_list = pages_list | where: "parent", "Publications" -%}
+{%- assign pub_list = pages_list | where: "parent", "Publications" | reverse -%}
 {% for pub in pub_list %}
-<div class="container pt-2 b-2">
+<div class="container pt-2 pb-2 b-2">
+    <b>{{ pub.paper_title }}</b>
+    <br>
     {% for author in pub.authors_list %}
     {% if author.profile %}
-    <span><a href="{{ author.profile }}">{{ author.name }}</a></span>
+    <span><a class="text-decoration-none" href="{{ author.profile }}">{{ author.name }}</a></span>
     {% else %}
     <span>{{ author.name }}</span>
     {% endif %}
-
     {% if forloop.last -%}{% else %},{% endif -%}
     {% endfor -%}
-
-    &nbsp;
-    <b>"{{ pub.paper_title }}"</b>,
+    <br>
     <span>{{ pub.published_at }}</span>
     <br>
     <span>doi: <a class="text-muted research-doi" href="{{ pub.doi }}" target="_blank">{{ pub.doi }}</a></span>
