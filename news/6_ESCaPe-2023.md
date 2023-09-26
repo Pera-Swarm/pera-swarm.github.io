@@ -8,6 +8,8 @@ parent: News
 navbar_active: News
 nav_order: 6
 
+thumb: /news/img/escape-2023.jpg
+
 link_url: #
 link_caption: View More
 

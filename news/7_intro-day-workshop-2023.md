@@ -8,6 +8,8 @@ parent: News
 navbar_active: News
 nav_order: 7
 
+thumb: ../../gallery/intro-workshop-2023/1.jpeg
+
 link_url: #
 link_caption: View More
 

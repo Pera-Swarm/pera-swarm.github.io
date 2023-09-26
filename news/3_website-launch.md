@@ -8,6 +8,8 @@ parent: News
 navbar_active: News
 nav_order: 3
 
+thumb: /news/img/website.png
+ 
 link_url: #
 link_caption: View More
 

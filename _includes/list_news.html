@@ -1,27 +1,48 @@
 {%- assign news_list = pages_list | where: "parent", "News" | reverse -%}
+
+{%- assign count = 0 -%}
+{%- assign total = news_list | size -%}
+
+{% if include.limit %}
+{%- assign maxCount = include.limit -%}
+<!-- {%- assign count = count | plus: 1 -%} -->
+{% else -%}
+{%- assign maxCount = 5 -%}
+{% endif -%}
+
 {% for news in news_list %}
-{% if news.title != "Dummy News" -%}
-<div class="container">
-    <div class="row">
-        <div class="col-sm-2">
-            {{ news.published_date }}
+
+{% if include.limit %}
+{%- assign count = count | plus: 1 -%}
+{% endif -%}
+
+{% if count <= maxCount %} {% if news.title !="Dummy News" -%} <div class="container">
+    <div class="row d-flex mb-3">
+        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xxl-2 d-md-block text-center align-self-center">
+            <img class="project-thumb img-fluid " src="{{ news.thumb }}" alt="{{ news.title }}">
         </div>
-        <div class="col">
-            <h5>
-                {{ news.title }}
-                <span class="text-muted small">
-                    <!-- &middot; {{ news.author }} -->
-                </span>
-            </h5>
-            <p>
-                {{ news.description }}
-                <br>
-                <a class="text-decoration-none pt-2" href="{{ news.permalink | relative_url }}">
-                    Read More
-                </a>
-            </p>
+        <div class="col-9 col-md-9 col-lg-9 col-xxl-10 d-flex">
+            <div class="client-info mr-4 mt-2 align-self-center">
+                <h5>{{ news.title }}</h5>
+                <span>{{ news.published_date }}</span>
+                <p class="mb-0">
+                    {{ news.description }}<br>
+                    <a class="text-decoration-none mt-2" href="{{ news.permalink | relative_url }}">
+                        Read More <i class="fa fa-chevron-right"></i>
+                    </a>
+                </p>
+            </div>
         </div>
     </div>
-</div>
-{% endif -%}
-{% endfor -%}
+    </div>
+    {% endif -%}
+    {% endif %}
+    {% endfor -%}
+
+    {% if include.limit and total>maxCount %}
+    <div class="text-center py-3">
+        <a href="/news" style="width:200px" class="btn btn-success">
+            <i class="fas fa-arrow-alt-circle-right me-2"></i>View More News
+        </a>
+    </div>
+    {% endif %}

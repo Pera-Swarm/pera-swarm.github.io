@@ -8,6 +8,8 @@ parent: News
 navbar_active: News
 nav_order: 1
 
+thumb: /projects/thumbs/mixed-reality-simulator.jpg
+
 link_url: #
 link_caption: View More
 

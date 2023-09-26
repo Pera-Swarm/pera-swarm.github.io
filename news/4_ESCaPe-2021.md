@@ -8,6 +8,8 @@ parent: News
 navbar_active: News
 nav_order: 4
 
+thumb: /news/img/escape-2021.png
+
 link_url: #
 link_caption: View More
 
