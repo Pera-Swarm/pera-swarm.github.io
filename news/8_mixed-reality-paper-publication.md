@@ -49,13 +49,13 @@ Mixed Reality based Simulation Framework is one of the main outcomes of the Pera
                         <b><span class="text-primary research-title">{{ title }}</span></b><br>
                     </div>
                 </div>
-                <div class="research-authors">{{ author(s) }}</div>
+                <div class="research-authors">{{ authors }}</div>
                 <i class="research-venue">{{ venue }}</i>, <span class="research-year">{{ year }}</span><br>
                 <span>doi: <a class="text-muted research-doi" href="#" target="_blank">{{ doi }}</a></span>
             </div>
 
             <div class="row pt-2">
-                <div class="col d-flex flex-wrap research-links">{{ link(s) }}</div>
+                <div class="col d-flex flex-wrap research-links">{{ links }}</div>
                 <div class="mt-2 research-tags">{{ tags }}</div>
             </div>
         </div>

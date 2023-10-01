@@ -18,10 +18,10 @@
 
 {% if count <= maxCount %} {% if news.title !="Dummy News" -%} <div class="container">
     <div class="row d-flex mb-3">
-        <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xxl-2 d-md-block text-center align-self-center">
+        <div class="col-8 col-sm-4 col-md-4 col-lg-4 col-xxl-3 d-md-block text-center align-self-center">
             <img class="project-thumb img-fluid " src="{{ news.thumb }}" alt="{{ news.title }}">
         </div>
-        <div class="col-9 col-md-9 col-lg-9 col-xxl-10 d-flex">
+        <div class="col-12 col-sm-8 col-md-8 col-lg-5 col-xxl-9 d-flex">
             <div class="client-info mr-4 mt-2 align-self-center">
                 <h5>{{ news.title }}</h5>
                 <span>{{ news.published_date }}</span>
