@@ -43,7 +43,7 @@ Mixed Reality based Simulation Framework is one of the main outcomes of the Pera
     </div>
 </div>
 
-<div class="project-section mb-2 publication-card d-none">
+<div class="project-section mb-2 publication-card">
     <h4 class="project-section-title">Publication</h4>
     <div class="container px-4">
     <div class="my-1 p-3 pb-4 publication-card d-none">
