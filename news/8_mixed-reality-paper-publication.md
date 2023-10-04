@@ -28,7 +28,7 @@ gallery_images:
 
 ---
 
-Mixed Reality based Simulation Framework is one of the main outcomes of the Pera-Swarm project, and the first paper publication under the project is now published in [IEEE Access, vol. 11, 2023](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639) (*Impact Factor: 3.9*, 2023).
+Mixed Reality based Swarm Robot Simulation Framework is one of the main outcomes of the Pera-Swarm project, and the first paper publication under the project is now published in [IEEE Access, vol. 11, 2023](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639) (*Impact Factor: 3.9*, 2023).
 
 <div class="container row pt-3 pb-5">
     <div class="col-md-8 col-sm-12 col-lg-8 mx-auto">
@@ -40,6 +40,16 @@ Mixed Reality based Simulation Framework is one of the main outcomes of the Pera
     <h4 class="project-section-title">Abstract</h4>
     <div class="container px-4">
         The term "Swarm intelligence" outlines a broad scope, which is generally defined as the collective behaviour of many individuals towards a certain task, each operating autonomously in a decentralised manner. Swarms are inspired by the type of biological behaviours of animals and this technology involves decentralised local control and communication, which ensures the problem-solving process is more efficient through modification and infusion into swarm robotic technology. Swarm robotics related experiments and applications are relatively expensive compared to other types of robotics experiments. The most common solution is to use computer based virtual simulations and accordingly, this study introduces a reliable and cost-effective hybrid solution using Mixed Reality (MR) technologies to perform swarm experiments on real robots and virtually deployed robots simultaneously. MR bridges the gap between the virtual and physical realms through Augmented Reality (AR) and Augmented Virtuality (AV) and addressing the weaknesses of simulators and providing a more accurate representation of real-world performance. This approach provides a platform for researchers to explore swarm robotics with enhanced realism and interactivity and conduct experiments that mimic real-world conditions. To validate this method we conducted experiments with both physical and virtual robots in near real-time in a mixed reality environment. In addition, an open-source, distributed, and modular mixed reality simulation framework was implemented with support libraries and applications. Our work not only demonstrates the potential of MR in swarm robotics but also emphasizes its value in advancing the understanding and application of swarm intelligence principles in practical contexts.
+    </div>
+</div>
+
+<div class="project-section mb-5">
+    <h4 class="project-section-title">Special Thanks</h4>
+    <div class="container px-4">
+        <ul>
+            <li>Research and Innovation Centers Division, Rabdan Academy, Abu Dhabi, UAE</li>
+            <li>Faculty of Engineering, University of Peradeniya</li>
+        </ul>  
     </div>
 </div>
 
