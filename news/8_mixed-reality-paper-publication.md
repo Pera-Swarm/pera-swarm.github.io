@@ -1,7 +1,7 @@
 ---
 layout: page_news
-title: "Mixed Reality Simulation research is now published in IEEE Access Journal"
-description: "Mixed-Reality based Multi-Agent Robotics Framework for Artificial Swarm Intelligence Experiments"
+title: "Our Research Works on Mixed-Reality based Swarm Simulation has now published in the IEEE Access Journal"
+description: "Under the title, 'Mixed-Reality based Multi-Agent Robotics Framework for Artificial Swarm Intelligence Experiments'"
 
 permalink: /news/mixed-reality-simulation-framework/
 parent: News
