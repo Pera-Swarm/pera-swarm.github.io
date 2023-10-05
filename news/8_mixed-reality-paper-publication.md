@@ -28,7 +28,7 @@ gallery_images:
 
 ---
 
-Mixed Reality based Swarm Robot Simulation Framework is one of the main outcomes of the Pera-Swarm project, and the first paper publication under the project is now published in [IEEE Access, vol. 11, 2023](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639) (*Q1 Journal*, 2023).
+Mixed Reality based Swarm Robot Simulation Framework is one of the main outcomes of the Pera-Swarm project, and the first paper publication under the project is now published in [IEEE Access, vol. 11, 2023](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639) (*Q1 Journal in Computer Science*, 2023).
 
 <div class="container row pt-3 pb-5">
     <div class="col-md-8 col-sm-12 col-lg-8 mx-auto">
