@@ -28,7 +28,7 @@ gallery_images:
 
 ---
 
-Mixed Reality based Swarm Robot Simulation Framework is one of the main outcomes of the Pera-Swarm project, and the first paper publication under the project is now published in [IEEE Access, vol. 11, 2023](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639) (*Impact Factor: 3.9*, 2023).
+Mixed Reality based Swarm Robot Simulation Framework is one of the main outcomes of the Pera-Swarm project, and the first paper publication under the project is now published in [IEEE Access, vol. 11, 2023](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639) (*Q1 Journal*, 2023).
 
 <div class="container row pt-3 pb-5">
     <div class="col-md-8 col-sm-12 col-lg-8 mx-auto">
@@ -87,16 +87,14 @@ Mixed Reality based Swarm Robot Simulation Framework is one of the main outcomes
 <script>
     $(document).ready(() => {
         const API_BASE = 'https://api.ce.pdn.ac.lk/publications/v1';
-        const params = new URLSearchParams(location.search);
         const doi = "10.1109/ACCESS.2023.3317434";
-        const theme = params.get('theme') || 'light';
         const url = `${API_BASE}/${doi}`
 
         $.ajax({
             url: url,
             type: "GET",
             success: function (data) {
-                console.log(url, data);
+                // console.log(url, data);
 
                 $('title').html(data.title);
                 $('.research-title').html(data.title);
@@ -148,8 +146,6 @@ Mixed Reality based Swarm Robot Simulation Framework is one of the main outcomes
                     console.error("Incompleted information !")
                     $('.publication-error').removeClass('d-none');
                 }
-
-
             },
             error: function (xhr, textStatus, errorThrown) {
                 // Handle errors
@@ -157,6 +153,5 @@ Mixed Reality based Swarm Robot Simulation Framework is one of the main outcomes
                 $('.publication-error').removeClass('d-none');
             }
         });
-
     });
 </script>
