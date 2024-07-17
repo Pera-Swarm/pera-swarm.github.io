@@ -1,6 +1,6 @@
 ---
 layout: page_project
-title: "Simultaneous Localization and Mapping in Mixed Reality Environment "
+title: "Simultaneous Localization and Mapping in Mixed Reality Environment"
 description: "The study delves into the realm of swarm robotics, where agents collaborate to efficiently explore and map unknown environments..."
 permalink: /projects/simultaneous-localization-and-mapping-in-mixed-reality-environment/
 parent: Projects
