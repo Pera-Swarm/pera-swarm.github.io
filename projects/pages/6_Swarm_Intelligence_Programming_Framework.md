@@ -7,7 +7,7 @@ parent: Projects
 navbar_active: Projects
 nav_order: 6
 
-thumb: /projects/thumbs/swarm-intelligence-programming-framewor.jpg
+thumb: /projects/thumbs/swarm-intelligence-programming-framework.jpg
 
 link_url: https://cepdnaclk.github.io/e16-4yp-swarm-intelligence-programming-framework/
 link_caption: Project Blog
