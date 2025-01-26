@@ -1,117 +1,17 @@
 [
     {
-        "title": "obstacle bots for swarm robots",
-        "description": "Obstacle bots for the existing swarm research project of the  Department of Computer Engineering, University of Peradeniya. Robots are localized with an overhead camera set up in order to create very challenging patterns using movements in a self-created potential surface with collision-avoiding algorithms on optimized stochastic gradient descent and particle repulsion theory.",
+        "title": "A GUI for controlling and supervising multiple robots remotely",
+        "description": "The idea is to create a GUI platform where a user can give commands which is to be followed by some ground units in a remote location. The server can identify the starting locations of the robots and manipulate them to do the task in the most efficient way as possible.",
         "category": {
             "title": "Cyber-Physical Systems Projects",
             "code": "3yp",
             "api_url": "https://api.ce.pdn.ac.lk/projects/v1/3yp/"
         },
-        "project_url": "https://projects.ce.pdn.ac.lk/3yp/e16/obstacle-bots-for-swarm-robots/",
-        "repo_url": "https://github.com/cepdnaclk/e16-3yp-obstacle-bots-for-swarm-robots",
-        "page_url": "https://cepdnaclk.github.io/e16-3yp-obstacle-bots-for-swarm-robots",
-        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/3yp/E16/obstacle-bots-for-swarm-robots/",
+        "project_url": "https://projects.ce.pdn.ac.lk/3yp/e15/A-GUI-for-controlling-and-supervising-multiple-robots-remotely/",
+        "repo_url": "https://github.com/cepdnaclk/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely",
+        "page_url": "https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/3yp/E15/A-GUI-for-controlling-and-supervising-multiple-robots-remotely/",
         "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/3yp/thumbnail.jpg",
-        "team": {
-            "E/16/366": {
-                "name": "Thilarakathna W M D U",
-                "email": "e16366@eng.pdn.ac.lk",
-                "website": "https://dinindu.me",
-                "github": "https://github.com/dininduwm",
-                "linkedin": "https://www.linkedin.com/in/dinindu-thilakarathna/",
-                "researchgate": "https://www.researchgate.net/profile/Dinindu-Thilakarathna",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E16/366",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e16/e16366.jpg",
-                "profile_url": "https://people.ce.pdn.ac.lk/students/e16/366/"
-            },
-            "E/16/369": {
-                "name": "Thushara K A R T",
-                "email": "e16369@eng.pdn.ac.lk",
-                "website": "https://tesla.ce.pdn.ac.lk/students/rusiru/",
-                "github": "https://github.com/thusharakart/",
-                "linkedin": "https://www.linkedin.com/in/rusiru-thushara/",
-                "researchgate": "https://www.researchgate.net/profile/Rusiru-Thushara",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E16/369",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e16/e16369.jpg",
-                "profile_url": "https://people.ce.pdn.ac.lk/students/e16/369/"
-            },
-            "E/16/088": {
-                "name": "Dissanayake D M T H",
-                "email": "e16088@eng.pdn.ac.lk",
-                "website": "",
-                "github": "",
-                "linkedin": "",
-                "researchgate": "",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E16/088",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e16/e16088.jpg",
-                "profile_url": "https://people.ce.pdn.ac.lk/students/e16/088/"
-            }
-        },
-        "supervisors": {
-            "isurunawinne@eng.pdn.ac.lk": {
-                "name": "Dr. Isuru Nawinne",
-                "email": "isurunawinne@eng.pdn.ac.lk",
-                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/isuru-nawinne.png",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/isurunawinne",
-                "website": "",
-                "linkedin": "https://www.linkedin.com/in/isuru-nawinne-73302833/",
-                "researchgate": "https://www.researchgate.net/profile/Isuru-Nawinne",
-                "google_scholar": "https://scholar.google.com/citations?hl=en&user=8qqGvuwAAAAJ"
-            },
-            "roshanr@eng.pdn.ac.lk": {
-                "name": "Prof. Roshan G. Ragel",
-                "email": "roshanr@eng.pdn.ac.lk",
-                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/roshanr",
-                "website": "http://roshan.ragel.net/",
-                "linkedin": "https://www.linkedin.com/in/roshanragel/",
-                "researchgate": "https://www.researchgate.net/profile/Roshan-Ragel",
-                "google_scholar": "https://scholar.google.com/citations?user=UTYj8usAAAAJ&hl=en"
-            },
-            "ziyanm@gmail.com": {
-                "name": "Mr. Ziyan Maraikar",
-                "email": "ziyanm@eng.pdn.ac.lk",
-                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/ziyan-maraikar/",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/ziyan-maraikar.png",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/ziyanm",
-                "website": "",
-                "linkedin": "https://www.linkedin.com/in/ziyan-maraikar-15539818a",
-                "researchgate": "https://www.researchgate.net/profile/Ziyan-Maraikar-2",
-                "google_scholar": "https://scholar.google.com.au/citations?user=5xf_7TAAAAAJ&hl=en"
-            },
-            "upuljm@eng.pdn.ac.lk": {
-                "name": "Dr. Upul Jayasinghe",
-                "email": "upuljm@eng.pdn.ac.lk",
-                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/upul/",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/upul-jayasinghe.jpg",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/upuljm",
-                "website": "",
-                "linkedin": "https://www.linkedin.com/in/upuljm/",
-                "researchgate": "https://www.researchgate.net/profile/Upul-Jayasinghe",
-                "google_scholar": "https://scholar.google.ch/citations?user=9nBn4b0AAAAJ"
-            }
-        },
-        "tags": [
-            "Web",
-            "Embedded Systems",
-            "Image Processing"
-        ]
-    },
-    {
-        "title": "Mixed Reality based Simulation Platform for Swarm Robotics",
-        "description": "The main objective of this project is to implement a mixed reality-based simulator application with an efficient and reliable architecture for allowing both physical and virtual robots to collaboratively run swarm intelligence based algorithms in real-time",
-        "category": {
-            "title": "Undergraduate Research Projects",
-            "code": "4yp",
-            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/4yp/"
-        },
-        "project_url": "https://projects.ce.pdn.ac.lk/4yp/e15/Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics/",
-        "repo_url": "https://github.com/cepdnaclk/e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics",
-        "page_url": "https://cepdnaclk.github.io/e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics",
-        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/4yp/E15/Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics/",
-        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/4yp/thumbnail.jpg",
         "team": {
             "E/15/140": {
                 "name": "Jaliyagoda A.J.N.M.",
@@ -135,16 +35,16 @@
                 "profile_image": "https://people.ce.pdn.ac.lk/images/students/e15/e15173.jpg",
                 "profile_url": "https://people.ce.pdn.ac.lk/students/e15/173/"
             },
-            "E/15/142": {
-                "name": "Jayalath A.H.G.D.",
-                "email": "dhananja.jayalath@eng.pdn.ac.lk",
+            "E/15/350": {
+                "name": "Pasan Tennakoon",
+                "email": "e15350@eng.pdn.ac.lk",
                 "website": "",
-                "github": "https://github.com/luk3Sky",
+                "github": "https://github.com/PasanT9",
                 "linkedin": "",
                 "researchgate": "",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E15/142",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e15/e15142.jpg",
-                "profile_url": "https://people.ce.pdn.ac.lk/students/e15/142/"
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E15/350",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e15/e15350.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e15/350/"
             }
         },
         "supervisors": {
@@ -158,24 +58,11 @@
                 "linkedin": "https://www.linkedin.com/in/isuru-nawinne-73302833/",
                 "researchgate": "https://www.researchgate.net/profile/Isuru-Nawinne",
                 "google_scholar": "https://scholar.google.com/citations?hl=en&user=8qqGvuwAAAAJ"
-            },
-            "roshanr@eng.pdn.ac.lk": {
-                "name": "Prof. Roshan G. Ragel",
-                "email": "roshanr@eng.pdn.ac.lk",
-                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/roshanr",
-                "website": "http://roshan.ragel.net/",
-                "linkedin": "https://www.linkedin.com/in/roshanragel/",
-                "researchgate": "https://www.researchgate.net/profile/Roshan-Ragel",
-                "google_scholar": "https://scholar.google.com/citations?user=UTYj8usAAAAJ&hl=en"
             }
         },
         "tags": [
-            "Swarm Robotics",
-            "Research",
-            "Simulation",
-            "Mixed Reality"
+            "Web",
+            "Embedded Systems"
         ]
     },
     {
@@ -249,72 +136,6 @@
             }
         },
         "supervisors": {},
-        "tags": [
-            "Web",
-            "Embedded Systems"
-        ]
-    },
-    {
-        "title": "A GUI for controlling and supervising multiple robots remotely",
-        "description": "The idea is to create a GUI platform where a user can give commands which is to be followed by some ground units in a remote location. The server can identify the starting locations of the robots and manipulate them to do the task in the most efficient way as possible.",
-        "category": {
-            "title": "Cyber-Physical Systems Projects",
-            "code": "3yp",
-            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/3yp/"
-        },
-        "project_url": "https://projects.ce.pdn.ac.lk/3yp/e15/A-GUI-for-controlling-and-supervising-multiple-robots-remotely/",
-        "repo_url": "https://github.com/cepdnaclk/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely",
-        "page_url": "https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely",
-        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/3yp/E15/A-GUI-for-controlling-and-supervising-multiple-robots-remotely/",
-        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/3yp/thumbnail.jpg",
-        "team": {
-            "E/15/140": {
-                "name": "Jaliyagoda A.J.N.M.",
-                "email": "nuwanjaliyagoda@eng.pdn.ac.lk",
-                "website": "https://nuwanjaliyagoda.com/",
-                "github": "https://github.com/NuwanJ",
-                "linkedin": "https://www.linkedin.com/in/nuwan-jaliyagoda/",
-                "researchgate": "https://www.researchgate.net/profile/Nuwan-Jaliyagoda",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E15/140",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e15/e15140.jpg",
-                "profile_url": "https://people.ce.pdn.ac.lk/students/e15/140/"
-            },
-            "E/15/173": {
-                "name": "Karunarathna S.D.D.D.",
-                "email": "dilshanik@eng.pdn.ac.lk",
-                "website": "",
-                "github": "https://github.com/DDilshani",
-                "linkedin": "https://www.linkedin.com/in/dilshanikarunarathna/",
-                "researchgate": "https://www.researchgate.net/profile/Dilshani-Karunrathna",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E15/173",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e15/e15173.jpg",
-                "profile_url": "https://people.ce.pdn.ac.lk/students/e15/173/"
-            },
-            "E/15/350": {
-                "name": "Pasan Tennakoon",
-                "email": "e15350@eng.pdn.ac.lk",
-                "website": "",
-                "github": "https://github.com/PasanT9",
-                "linkedin": "",
-                "researchgate": "",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E15/350",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e15/e15350.jpg",
-                "profile_url": "https://people.ce.pdn.ac.lk/students/e15/350/"
-            }
-        },
-        "supervisors": {
-            "isurunawinne@eng.pdn.ac.lk": {
-                "name": "Dr. Isuru Nawinne",
-                "email": "isurunawinne@eng.pdn.ac.lk",
-                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/",
-                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/isuru-nawinne.png",
-                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/isurunawinne",
-                "website": "",
-                "linkedin": "https://www.linkedin.com/in/isuru-nawinne-73302833/",
-                "researchgate": "https://www.researchgate.net/profile/Isuru-Nawinne",
-                "google_scholar": "https://scholar.google.com/citations?hl=en&user=8qqGvuwAAAAJ"
-            }
-        },
         "tags": [
             "Web",
             "Embedded Systems"
@@ -529,6 +350,185 @@
             "compilers",
             "artificial intelligence",
             "robotics"
+        ]
+    },
+    {
+        "title": "Mixed Reality based Simulation Platform for Swarm Robotics",
+        "description": "The main objective of this project is to implement a mixed reality-based simulator application with an efficient and reliable architecture for allowing both physical and virtual robots to collaboratively run swarm intelligence based algorithms in real-time",
+        "category": {
+            "title": "Undergraduate Research Projects",
+            "code": "4yp",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/4yp/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/4yp/e15/Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics/",
+        "repo_url": "https://github.com/cepdnaclk/e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics",
+        "page_url": "https://cepdnaclk.github.io/e15-4yp-Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/4yp/E15/Mixed-Reality-based-Simulation-Platform-for-Swarm-Robotics/",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/4yp/thumbnail.jpg",
+        "team": {
+            "E/15/140": {
+                "name": "Jaliyagoda A.J.N.M.",
+                "email": "nuwanjaliyagoda@eng.pdn.ac.lk",
+                "website": "https://nuwanjaliyagoda.com/",
+                "github": "https://github.com/NuwanJ",
+                "linkedin": "https://www.linkedin.com/in/nuwan-jaliyagoda/",
+                "researchgate": "https://www.researchgate.net/profile/Nuwan-Jaliyagoda",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E15/140",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e15/e15140.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e15/140/"
+            },
+            "E/15/173": {
+                "name": "Karunarathna S.D.D.D.",
+                "email": "dilshanik@eng.pdn.ac.lk",
+                "website": "",
+                "github": "https://github.com/DDilshani",
+                "linkedin": "https://www.linkedin.com/in/dilshanikarunarathna/",
+                "researchgate": "https://www.researchgate.net/profile/Dilshani-Karunrathna",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E15/173",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e15/e15173.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e15/173/"
+            },
+            "E/15/142": {
+                "name": "Jayalath A.H.G.D.",
+                "email": "dhananja.jayalath@eng.pdn.ac.lk",
+                "website": "",
+                "github": "https://github.com/luk3Sky",
+                "linkedin": "",
+                "researchgate": "",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E15/142",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e15/e15142.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e15/142/"
+            }
+        },
+        "supervisors": {
+            "isurunawinne@eng.pdn.ac.lk": {
+                "name": "Dr. Isuru Nawinne",
+                "email": "isurunawinne@eng.pdn.ac.lk",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/isuru-nawinne.png",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/isurunawinne",
+                "website": "",
+                "linkedin": "https://www.linkedin.com/in/isuru-nawinne-73302833/",
+                "researchgate": "https://www.researchgate.net/profile/Isuru-Nawinne",
+                "google_scholar": "https://scholar.google.com/citations?hl=en&user=8qqGvuwAAAAJ"
+            },
+            "roshanr@eng.pdn.ac.lk": {
+                "name": "Prof. Roshan G. Ragel",
+                "email": "roshanr@eng.pdn.ac.lk",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/roshanr",
+                "website": "http://roshan.ragel.net/",
+                "linkedin": "https://www.linkedin.com/in/roshanragel/",
+                "researchgate": "https://www.researchgate.net/profile/Roshan-Ragel",
+                "google_scholar": "https://scholar.google.com/citations?user=UTYj8usAAAAJ&hl=en"
+            }
+        },
+        "tags": [
+            "Swarm Robotics",
+            "Research",
+            "Simulation",
+            "Mixed Reality"
+        ]
+    },
+    {
+        "title": "obstacle bots for swarm robots",
+        "description": "Obstacle bots for the existing swarm research project of the  Department of Computer Engineering, University of Peradeniya. Robots are localized with an overhead camera set up in order to create very challenging patterns using movements in a self-created potential surface with collision-avoiding algorithms on optimized stochastic gradient descent and particle repulsion theory.",
+        "category": {
+            "title": "Cyber-Physical Systems Projects",
+            "code": "3yp",
+            "api_url": "https://api.ce.pdn.ac.lk/projects/v1/3yp/"
+        },
+        "project_url": "https://projects.ce.pdn.ac.lk/3yp/e16/obstacle-bots-for-swarm-robots/",
+        "repo_url": "https://github.com/cepdnaclk/e16-3yp-obstacle-bots-for-swarm-robots",
+        "page_url": "https://cepdnaclk.github.io/e16-3yp-obstacle-bots-for-swarm-robots",
+        "api_url": "https://api.ce.pdn.ac.lk/projects/v1/3yp/E16/obstacle-bots-for-swarm-robots/",
+        "thumbnail_url": "https://projects.ce.pdn.ac.lk/data/categories/3yp/thumbnail.jpg",
+        "team": {
+            "E/16/366": {
+                "name": "Thilarakathna W M D U",
+                "email": "e16366@eng.pdn.ac.lk",
+                "website": "https://dinindu.me",
+                "github": "https://github.com/dininduwm",
+                "linkedin": "https://www.linkedin.com/in/dinindu-thilakarathna/",
+                "researchgate": "https://www.researchgate.net/profile/Dinindu-Thilakarathna",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E16/366",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e16/e16366.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e16/366/"
+            },
+            "E/16/369": {
+                "name": "Thushara K A R T",
+                "email": "e16369@eng.pdn.ac.lk",
+                "website": "https://tesla.ce.pdn.ac.lk/students/rusiru/",
+                "github": "https://github.com/thusharakart/",
+                "linkedin": "https://www.linkedin.com/in/rusiru-thushara/",
+                "researchgate": "https://www.researchgate.net/profile/Rusiru-Thushara",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E16/369",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e16/e16369.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e16/369/"
+            },
+            "E/16/088": {
+                "name": "Dissanayake D M T H",
+                "email": "e16088@eng.pdn.ac.lk",
+                "website": "",
+                "github": "",
+                "linkedin": "",
+                "researchgate": "",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/students/E16/088",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/students/e16/e16088.jpg",
+                "profile_url": "https://people.ce.pdn.ac.lk/students/e16/088/"
+            }
+        },
+        "supervisors": {
+            "isurunawinne@eng.pdn.ac.lk": {
+                "name": "Dr. Isuru Nawinne",
+                "email": "isurunawinne@eng.pdn.ac.lk",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/isuru-nawinne.png",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/isurunawinne",
+                "website": "",
+                "linkedin": "https://www.linkedin.com/in/isuru-nawinne-73302833/",
+                "researchgate": "https://www.researchgate.net/profile/Isuru-Nawinne",
+                "google_scholar": "https://scholar.google.com/citations?hl=en&user=8qqGvuwAAAAJ"
+            },
+            "roshanr@eng.pdn.ac.lk": {
+                "name": "Prof. Roshan G. Ragel",
+                "email": "roshanr@eng.pdn.ac.lk",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/roshan-ragel.jpg",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/roshanr",
+                "website": "http://roshan.ragel.net/",
+                "linkedin": "https://www.linkedin.com/in/roshanragel/",
+                "researchgate": "https://www.researchgate.net/profile/Roshan-Ragel",
+                "google_scholar": "https://scholar.google.com/citations?user=UTYj8usAAAAJ&hl=en"
+            },
+            "ziyanm@gmail.com": {
+                "name": "Mr. Ziyan Maraikar",
+                "email": "ziyanm@eng.pdn.ac.lk",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/ziyan-maraikar/",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/ziyan-maraikar.png",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/ziyanm",
+                "website": "",
+                "linkedin": "https://www.linkedin.com/in/ziyan-maraikar-15539818a",
+                "researchgate": "https://www.researchgate.net/profile/Ziyan-Maraikar-2",
+                "google_scholar": "https://scholar.google.com.au/citations?user=5xf_7TAAAAAJ&hl=en"
+            },
+            "upuljm@eng.pdn.ac.lk": {
+                "name": "Dr. Upul Jayasinghe",
+                "email": "upuljm@eng.pdn.ac.lk",
+                "profile_url": "https://people.ce.pdn.ac.lk/staff/academic/upul/",
+                "profile_image": "https://people.ce.pdn.ac.lk/images/staff/academic-staff/upul-jayasinghe.jpg",
+                "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/upuljm",
+                "website": "",
+                "linkedin": "https://www.linkedin.com/in/upuljm/",
+                "researchgate": "https://www.researchgate.net/profile/Upul-Jayasinghe",
+                "google_scholar": "https://scholar.google.ch/citations?user=9nBn4b0AAAAJ"
+            }
+        },
+        "tags": [
+            "Web",
+            "Embedded Systems",
+            "Image Processing"
         ]
     }
 ]
