@@ -1,64 +1,64 @@
 {
-    "arenas": [
-        {
-            "title": "Simple Playground",
-            "description": "",
-            "dimensions": {
-                "length": 180,
-                "width": 180
-            },
-            "channel": "v10",
-            "thumbnail": "https://pera-swarm.ce.pdn.ac.lk/assets/img/environments/v10.png",
-            "server": {
-                "ip": "10.40.2.121",
-                "note": "Internal VM "
-            },
-            "status": "ACTIVE"
-        },
-        {
-            "title": "Maze Playground 1",
-            "description": "",
-            "dimensions": {
-                "length": 180,
-                "width": 180
-            },
-            "channel": "v11",
-            "thumbnail": "https://pera-swarm.ce.pdn.ac.lk/assets/img/environments/v11.png",
-            "server": {
-                "ip": "10.40.2.121",
-                "note": "Internal VM "
-            },
-            "status": "ACTIVE"
-        },
-        {
-            "title": "Large Playground",
-            "description": "",
-            "dimensions": {
-                "length": 600,
-                "width": 600
-            },
-            "channel": "v12",
-            "thumbnail": "#",
-            "server": {
-                "ip": "10.40.2.121",
-                "note": "Internal VM "
-            },
-            "status": "ACTIVE"
-        },
-        {
-            "title": "Playground with one Red Cylinder",
-            "description": "",
-            "dimensions": {
-                "length": 90,
-                "width": 90
-            },
-            "channel": "v13",
-            "thumbnail": "#",
-            "server": {
-                "ip": "10.40.2.121",
-                "note": "Internal VM "
-            },
-            "status": "INACTIVE"
-        }
-    ]
+  "arenas": [
+    {
+      "title": "Simple Playground",
+      "description": "",
+      "dimensions": {
+        "length": 180,
+        "width": 180
+      },
+      "channel": "v10",
+      "thumbnail": "https://pera-swarm.ce.pdn.ac.lk/assets/img/environments/v10.png",
+      "server": {
+        "ip": "tesla.ce.pdn.ac.lk",
+        "note": "Using Tesla MQTT Broker"
+      },
+      "status": "ACTIVE"
+    },
+    {
+      "title": "Maze Playground 1",
+      "description": "",
+      "dimensions": {
+        "length": 180,
+        "width": 180
+      },
+      "channel": "v11",
+      "thumbnail": "https://pera-swarm.ce.pdn.ac.lk/assets/img/environments/v11.png",
+      "server": {
+        "ip": "10.40.2.121",
+        "note": "Internal VM "
+      },
+      "status": "INACTIVE"
+    },
+    {
+      "title": "Large Playground",
+      "description": "",
+      "dimensions": {
+        "length": 600,
+        "width": 600
+      },
+      "channel": "v12",
+      "thumbnail": "#",
+      "server": {
+        "ip": "10.40.2.121",
+        "note": "Internal VM "
+      },
+      "status": "INACTIVE"
+    },
+    {
+      "title": "Playground with one Red Cylinder",
+      "description": "",
+      "dimensions": {
+        "length": 90,
+        "width": 90
+      },
+      "channel": "v13",
+      "thumbnail": "#",
+      "server": {
+        "ip": "10.40.2.121",
+        "note": "Internal VM "
+      },
+      "status": "INACTIVE"
+    }
+  ]
 }
