@@ -1,15 +1,4 @@
 {
-    "dilshanik@eng.pdn.ac.lk": {
-        "name": "Dilshani Karunarathna",
-        "email": "dilshanik@eng.pdn.ac.lk",
-        "profile_url": "https://people.ce.pdn.ac.lk/students/e15/173",
-        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/dilshani.jpg",
-        "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/dilshanik",
-        "website": "#",
-        "linkedin": "#",
-        "researchgate": "#",
-        "google_scholar": "#"
-    },
     "isurunawinne@eng.pdn.ac.lk": {
         "name": "Dr. Isuru Nawinne",
         "email": "isurunawinne@eng.pdn.ac.lk",
@@ -54,6 +43,17 @@
         "researchgate": "https://www.researchgate.net/profile/Upul-Jayasinghe",
         "google_scholar": "https://scholar.google.ch/citations?user=9nBn4b0AAAAJ"
     },
+    "nuwanjaliyagoda@eng.pdn.ac.lk": {
+        "name": "Mr. Nuwan Jaliyagoda",
+        "email": "nuwanjaliyagoda@eng.pdn.ac.lk",
+        "profile_url": "#",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/students/default.jpg",
+        "api_url": "#",
+        "website": "#",
+        "linkedin": "#",
+        "researchgate": "#",
+        "google_scholar": "#"
+    },
     "ziyanm@gmail.com": {
         "name": "Mr. Ziyan Maraikar",
         "email": "ziyanm@eng.pdn.ac.lk",
@@ -65,12 +65,12 @@
         "researchgate": "https://www.researchgate.net/profile/Ziyan-Maraikar-2",
         "google_scholar": "https://scholar.google.com.au/citations?user=5xf_7TAAAAAJ&hl=en"
     },
-    "nuwanjaliyagoda@eng.pdn.ac.lk": {
-        "name": "Nuwan Jaliyagoda",
-        "email": "nuwanjaliyagoda@eng.pdn.ac.lk",
-        "profile_url": "https://people.ce.pdn.ac.lk//students/e15/140",
-        "profile_image": "https://people.ce.pdn.ac.lk/images/staff/temporary-academic-staff/nuwan.jpg",
-        "api_url": "https://api.ce.pdn.ac.lk/people/v1/staff/nuwanjaliyagoda",
+    "dilshanik@eng.pdn.ac.lk": {
+        "name": "Ms. Dilshani Karunarathne",
+        "email": "dilshanik@eng.pdn.ac.lk",
+        "profile_url": "#",
+        "profile_image": "https://people.ce.pdn.ac.lk/images/students/default.jpg",
+        "api_url": "#",
         "website": "#",
         "linkedin": "#",
         "researchgate": "#",
