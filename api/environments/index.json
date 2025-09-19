@@ -25,10 +25,10 @@
       "channel": "v11",
       "thumbnail": "https://pera-swarm.ce.pdn.ac.lk/assets/img/environments/v11.png",
       "server": {
-        "ip": "10.40.2.121",
-        "note": "Internal VM "
+        "ip": "tesla.ce.pdn.ac.lk",
+        "note": "Using Tesla MQTT Broker"
       },
-      "status": "INACTIVE"
+      "status": "ACTIVE"
     },
     {
       "title": "Large Playground",
