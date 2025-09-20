@@ -1,5 +1,5 @@
 ---
-layout: blank
+layout: none
 title: Pera-swarm | Demo VR
 permalink: /demo-vr/
 nav_exclude: true
@@ -8,7 +8,7 @@ sitemap: false
 ---
 
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>Pera Swarm - Demo with VR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,41 +18,52 @@ sitemap: false
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="{{ '/assets/css/demo.css' | relative_url }}" />
-    <link rel="shortcut icon" href="{{ '/assets/img/favicon.ico' | relative_url }}" type="image/x-icon"/>
-
-</head>
-<body class="font-sans w-100">
-
+    <link
+      rel="shortcut icon"
+      href="{{ '/assets/img/favicon.ico' | relative_url }}"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="font-sans w-100">
     <div class="flex">
-        <div class="split" id="one" >
-            <iframe src="https://pera-swarm.ce.pdn.ac.lk/sandbox/" referrerpolicy="no-referrer" frameborder="0"></iframe>
-        </div>
-        <div class="split" id="two">
-            <iframe src="https://pera-swarm.ce.pdn.ac.lk/pera-swarm-visualizer-vr/" referrerpolicy="no-referrer" frameborder="0"></iframe>
-        </div>
+      <div class="split" id="one">
+        <iframe
+          src="https://pera-swarm.ce.pdn.ac.lk/sandbox/"
+          referrerpolicy="no-referrer"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="split" id="two">
+        <iframe
+          src="https://pera-swarm.ce.pdn.ac.lk/visualizer-ar"
+          referrerpolicy="no-referrer"
+          frameborder="0"
+        ></iframe>
+      </div>
     </div>
 
     <div class="w3-container">
-        <div class="w3-row">
-            <p class=""><b>Note</b>: Please enable 3rd-party cookies, if the page wasn't rendered correctly.</p>
-        </div>
+      <div class="w3-row">
+        <p class="">
+          <b>Note</b>: Please enable 3rd-party cookies, if the page wasn't
+          rendered correctly.
+        </p>
+      </div>
     </div>
 
     <script type="text/javascript">
+      $(document).ready(function () {
+        console.log("begin");
 
-        $(document).ready(function(){
-            console.log('begin');
-
-            Split(['#one', '#two'], {
-                elementStyle: (dimension, size, gutterSize) => ({
-                    'flex-basis': `calc(${size}% - ${gutterSize}px)`,
-                }),
-                gutterStyle: (dimension, gutterSize) => ({
-                    'flex-basis':  `${gutterSize}px`,
-                }),
-            })
+        Split(["#one", "#two"], {
+          elementStyle: (dimension, size, gutterSize) => ({
+            "flex-basis": `calc(${size}% - ${gutterSize}px)`,
+          }),
+          gutterStyle: (dimension, gutterSize) => ({
+            "flex-basis": `${gutterSize}px`,
+          }),
         });
+      });
     </script>
-
-</body>
+  </body>
 </html>
