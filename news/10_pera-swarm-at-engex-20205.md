@@ -8,7 +8,7 @@ parent: News
 navbar_active: News
 nav_order: 10
 
-thumb: /news/img/engex-2025.png
+thumb: /news/img/engex-2025.jpeg
 
 link_url: #
 link_caption: View More
