@@ -4,59 +4,116 @@ title: Pera Swarm
 permalink: /
 navbar_active: Home
 ---
+
 {% include page_tree_builder.html pages=site.html_pages -%}
 
 <div class="container">
+  <!-- Intro -->
+  <div class="p-3">
+    <h2 class="text-center">What is Pera-Swarm?</h2>
+    <hr />
 
-    <!-- News -->
-    <h2 class="home-h2">
-        News
-        <a class="h5 text-muted text-link text-decoration-none" href="{% link news/index.html %}">
-            <i class="fa fa-link ms-2" aria-hidden="true"></i>
-        </a>
-    </h2>
-    {% include list_news.html limit=5 %}
+    <p>
+      Pera-Swarm explores the powerful combination of Swarm Robotics and Mixed
+      Reality (MR) to create a seamless integration between the real and virtual
+      worlds. The project demonstrates how physical robots can interact with
+      virtual environments in real time, paving the way for applications that
+      merge simulation with tangible operations.
+    </p>
 
-    <!-- Publications -->
-    <h2 class="home-h2">
-        Publications
-        <a class="h5 text-muted text-link text-decoration-none" href="{% link publications/index.html %}">
-            <i class="fa fa-link ms-2" aria-hidden="true"></i>
-        </a>
-    </h2>
-    {% include list_publications.html %}
+    <p>
+      Swarm Robotics, inspired by the collective intelligence of nature, focuses
+      on how multiple robots can coordinate as a system to perform complex tasks
+      efficiently. When enhanced with Mixed Reality, these robot swarms are not
+      only visible in their physical form but can also be extended, manipulated,
+      and observed in immersive digital spaces.
+    </p>
 
-    <!-- Projects -->
-    <h2 class="home-h2">
-        Projects
-        <a class="h5 text-muted text-link text-decoration-none" href="{% link projects/index.html %}">
-            <i class="fa fa-link ms-2" aria-hidden="true"></i>
-        </a>
-    </h2>
-    {% include list_projects.html %}
+    <h4>Why It Matters</h4>
 
-    <!-- People -->
-    <h2 class="home-h2">
-        People
-        <a class="h5 text-muted text-link text-decoration-none" href="{% link people/index.html %}">
-            <i class="fa fa-link ms-2" aria-hidden="true"></i>
-        </a>
-    </h2>
+    This integration of robotics and MR has transformative potential in domains
+    such as:
+    <ul>
+      <li>
+        <b>Smart Cities</b>: modeling and managing urban infrastructure in real
+        time.
+      </li>
+      <li>
+        <b>Disaster Response</b>: simulating emergency situations while
+        deploying real-world robot teams.
+      </li>
+      <li>
+        <b>Education & Research</b>: providing an interactive platform for
+        students and researchers to experiment with robotics and simulations.
+      </li>
+      <li>
+        <b>Industry Applications</b>: optimizing logistics, automation, and
+        resource management through real-virtual synergy.
+      </li>
+    </ul>
+  </div>
 
-    {% include list_people.html contact=false %}
+  <!-- News -->
+  <h2 class="home-h2">
+    News
+    <a
+      class="h5 text-muted text-link text-decoration-none"
+      href="{% link news/index.html %}"
+    >
+      <i class="fa fa-link ms-2" aria-hidden="true"></i>
+    </a>
+  </h2>
+  {% include list_news.html limit=5 %}
 
+  <!-- Publications -->
+  <h2 class="home-h2">
+    Publications
+    <a
+      class="h5 text-muted text-link text-decoration-none"
+      href="{% link publications/index.html %}"
+    >
+      <i class="fa fa-link ms-2" aria-hidden="true"></i>
+    </a>
+  </h2>
+  {% include list_publications.html %}
 
-    <!-- Intro -->
-    <h2 class="home-h2">
-        Intro
-    </h2>
-    <h4>Mixed Reality based Simulation Platform for Swarm Robotics</h4>
-    <div class="d-flex justify-content-center">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/UxYynRS6BR0" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
+  <!-- Projects -->
+  <h2 class="home-h2">
+    Projects
+    <a
+      class="h5 text-muted text-link text-decoration-none"
+      href="{% link projects/index.html %}"
+    >
+      <i class="fa fa-link ms-2" aria-hidden="true"></i>
+    </a>
+  </h2>
+  {% include list_projects.html %}
 
+  <!-- People -->
+  <h2 class="home-h2">
+    People
+    <a
+      class="h5 text-muted text-link text-decoration-none"
+      href="{% link people/index.html %}"
+    >
+      <i class="fa fa-link ms-2" aria-hidden="true"></i>
+    </a>
+  </h2>
 
+  {% include list_people.html contact=false %}
+
+  <!-- Intro -->
+  <h2 class="home-h2">Intro</h2>
+  <h4>Mixed Reality based Simulation Platform for Swarm Robotics</h4>
+  <div class="d-flex justify-content-center">
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/UxYynRS6BR0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
 </div>
