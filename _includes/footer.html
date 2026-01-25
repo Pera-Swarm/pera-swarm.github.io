@@ -1,21 +1,23 @@
 <footer class="mt-5 pt-4 pb-2 bg-dark">
-<div class="container">
-<p class="m-2 text-center text-white">
-     Department of Comuputer Engineering - University of Peradeniya
-     <br>
-     <span style="color: #9f9b9b; font-size: small">
-         Last Update: {{ site.time | date: '%d-%m-%Y' }} &middot;
-         <a class="text-decoration-none" style="color: #9f9b9b" href="{% link pages/sitemap.html %}">Sitemap</a>
-     </span>
-</p>
-</div>
+  <div class="container">
+    <p class="m-2 text-center text-white">
+      Department of Comuputer Engineering - University of Peradeniya
+      <br />
+      <span style="color: #9f9b9b; font-size: small">
+        Last Update: {{ site.time | date: '%d-%m-%Y' }} &middot;
+        <a class="text-decoration-none" style="color: #9f9b9b" href="{% link pages/sitemap.html %}">
+          Sitemap
+        </a>
+      </span>
+    </p>
+  </div>
 </footer>
 
 {% if page.gallery == true %}
 <script src="{{ '/assets/js/lightgallery-all.min.js' | relative_url }}"></script>
 <script type="text/javascript">
-    $(document).ready(function () {
-        $('#lightgallery').lightGallery({share: false, download: false});
-    });
+  $(document).ready(function () {
+    $("#lightgallery").lightGallery({ share: false, download: false });
+  });
 </script>
 {% endif -%}

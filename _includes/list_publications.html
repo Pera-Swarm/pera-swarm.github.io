@@ -1,40 +1,39 @@
-{%- assign pub_list = pages_list | where: "parent", "Publications" | reverse -%}
-{% for pub in pub_list %}
+{%- assign pub_list = pages_list | where: "parent", "Publications" | reverse -%} {% for pub in
+pub_list %}
 <div class="container pt-2 pb-2 b-2">
-    <b>{{ pub.paper_title }}</b>
-    <br>
-    {% for author in pub.authors_list %}
-    {% if author.profile %}
-    <span><a class="text-decoration-none" href="{{ author.profile }}">{{ author.name }}</a></span>
-    {% else %}
-    <span>{{ author.name }}</span>
-    {% endif %}
-    {% if forloop.last -%}{% else %},{% endif -%}
-    {% endfor -%}
-    <br>
-    <span>{{ pub.published_at }}</span>
-    <br>
-    <span>doi: <a class="text-muted research-doi" href="{{ pub.doi }}" target="_blank">{{ pub.doi }}</a></span>
-    <br>
+  <b>{{ pub.paper_title }}</b>
+  <br />
+  {% for author in pub.authors_list %} {% if author.profile %}
+  <span><a class="text-decoration-none" href="{{ author.profile }}">{{ author.name }}</a></span>
+  {% else %}
+  <span>{{ author.name }}</span>
+  {% endif %} {% if forloop.last -%}{% else %},{% endif -%} {% endfor -%}
+  <br />
+  <span>{{ pub.published_at }}</span>
+  <br />
+  <span>
+    doi:
+    <a class="text-muted research-doi" href="{{ pub.doi }}" target="_blank">{{ pub.doi }}</a>
+  </span>
+  <br />
 
-    <div class="row pt-2">
-        <div class="col d-flex flex-wrap research-links">
-            {% if pub.pdf -%}
-            <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.pdf }}">[ PDF ]</a>
-            {% endif -%}
-
-            {% if pub.presentation -%}
-            <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.presentation }}">[ Presentation
-                ]</a>
-            {% endif -%}
-
-            {% if pub.source_code -%}
-            <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.source_code }}">[ Source Code
-                ]</a>
-            {% endif -%}
-        </div>
-        <div class="mt-2 research-tags"></div>
+  <div class="row pt-2">
+    <div class="col d-flex flex-wrap research-links">
+      {% if pub.pdf -%}
+      <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.pdf }}">
+        [ PDF ]
+      </a>
+      {% endif -%} {% if pub.presentation -%}
+      <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.presentation }}">
+        [ Presentation ]
+      </a>
+      {% endif -%} {% if pub.source_code -%}
+      <a class="text-link px-2 text-decoration-none" target="_blank" href="{{ pub.source_code }}">
+        [ Source Code ]
+      </a>
+      {% endif -%}
     </div>
-
+    <div class="mt-2 research-tags"></div>
+  </div>
 </div>
 {% endfor -%}

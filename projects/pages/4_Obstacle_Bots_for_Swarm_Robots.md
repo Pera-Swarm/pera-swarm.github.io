@@ -16,14 +16,13 @@ api_url: https://api.ce.pdn.ac.lk/projects/v1/3yp/E16/obstacle-bots-for-swarm-ro
 
 gallery: true
 gallery_images:
-    - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/2.jpg', caption: 'PCB Design'}
-    - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/3.jpg', caption: 'CAD Design'}
-    - {url: '/projects/gallery/obstacle-bots-for-swarm-robots/1.jpg', caption: 'Final Robot'}
+  - { url: "/projects/gallery/obstacle-bots-for-swarm-robots/2.jpg", caption: "PCB Design" }
+  - { url: "/projects/gallery/obstacle-bots-for-swarm-robots/3.jpg", caption: "CAD Design" }
+  - { url: "/projects/gallery/obstacle-bots-for-swarm-robots/1.jpg", caption: "Final Robot" }
 
 resources: false
 resource_list:
-    - {text: 'Page', url: '#' }
-
+  - { text: "Page", url: "#" }
 ---
 
 In swarm robotics the major barrier is that the researchers have to do a lot of hardware implementation prior to their projects. This particular project we are going to come up with obstacle bots for a swarm robotic arena which is a part of a swarm robots platform project which eventually solves the above mentioned problem.

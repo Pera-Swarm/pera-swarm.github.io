@@ -8,145 +8,183 @@ sitemap: false
 ---
 
 <div class="container">
-    <div class="row pb-3">
-        <div class="mx-auto">
-            You can use this page to generate access links to online visualization tools.
-        </div>
-
+  <div class="row pb-3">
+    <div class="mx-auto">
+      You can use this page to generate access links to online visualization tools.
     </div>
+  </div>
 
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Settings</h5>
-            <form>
-                <div class="row">
-                    <div class="col col-md-6 col-sm-12">
-                        <div class="form-group mb-3">
-                            <label for="txtHost">Host</label>
-                            <input type="text" class="form-control" id="txtHost" placeholder=""
-                                value="webservices.ceykod.com">
-                        </div>
-                        <div class="row pb-2">
-                            <div class="col col-md-6">
-                                <label for="txtPort">Port</label>
-                                <input type="number" min="1000" max="9999" class="form-control" id="txtPort"
-                                    placeholder="" value="8883">
-                            </div>
-                            <div class="col col-md-6">
-                                <label for="txtChannel">Channel</label>
-                                <input type="text" class="form-control" id="txtChannel" placeholder="vXX" value="v1">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col col-md-6 col-sm-12">
-                        <div class="form-group mb-3">
-                            <label for="txtUser">User Name</label>
-                            <input type="text" required="" class="form-control" id="txtUser"
-                                placeholder="Username of the MQTT broker" value="swarm_user">
-                        </div>
-                        <div class="form-group mb-3">
-                            <label for="txtPass">Password</label>
-                            <input type="password" required="" class="form-control" id="txtPass"
-                                placeholder="Password of the MQTT broker" value="">
-                        </div>
-                        <div class="">
-                            <button id="btnGenerate" type="button" class="btn btn-primary m-auto btn-200"></button>
-                        </div>
-                    </div>
-                </div>
-            </form>
-            <div class="container pt-4 pb-4">
-                <div id="divResult" class="container">
-                    <h5 class="access-link d-none">Access Links:</h5>
-                    <div class="card mb-2 access-link d-none">
-                        <div class="card-body">
-                            3D Visualizer<br>
-                            <a id="link3D"
-                                href="https://pera-swarm.ce.pdn.ac.lk/visualizer/?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJjcmVhdGVkQXQiOiIyMDIzLTA2LTAxIDA1OjU1OjQ5IiwiZXhwaXJlZEF0IjoiMjAyMy0wNi0wMSAwNjo1NTo0OSIsImhvc3QiOiJ3ZWJzZXJ2aWNlcy5jZXlrb2QuY29tIiwicG9ydCI6Ijg4ODMiLCJwYXRoIjoiXC9tcXR0IiwiY2hhbm5lbCI6InYxIiwidXNlciI6InN3YXJtX3VzZXIiLCJwYXNzIjoiIn0.BFDO1zEO58Ksjuc3DqOkAuJJlY86VnmlPU8d2n_Eby-NT41C8MJOusFys386IVvVlYJGHx15G9Sda0EAWvSK-eZp-hjXSLAKdo28aca9JBzitmiQgFjlUq30t4WXuu7RypvCO3ULFICsNqW1iseMkmKw0ZZGdAxcaMNG3iLtT9w"
-                                target="_blank" class="card-link">
-                                https://pera-swarm.ce.pdn.ac.lk/visualizer/
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card access-link d-none">
-                        <div class="card-body">AR Visualizer<br>
-                            <a id="linkAR" href="#" target="_blank" class="card-link">
-                                https://pera-swarm.ce.pdn.ac.lk/visualizer-ar/
-                            </a>
-                        </div>
-                    </div>
-                </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Settings</h5>
+      <form>
+        <div class="row">
+          <div class="col col-md-6 col-sm-12">
+            <div class="form-group mb-3">
+              <label for="txtHost">Host</label>
+              <input
+                type="text"
+                class="form-control"
+                id="txtHost"
+                placeholder=""
+                value="webservices.ceykod.com"
+              />
             </div>
+            <div class="row pb-2">
+              <div class="col col-md-6">
+                <label for="txtPort">Port</label>
+                <input
+                  type="number"
+                  min="1000"
+                  max="9999"
+                  class="form-control"
+                  id="txtPort"
+                  placeholder=""
+                  value="8883"
+                />
+              </div>
+              <div class="col col-md-6">
+                <label for="txtChannel">Channel</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="txtChannel"
+                  placeholder="vXX"
+                  value="v1"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-6 col-sm-12">
+            <div class="form-group mb-3">
+              <label for="txtUser">User Name</label>
+              <input
+                type="text"
+                required=""
+                class="form-control"
+                id="txtUser"
+                placeholder="Username of the MQTT broker"
+                value="swarm_user"
+              />
+            </div>
+            <div class="form-group mb-3">
+              <label for="txtPass">Password</label>
+              <input
+                type="password"
+                required=""
+                class="form-control"
+                id="txtPass"
+                placeholder="Password of the MQTT broker"
+                value=""
+              />
+            </div>
+            <div class="">
+              <button
+                id="btnGenerate"
+                type="button"
+                class="btn btn-primary m-auto btn-200"
+              ></button>
+            </div>
+          </div>
         </div>
+      </form>
+      <div class="container pt-4 pb-4">
+        <div id="divResult" class="container">
+          <h5 class="access-link d-none">Access Links:</h5>
+          <div class="card mb-2 access-link d-none">
+            <div class="card-body">
+              3D Visualizer
+              <br />
+              <a
+                id="link3D"
+                href="https://pera-swarm.ce.pdn.ac.lk/visualizer/?key=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJjcmVhdGVkQXQiOiIyMDIzLTA2LTAxIDA1OjU1OjQ5IiwiZXhwaXJlZEF0IjoiMjAyMy0wNi0wMSAwNjo1NTo0OSIsImhvc3QiOiJ3ZWJzZXJ2aWNlcy5jZXlrb2QuY29tIiwicG9ydCI6Ijg4ODMiLCJwYXRoIjoiXC9tcXR0IiwiY2hhbm5lbCI6InYxIiwidXNlciI6InN3YXJtX3VzZXIiLCJwYXNzIjoiIn0.BFDO1zEO58Ksjuc3DqOkAuJJlY86VnmlPU8d2n_Eby-NT41C8MJOusFys386IVvVlYJGHx15G9Sda0EAWvSK-eZp-hjXSLAKdo28aca9JBzitmiQgFjlUq30t4WXuu7RypvCO3ULFICsNqW1iseMkmKw0ZZGdAxcaMNG3iLtT9w"
+                target="_blank"
+                class="card-link"
+              >
+                https://pera-swarm.ce.pdn.ac.lk/visualizer/
+              </a>
+            </div>
+          </div>
+          <div class="card access-link d-none">
+            <div class="card-body">
+              AR Visualizer
+              <br />
+              <a id="linkAR" href="#" target="_blank" class="card-link">
+                https://pera-swarm.ce.pdn.ac.lk/visualizer-ar/
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 <script type="text/javascript" async>
-    $(document).ready(function () {
+  $(document).ready(function () {
+    // Is there a rd component in the URL ? Then generate the link for it
+    const params = new URLSearchParams(location.search);
+    const rdURL = params.get("rd");
+    if (rdURL != undefined) {
+      $("#btnGenerate").text("Login");
+    } else {
+      $("#btnGenerate").text("Generate Token");
+    }
 
-        // Is there a rd component in the URL ? Then generate the link for it
-        const params = new URLSearchParams(location.search);
-        const rdURL = params.get('rd');
-        if (rdURL != undefined) {
-            $('#btnGenerate').text("Login");
-        } else {
-            $('#btnGenerate').text("Generate Token");
-        }
+    const channel = params.get("channel");
+    if (channel != undefined) {
+      $("#txtChannel").val(channel);
+    }
 
-        const channel = params.get('channel');
-        if (channel != undefined) {
-            $('#txtChannel').val(channel);
-        }
+    $("#btnGenerate").click(() => {
+      const endpoint = "https://tesla.ce.pdn.ac.lk/apps/pera-swarm/login/";
 
-        $('#btnGenerate').click(() => {
-            const endpoint = 'https://tesla.ce.pdn.ac.lk/apps/pera-swarm/login/';
+      const host = $("#txtHost").val();
+      const port = $("#txtPort").val();
+      const channel = $("#txtChannel").val();
+      const user = $("#txtUser").val();
+      const password = $("#txtPass").val();
 
-            const host = $('#txtHost').val();
-            const port = $('#txtPort').val();
-            const channel = $('#txtChannel').val();
-            const user = $('#txtUser').val();
-            const password = $('#txtPass').val();
+      const postData = {
+        host: host,
+        port: port,
+        path: "/mqtt",
+        channel: channel,
+        user: user,
+        pass: password,
+      };
+      // console.log(JSON.stringify(postData));
 
-            const postData = {
-                host: host,
-                port: port,
-                path: '/mqtt',
-                channel: channel,
-                user: user,
-                pass: password,
+      $.ajax({
+        type: "post",
+        url: endpoint,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        cache: false,
+        async: false,
+        data: JSON.stringify(postData),
+        success: function (resp) {
+          if (resp.status == "Success") {
+            console.log(resp);
+            const token = resp.token;
+
+            if (rdURL != undefined) {
+              const url = `${rdURL}/?key=${token}`;
+              console.log("Redirecting to ", url);
+              window.location.replace(url);
+            } else {
+              const link3D = `https://pera-swarm.ce.pdn.ac.lk/visualizer/?key=${token}`;
+              const linkAR = `https://pera-swarm.ce.pdn.ac.lk/visualizer-ar/?key=${token}`;
+              $(".access-link").removeClass("d-none");
+              $("#link3D").attr("href", link3D);
+              $("#linkAR").attr("href", linkAR);
+              $("#accessToken").text(token);
             }
-            // console.log(JSON.stringify(postData));
-
-            $.ajax({
-                type: "post",
-                url: endpoint,
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                cache: false,
-                async: false,
-                data: JSON.stringify(postData),
-                success: function (resp) {
-                    if (resp.status == "Success") {
-                        console.log(resp)
-                        const token = resp.token;
-
-                        if (rdURL != undefined) {
-                            const url = `${rdURL}/?key=${token}`;
-                            console.log("Redirecting to ", url)
-                            window.location.replace(url);
-                        } else {
-                            const link3D = `https://pera-swarm.ce.pdn.ac.lk/visualizer/?key=${token}`;
-                            const linkAR = `https://pera-swarm.ce.pdn.ac.lk/visualizer-ar/?key=${token}`;
-                            $('.access-link').removeClass('d-none');
-                            $('#link3D').attr('href', link3D);
-                            $('#linkAR').attr('href', linkAR);
-                            $('#accessToken').text(token);
-                        }
-                    }
-                },
-                error: function (xhr, status, error) {
-                    alert(xhr.toString());
-                }
-            });
-        });
+          }
+        },
+        error: function (xhr, status, error) {
+          alert(xhr.toString());
+        },
+      });
     });
+  });
 </script>

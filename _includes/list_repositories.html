@@ -1,41 +1,40 @@
-{%- assign repo_list = pages_list | where: "parent", "Repository" -%}
-{% for repo in repo_list %}
+{%- assign repo_list = pages_list | where: "parent", "Repository" -%} {% for repo in repo_list %}
 
 <div class="card mb-3">
-    <div class="row g-0">
-        <div class="col-lg-3 col-md-4 d-flex">
-            <img src="{{ repo.thumb | relative_url }}" class="img-fluid align-self-center p-3" alt="{{ repo.title }}">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body">
-                <span class="card-title h5 me-3">{{ repo.title }}</span>
-                <br>
-                <span class="text-muted small">{{ repo.project }}</span>
-                <br>
-                <span class="align-self-center">
-                    {% for badge in repo.badges %}
-                    <img class="me-2" src="{{ badge }}" alt="">
-                    {% endfor -%}
-                </span>
-
-                <p class="card-text pt-2">{{ repo.description }}</p>
-
-                {% if repo.github -%}
-                <a href="{{ repo.github }}" target="_blank" class="card-link">Visit Repository</a>
-                {% endif -%}
-
-                {% if repo.docs -%}
-                <a href="{{ repo.docs }}" target="_blank" class="card-link">Documentation</a>
-                {% endif -%}
-
-                {% if repo.gh_page -%}
-                <a href="{{ repo.gh_page }}" target="_blank" class="card-link">Visit GitHub Page</a>
-                {% endif -%}
-
-                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-            </div>
-        </div>
+  <div class="row g-0">
+    <div class="col-lg-3 col-md-4 d-flex">
+      <img
+        src="{{ repo.thumb | relative_url }}"
+        class="img-fluid align-self-center p-3"
+        alt="{{ repo.title }}"
+      />
     </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <span class="card-title h5 me-3">{{ repo.title }}</span>
+        <br />
+        <span class="text-muted small">{{ repo.project }}</span>
+        <br />
+        <span class="align-self-center">
+          {% for badge in repo.badges %}
+          <img class="me-2" src="{{ badge }}" alt="" />
+          {% endfor -%}
+        </span>
+
+        <p class="card-text pt-2">{{ repo.description }}</p>
+
+        {% if repo.github -%}
+        <a href="{{ repo.github }}" target="_blank" class="card-link">Visit Repository</a>
+        {% endif -%} {% if repo.docs -%}
+        <a href="{{ repo.docs }}" target="_blank" class="card-link">Documentation</a>
+        {% endif -%} {% if repo.gh_page -%}
+        <a href="{{ repo.gh_page }}" target="_blank" class="card-link">Visit GitHub Page</a>
+        {% endif -%}
+
+        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- <div class="container">

@@ -4,13 +4,14 @@ title: Sitemap
 permalink: /sitemap/
 navbar_active: Sitemap
 ---
+
 {% include page_tree_builder.html pages=site.html_pages -%}
 
 <nav aria-label="breadcrumb" class="pb-3">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{% link pages/home.html %}">Home</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Sitemap</li>
-    </ol>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% link pages/home.html %}">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Sitemap</li>
+  </ol>
 </nav>
 <h2>Sitemap</h2>
 
@@ -26,37 +27,34 @@ navbar_active: Sitemap
 <!-- Projects -->
 <h4 class="pt-2">Projects</h4>
 <ul>
-    {%- assign project_list = pages_list | where: "parent", "Projects" | reverse -%}
-    {% for proj in project_list %}
-    <li><a href="{{ proj.permalink }}">{{ proj.title }}</a></li>
-    {% endfor -%}
+  {%- assign project_list = pages_list | where: "parent", "Projects" | reverse -%} {% for proj in
+  project_list %}
+  <li><a href="{{ proj.permalink }}">{{ proj.title }}</a></li>
+  {% endfor -%}
 </ul>
 
 <!-- Repositories -->
 <h4 class="pt-2">Repositories</h4>
 <ul>
-    {%- assign repo_list = pages_list | where: "parent", "Repository" -%}
-    {% for repo in repo_list %}
-    <li><a href="{{ repo.permalink }}">{{ repo.title }}</a></li>
-    {% endfor -%}
+  {%- assign repo_list = pages_list | where: "parent", "Repository" -%} {% for repo in repo_list %}
+  <li><a href="{{ repo.permalink }}">{{ repo.title }}</a></li>
+  {% endfor -%}
 </ul>
 
 <!-- News -->
 <h4 class="pt-2">News</h4>
 <ul>
-    {%- assign news_list = pages_list | where: "parent", "News" | reverse -%}
-    {% for news in news_list %}
-    {% if news.title != "Dummy News" -%}
-    <li><a href="{{ news.permalink }}">{{ news.title }}</a></li>
-    {% endif -%}
-    {% endfor -%}
+  {%- assign news_list = pages_list | where: "parent", "News" | reverse -%} {% for news in news_list
+  %} {% if news.title != "Dummy News" -%}
+  <li><a href="{{ news.permalink }}">{{ news.title }}</a></li>
+  {% endif -%} {% endfor -%}
 </ul>
 
 <!-- Other -->
 <h4 class="pt-2">Other</h4>
 <ul>
-    <li><a href="{{ '/people/' | relative_url }}">People</a></li>
-    <!-- <li><a href="{{ '/gallery/' | relative_url }}">Gallery</a></li> -->
-    <li><a href="{{ '/contacts/' | relative_url }}">Contact Us</a></li>
-    <li><a href="{{ '/join-us/' | relative_url }}">Join Us</a></li>
+  <li><a href="{{ '/people/' | relative_url }}">People</a></li>
+  <!-- <li><a href="{{ '/gallery/' | relative_url }}">Gallery</a></li> -->
+  <li><a href="{{ '/contacts/' | relative_url }}">Contact Us</a></li>
+  <li><a href="{{ '/join-us/' | relative_url }}">Join Us</a></li>
 </ul>

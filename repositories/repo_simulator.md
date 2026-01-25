@@ -12,10 +12,9 @@ thumb: /repositories/thumbs/default.jpg
 project: "Mixed Reality based Simulation Platform"
 
 badges:
-    - https://github.com/Pera-Swarm/e15-fyp-swarm-server/workflows/Node.js%20CI/badge.svg
-    - https://img.shields.io/badge/License-MIT-bl.svg
+  - https://github.com/Pera-Swarm/e15-fyp-swarm-server/workflows/Node.js%20CI/badge.svg
+  - https://img.shields.io/badge/License-MIT-bl.svg
 
 github: https://github.com/Pera-Swarm/swarm-simulator
 gh_page: #
-
 ---

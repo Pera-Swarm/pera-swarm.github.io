@@ -1,0 +1,10 @@
+**/node_modules/**
+**/dist/**
+_site/**
+_layouts/vendor/**
+.jekyll-cache/**
+.mypy_cache/**
+.venv/**
+api/**
+_layouts/**
+_includes/wrappers_table.html

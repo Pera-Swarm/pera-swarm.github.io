@@ -12,12 +12,11 @@ thumb: /repositories/thumbs/default.jpg
 project: "Mixed Reality based Simulation Platform"
 
 badges:
-    - https://github.com/Pera-Swarm/visualizer/workflows/Webpack%20CI/badge.svg
-    - https://img.shields.io/badge/License-MIT-blue.svg
+  - https://github.com/Pera-Swarm/visualizer/workflows/Webpack%20CI/badge.svg
+  - https://img.shields.io/badge/License-MIT-blue.svg
 
 github: https://github.com/Pera-Swarm/visualizer
 docs: https://pera-swarm.ce.pdn.ac.lk/docs/visualizer/
 
 gh_page: https://pera-swarm.github.io/visualizer
-
 ---

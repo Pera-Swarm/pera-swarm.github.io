@@ -16,12 +16,11 @@ api_url: "#"
 
 gallery: false
 gallery_images:
-    - {url: '#', caption: ''}
+  - { url: "#", caption: "" }
 
 resources: false
 resource_list:
-    - {text: 'Resources', url: '#' }
-
+  - { text: "Resources", url: "#" }
 ---
 
 The commercially available swarm robots are relatively expensive. Therefore to test any swarm behavioral pattern, the better option would be making a general purpose robot. Since the primary aim of this project is to create a swarm of robots that are capable of doing simple tasks like following a leader or finding a path by avoiding obstacles.
