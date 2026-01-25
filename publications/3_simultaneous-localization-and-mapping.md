@@ -21,16 +21,15 @@ source_code: https://github.com/cepdnaclk/e18-4yp-PeraSwarm-Simultaneous-Localiz
 
 authors: true
 authors_list:
-    - {name: 'Dinuka Mudalige', profile: 'https://people.ce.pdn.ac.lk/students/e18/227/'}
-    - {name: 'Nipun Dharmarathne', profile: 'https://people.ce.pdn.ac.lk/students/e18/077/'}
-    - {name: 'Yojith Jayarathna', profile: 'https://people.ce.pdn.ac.lk/students/e18/150/'}
-    - {name: 'Nuwan Jaliyagoda', profile: 'https://people.ce.pdn.ac.lk/students/e15/140/'}
-    - {name: 'Akila Karunanayake', profile: 'https://people.ce.pdn.ac.lk/students/e17/154/'}
-    - {name: 'Isuru Nawinne', profile: 'https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/'}
-    - {name: 'Roshan Ragel', profile: 'https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/'}
+  - { name: "Dinuka Mudalige", profile: "https://people.ce.pdn.ac.lk/students/e18/227/" }
+  - { name: "Nipun Dharmarathne", profile: "https://people.ce.pdn.ac.lk/students/e18/077/" }
+  - { name: "Yojith Jayarathna", profile: "https://people.ce.pdn.ac.lk/students/e18/150/" }
+  - { name: "Nuwan Jaliyagoda", profile: "https://people.ce.pdn.ac.lk/students/e15/140/" }
+  - { name: "Akila Karunanayake", profile: "https://people.ce.pdn.ac.lk/students/e17/154/" }
+  - { name: "Isuru Nawinne", profile: "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/" }
+  - { name: "Roshan Ragel", profile: "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/" }
 
 resources: false
 resource_list:
-    - {text: '', url: '#' }
-
+  - { text: "", url: "#" }
 ---

@@ -16,12 +16,11 @@ api_url: https://api.ce.pdn.ac.lk/projects/v1/4yp/E18/PeraSwarm-Simultaneous-Loc
 
 gallery: false
 gallery_images:
-    - {url: '#', caption: ''}
+  - { url: "#", caption: "" }
 
 resources: false
 resource_list:
-    - {text: 'Page', url: '#' }
-
+  - { text: "Page", url: "#" }
 ---
 
 The study delves into the realm of swarm robotics, where agents collaborate to efficiently explore and map unknown environments, emphasizing the reduction of redundancy and enhancement of system reliability and cost-effectiveness. Leveraging a mixed reality framework, the research integrates physical and virtual robots, employing swarm SLAM algorithms to refine exploration strategies.

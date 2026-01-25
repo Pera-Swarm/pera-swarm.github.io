@@ -1,9 +1,16 @@
 {%- assign person = member[1] -%}
-<div class='col-lg-2 col-md-3 col-sm-4'>
-    <div class='' style='width:100%'>
-        <img class='w-100' src='{{ person.profile_image | relative_url }}' alt='{{ person.display_name }}'>
-        <a class="text-decoration-none text-link text-dark text-center" href="{{ person.profile_url }}">
-            <p class='pt-2'><b>{{ person.name }}</b><br></p>
-        </a>
-    </div>
+<div class="col-lg-2 col-md-3 col-sm-4">
+  <div class="" style="width: 100%">
+    <img
+      class="w-100"
+      src="{{ person.profile_image | relative_url }}"
+      alt="{{ person.display_name }}"
+    />
+    <a class="text-decoration-none text-link text-dark text-center" href="{{ person.profile_url }}">
+      <p class="pt-2">
+        <b>{{ person.name }}</b>
+        <br />
+      </p>
+    </a>
+  </div>
 </div>

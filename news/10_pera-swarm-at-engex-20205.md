@@ -18,21 +18,19 @@ published_date: 2025-09-26
 
 resources: false
 resource_list:
-    - {text: '', url: '#' }
+  - { text: "", url: "#" }
 
 gallery: true
 gallery_images:
-    - {url: '../../gallery/engex-2025/image-1.jpeg', caption: 'Photo Credits: PeraCom / ACES'}
-    - {url: '../../gallery/engex-2025/image-2.jpeg', caption: ''}
-    - {url: '../../gallery/engex-2025/image-3.jpeg', caption: ''}
-    - {url: '../../gallery/engex-2025/image-4.jpeg', caption: 'ESCAL Team Members'}
-
-
+  - { url: "../../gallery/engex-2025/image-1.jpeg", caption: "Photo Credits: PeraCom / ACES" }
+  - { url: "../../gallery/engex-2025/image-2.jpeg", caption: "" }
+  - { url: "../../gallery/engex-2025/image-3.jpeg", caption: "" }
+  - { url: "../../gallery/engex-2025/image-4.jpeg", caption: "ESCAL Team Members" }
 ---
 
-The Department of Computer Engineering, University of Peradeniya, is proud to present Pera-Swarm, an innovative research project, at __EngEx 2025__, the grand exhibition celebrating the 75th Anniversary of the Faculty of Engineering.
+The Department of Computer Engineering, University of Peradeniya, is proud to present Pera-Swarm, an innovative research project, at **EngEx 2025**, the grand exhibition celebrating the 75th Anniversary of the Faculty of Engineering.
 
-Visitors can experience Pera-Swarm at the __"Smart City by PeraCom"__ stall during the exhibition, which will run from September __23 to 28, 2025 at the University of Peradeniya__. The showcase will feature:
+Visitors can experience Pera-Swarm at the **"Smart City by PeraCom"** stall during the exhibition, which will run from September **23 to 28, 2025 at the University of Peradeniya**. The showcase will feature:
 
 - Live demonstrations of coordinated robot behaviors
 - Mixed reality visual overlays for situational awareness
@@ -41,6 +39,6 @@ Visitors can experience Pera-Swarm at the __"Smart City by PeraCom"__ stall duri
 
 This exhibition aims to inspire students, researchers, and industry partners to engage with next-generation cyber-physical systems. Team members will be available to discuss technical architecture, deployment frameworks, and opportunities for collaboration.
 
-Be sure to stop by the __"Smart City by PeraCom"__ stall at __EngEx 2025__ and witness how Pera-Swarm is redefining the boundaries of innovation.
+Be sure to stop by the **"Smart City by PeraCom"** stall at **EngEx 2025** and witness how Pera-Swarm is redefining the boundaries of innovation.
 
 For collaboration or academic inquiries, please reach out to the project team during the exhibition days.

@@ -17,7 +17,7 @@ author: Nuwan Jaliyagoda
 published_date: 2021-05-24
 ---
 
-Final presentation of the project *"Obstacle Bots for Swarm Robots"* done by a group of E16 students, under CO227 happened on 24th of May, 2021 from 8.30pm via Zoom.
+Final presentation of the project _"Obstacle Bots for Swarm Robots"_ done by a group of E16 students, under CO227 happened on 24th of May, 2021 from 8.30pm via Zoom.
 
 Project details available in <a href="{% link projects/pages/4_Obstacle_Bots_for_Swarm_Robots.md %}">here</a>
 

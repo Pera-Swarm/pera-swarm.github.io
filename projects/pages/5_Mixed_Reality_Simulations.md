@@ -16,15 +16,15 @@ api_url: https://api.ce.pdn.ac.lk/projects/v1/4yp/E15/Mixed-Reality-based-Simula
 
 gallery: true
 gallery_images:
-    - {url: '/projects/gallery/mixed-reality-simulator/0.jpg', caption: ''}
-    - {url: '/projects/gallery/mixed-reality-simulator/1.jpg', caption: ''}
-    - {url: '/projects/gallery/mixed-reality-simulator/2.jpg', caption: ''}
-    - {url: '/projects/gallery/mixed-reality-simulator/4.jpg', caption: 'Robots in the testbed'}
-    - {url: '/projects/gallery/mixed-reality-simulator/5.png', caption: ''}
+  - { url: "/projects/gallery/mixed-reality-simulator/0.jpg", caption: "" }
+  - { url: "/projects/gallery/mixed-reality-simulator/1.jpg", caption: "" }
+  - { url: "/projects/gallery/mixed-reality-simulator/2.jpg", caption: "" }
+  - { url: "/projects/gallery/mixed-reality-simulator/4.jpg", caption: "Robots in the testbed" }
+  - { url: "/projects/gallery/mixed-reality-simulator/5.png", caption: "" }
 
 resources: false
 resource_list:
-    - {text: 'Page', url: '#' }
+  - { text: "Page", url: "#" }
 ---
 
 Swarm robotic experiments need a large number of robots with expensive hardware setup and a well-controlled environment. As an alternative, there are many swarm robotics simulators run on virtual environments but would not be the same as real-world experiments. The purpose of his research is to introduce a Mixed Reality simulator, by merging the realities and modeling the swarm behaviors in such a way that both real and virtual robots co-exist and interact with each other.
@@ -33,4 +33,4 @@ In this approach, swarm behavioral experiments can be conducted with a few physi
 
 There is also an Open-Source library for the general swarm robotic use which is also potentially capable of more improvements and address specific swarm behavioral requirements.
 
-All the robots were build with the financial support of the  **Engineering Faculty Fund** and **ACES Project Fund** of the University of Peradeniya.
+All the robots were build with the financial support of the **Engineering Faculty Fund** and **ACES Project Fund** of the University of Peradeniya.

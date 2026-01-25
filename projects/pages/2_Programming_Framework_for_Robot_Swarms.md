@@ -10,18 +10,23 @@ nav_order: 2
 thumb: /projects/thumbs/blank.jpg
 
 link_url: #
-link_caption: ''
+link_caption: ""
 
 api_url: "#"
 
 gallery: true
 gallery_images:
-    - {url: '/projects/gallery/programming-framework-for-robot-swarms/1.png', caption: 'Coloured object identification and reaching concensus'}
+  - {
+      url: "/projects/gallery/programming-framework-for-robot-swarms/1.png",
+      caption: "Coloured object identification and reaching concensus",
+    }
 
 resources: true
 resource_list:
-    - {text: 'GitHub Project Repository', url: 'https://github.com/Pera-Swarm/e14-Swarm-Robots-Simulator' }
-
+  - {
+      text: "GitHub Project Repository",
+      url: "https://github.com/Pera-Swarm/e14-Swarm-Robots-Simulator",
+    }
 ---
 
 Swarm robotics is a well-evolved research area over the past couple of decades. This work introduces a framework for programming swarm robots in a novel approach based on behavior categorization, pheromone communication, and state representation. The framework is packaged with a set of well defined and tested behaviors that are structured based on the level of interactions between robots. These behaviors can be combined and integrated to the user code when implementing new behaviors. Robots function in a user-defined state and perform actions attributed to that state. A behavior-based bottom-up design approach was used for designing these behaviors which eventually alleviate the debugging and implementation process.

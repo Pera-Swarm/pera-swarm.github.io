@@ -16,21 +16,32 @@ api_url: https://api.ce.pdn.ac.lk/projects/v1/3yp/E15/A-GUI-for-controlling-and-
 
 gallery: true
 gallery_images:
-    - {url: '/projects/gallery/gui-for-controlling/1.jpg', caption: 'Hardware robot'}
-    - {url: '/projects/gallery/gui-for-controlling/2.jpg', caption: 'Robots in the testbed'}
-    - {url: '/projects/gallery/gui-for-controlling/3.jpg', caption: 'Hardware robots'}
-    - {url: '/projects/gallery/gui-for-controlling/4.png', caption: 'A Screenshot of the GUI'}
+  - { url: "/projects/gallery/gui-for-controlling/1.jpg", caption: "Hardware robot" }
+  - { url: "/projects/gallery/gui-for-controlling/2.jpg", caption: "Robots in the testbed" }
+  - { url: "/projects/gallery/gui-for-controlling/3.jpg", caption: "Hardware robots" }
+  - { url: "/projects/gallery/gui-for-controlling/4.png", caption: "A Screenshot of the GUI" }
 
 resources: true
 resource_list:
-    - {text: 'Project Repository', url: 'https://github.com/cepdnaclk/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely' }
-    - {text: 'Project Page', url: 'https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely' }
-    - {text: 'Technical Design', url: 'https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely/pdf/Technical_Design.pdf' }
-    - {text: 'User Manual', url: 'https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely/pdf/User_Manual.pdf' }
-
+  - {
+      text: "Project Repository",
+      url: "https://github.com/cepdnaclk/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely",
+    }
+  - {
+      text: "Project Page",
+      url: "https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely",
+    }
+  - {
+      text: "Technical Design",
+      url: "https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely/pdf/Technical_Design.pdf",
+    }
+  - {
+      text: "User Manual",
+      url: "https://cepdnaclk.github.io/e15-3yp-A-GUI-for-controlling-and-supervising-multiple-robots-remotely/pdf/User_Manual.pdf",
+    }
 ---
 
-According to the definition, "Swarm intelligence is the collective behavior of decentralized, self-organized systems"  Swarm robotics is applying swarm intelligence to accomplish a bigger task. And it is also similar to the behavior of animals like bees, ants, birds, etc.
+According to the definition, "Swarm intelligence is the collective behavior of decentralized, self-organized systems" Swarm robotics is applying swarm intelligence to accomplish a bigger task. And it is also similar to the behavior of animals like bees, ants, birds, etc.
 
 One of the greatest fallbacks of swarm intelligence-related research is that it is difficult to simulate the algorithms in the real world unless you have a large number of robots to test these algorithms. Building a group of robots takes a lot of time and it is very expensive. As a solution to this problem, we can design or buy general purpose robots which have hardware capabilities to run basic swarm intelligence related algorithms. But buying a set of pre-built robots doesn’t solve the whole problem since it is too expensive yet.
 

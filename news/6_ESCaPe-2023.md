@@ -18,11 +18,10 @@ published_date: 2023-01-23
 
 resources: true
 resource_list:
-    - {text: 'ESCaPe Official Website', url: 'https://aces.ce.pdn.ac.lk/escape/' }
-
+  - { text: "ESCaPe Official Website", url: "https://aces.ce.pdn.ac.lk/escape/" }
 ---
 
-The project,  <a href="{% link projects/pages/6_Swarm_Intelligence_Programming_Framework.md %}">Swarm Intelligence Programming Framework</a> was presented in the _ESCaPe 2023 - Engineering Students’ Conference and Career Fair_ at University of Peradeniya, and received the **"Best Research Presentation"** award.
+The project, <a href="{% link projects/pages/6_Swarm_Intelligence_Programming_Framework.md %}">Swarm Intelligence Programming Framework</a> was presented in the _ESCaPe 2023 - Engineering Students’ Conference and Career Fair_ at University of Peradeniya, and received the **"Best Research Presentation"** award.
 
 <div class="container row pt-3 pb-5">
     <div class="col-md-8 col-sm-12 col-lg-8 mx-auto">

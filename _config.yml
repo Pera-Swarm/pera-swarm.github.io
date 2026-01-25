@@ -29,11 +29,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-
 # Google Analytics Tracking (optional)
 ga_tracking: G-SMNK8SSXD5
 ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true/nil by default)
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -59,9 +57,8 @@ exclude:
     "graphic_templates",
     "*.py",
     "*.sh",
-    "*.yml"
+    "*.yml",
   ]
-
 
 # Sort order for navigation links
 # nav_sort: case_insensitive # default, equivalent to nil
@@ -72,7 +69,6 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: false
-
 
 # Guideline:https://www.digitalocean.com/community/tutorials/jekyll-compress-html0
 compress_html:

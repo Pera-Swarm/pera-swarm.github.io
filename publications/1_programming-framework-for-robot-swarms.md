@@ -21,16 +21,15 @@ source_code: https://github.com/Pera-Swarm/e14-Swarm-Robots-Simulator
 
 authors: true
 authors_list:
-    - {name: 'Mahendra Dassanayaka', profile: 'https://people.ce.pdn.ac.lk/students/e14/065/'}
-    - {name: 'Tharuka Bandara', profile: 'https://people.ce.pdn.ac.lk/students/e14/028/'}
-    - {name: 'Nadun Adikari', profile: 'https://people.ce.pdn.ac.lk/students/e14/010/'}
-    - {name: 'Isuru Nawinne', profile: 'https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/'}
-    - {name: 'Roshan Ragel', profile: 'https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/'}
+  - { name: "Mahendra Dassanayaka", profile: "https://people.ce.pdn.ac.lk/students/e14/065/" }
+  - { name: "Tharuka Bandara", profile: "https://people.ce.pdn.ac.lk/students/e14/028/" }
+  - { name: "Nadun Adikari", profile: "https://people.ce.pdn.ac.lk/students/e14/010/" }
+  - { name: "Isuru Nawinne", profile: "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/" }
+  - { name: "Roshan Ragel", profile: "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/" }
 
 resources: false
 resource_list:
-    - {text: '', url: '#' }
-
+  - { text: "", url: "#" }
 ---
 
 ### Abstract

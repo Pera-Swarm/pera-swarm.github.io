@@ -1,26 +1,26 @@
-
 <b>
-    {% if include.contact != false -%}
-    {{ people.display_name }}
-    {% else -%}
-    <a href="{{ people.profile }}" target="_blank">{{ people.display_name }}</a>
-    {% endif -%}
+  {% if include.contact != false -%} {{ people.display_name }} {% else -%}
+  <a href="{{ people.profile }}" target="_blank">{{ people.display_name }}</a>
+  {% endif -%}
 </b>
 
-<br>
+<br />
 {% if include.contact != false -%}
 <span class="ms-3">
-    {% if people.profile -%}
-    <span class="mx-1"><a class="text-muted text-link text-decoration-none" href="{{ people.profile }}">
-        <i class='fa fa-globe mx-2' aria-hidden='true'></i>Profile
-    </a></span>
-    {% endif -%}
-
-    {% if people.email_faculty -%}
-    <span class="mx-1"><a class="text-muted text-link text-decoration-none" href="mailto:{{ people.email_faculty }}">
-        <i class='fa fa-envelope mx-2' aria-hidden='true'></i>{{ people.email_faculty }}
-    </a></span>
-    {% endif -%}
-
+  {% if people.profile -%}
+  <span class="mx-1">
+    <a class="text-muted text-link text-decoration-none" href="{{ people.profile }}">
+      <i class="fa fa-globe mx-2" aria-hidden="true"></i>
+      Profile
+    </a>
+  </span>
+  {% endif -%} {% if people.email_faculty -%}
+  <span class="mx-1">
+    <a class="text-muted text-link text-decoration-none" href="mailto:{{ people.email_faculty }}">
+      <i class="fa fa-envelope mx-2" aria-hidden="true"></i>
+      {{ people.email_faculty }}
+    </a>
+  </span>
+  {% endif -%}
 </span>
 {% endif -%}

@@ -16,12 +16,11 @@ api_url: https://api.ce.pdn.ac.lk/projects/v1/3yp/E19/Pera-Swarm-Modular-Robots/
 
 gallery: false
 gallery_images:
-    - {url: '#', caption: ''}
+  - { url: "#", caption: "" }
 
 resources: false
 resource_list:
-    - {text: 'Page', url: '#' }
-
+  - { text: "Page", url: "#" }
 ---
 
 Pera Swarm's Swarm Capable and Reconfigurable Agent is its first modular robot system, designed to overcome the limited scope of tasks typically associated with ordinary swarm robots. It aims to offer,

@@ -12,44 +12,47 @@
 }
 -->
 
-{%- assign package_list = site.data.packages -%}
-{% for package in package_list %}
+{%- assign package_list = site.data.packages -%} {% for package in package_list %}
 
 <div class="card mb-3">
-    <div class="row g-0">
-        <div class="col-lg-3 col-md-4 d-flex">
-            <img src="{{ package.icon | relative_url }}" class="img-fluid align-self-center mx-auto p-3"
-                alt="{{ package.title }}" style="width: 128px;">
-        </div>
-        <div class="col-md-8">
-            <div class="card-body">
-                <span class="card-title h5 me-3">
-                    {{ package.title }}
-                    <span class="h6">
-                        <span class="badge rounded-pill bg-secondary ms-2">{{ package.version }}</span>
-                    </span>
-                </span>
-                <br>
-
-                <p class="card-text pt-2">{{ package.description }}</p>
-
-                {% if package.repositrory -%}
-                <a href="{{ package.repositrory }}" target="_blank" class="card-link">Visit GitHub Repository</a>
-                {% endif -%}
-
-                {% if package.documentation -%}
-                <a href="{{ package.documentation }}" target="_blank" class="card-link">Documentation</a>
-                {% endif -%}
-
-                <div class="pt-3">
-                    <span class="align-self-center">
-                        {% for badge in package.badges %}
-                        <img class="me-2" src="{{ badge }}" alt="">
-                        {% endfor -%}
-                    </span>
-                </div>
-            </div>
-        </div>
+  <div class="row g-0">
+    <div class="col-lg-3 col-md-4 d-flex">
+      <img
+        src="{{ package.icon | relative_url }}"
+        class="img-fluid align-self-center mx-auto p-3"
+        alt="{{ package.title }}"
+        style="width: 128px"
+      />
     </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <span class="card-title h5 me-3">
+          {{ package.title }}
+          <span class="h6">
+            <span class="badge rounded-pill bg-secondary ms-2">{{ package.version }}</span>
+          </span>
+        </span>
+        <br />
+
+        <p class="card-text pt-2">{{ package.description }}</p>
+
+        {% if package.repositrory -%}
+        <a href="{{ package.repositrory }}" target="_blank" class="card-link">
+          Visit GitHub Repository
+        </a>
+        {% endif -%} {% if package.documentation -%}
+        <a href="{{ package.documentation }}" target="_blank" class="card-link">Documentation</a>
+        {% endif -%}
+
+        <div class="pt-3">
+          <span class="align-self-center">
+            {% for badge in package.badges %}
+            <img class="me-2" src="{{ badge }}" alt="" />
+            {% endfor -%}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 {% endfor -%}

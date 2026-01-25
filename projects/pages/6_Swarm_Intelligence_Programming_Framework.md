@@ -16,12 +16,11 @@ api_url: https://api.ce.pdn.ac.lk/projects/v1/4yp/E16/swarm-intelligence-program
 
 gallery: false
 gallery_images:
-    - {url: '#', caption: ''}
+  - { url: "#", caption: "" }
 
 resources: false
 resource_list:
-    - {text: 'Page', url: '#' }
-
+  - { text: "Page", url: "#" }
 ---
 
 This particular project will focus on building a high-level programming and compiler framework which can be used to ‘write’ or ‘draw’ algorithms and convert them into low-level code. The framework will support multiple different types of robot hardware (both real and virtual).

@@ -1,48 +1,38 @@
-{%- assign news_list = pages_list | where: "parent", "News" | reverse -%}
-
-{%- assign count = 0 -%}
-{%- assign total = news_list | size -%}
-
-{% if include.limit %}
-{%- assign maxCount = include.limit -%}
+{%- assign news_list = pages_list | where: "parent", "News" | reverse -%} {%- assign count = 0 -%}
+{%- assign total = news_list | size -%} {% if include.limit %} {%- assign maxCount = include.limit
+-%}
 <!-- {%- assign count = count | plus: 1 -%} -->
-{% else -%}
-{%- assign maxCount = 5 -%}
-{% endif -%}
-
-{% for news in news_list %}
-
-{% if include.limit %}
-{%- assign count = count | plus: 1 -%}
-{% endif -%}
-
-{% if count <= maxCount %} {% if news.title !="Dummy News" -%} <div class="container">
-    <div class="row d-flex mb-3">
-        <div class="col-8 col-sm-4 col-md-4 col-lg-4 col-xxl-3 d-md-block text-center align-self-center">
-            <img class="project-thumb img-fluid " src="{{ news.thumb }}" alt="{{ news.title }}">
-        </div>
-        <div class="col-12 col-sm-8 col-md-8 col-lg-5 col-xxl-9 d-flex">
-            <div class="client-info mr-4 mt-2 align-self-center">
-                <h5>{{ news.title }}</h5>
-                <span>{{ news.published_date }}</span>
-                <p class="mb-0">
-                    <span class="text-muted">{{ news.description }}</span><br>
-                    <a class="text-decoration-none mt-2" href="{{ news.permalink | relative_url }}">
-                        Read More <i class="fa fa-chevron-right"></i>
-                    </a>
-                </p>
-            </div>
-        </div>
+{% else -%} {%- assign maxCount = 5 -%} {% endif -%} {% for news in news_list %} {% if include.limit
+%} {%- assign count = count | plus: 1 -%} {% endif -%} {% if count <= maxCount %} {% if news.title
+!="Dummy News" -%}
+<div class="container">
+  <div class="row d-flex mb-3">
+    <div
+      class="col-8 col-sm-4 col-md-4 col-lg-4 col-xxl-3 d-md-block text-center align-self-center"
+    >
+      <img class="project-thumb img-fluid" src="{{ news.thumb }}" alt="{{ news.title }}" />
     </div>
+    <div class="col-12 col-sm-8 col-md-8 col-lg-5 col-xxl-9 d-flex">
+      <div class="client-info mr-4 mt-2 align-self-center">
+        <h5>{{ news.title }}</h5>
+        <span>{{ news.published_date }}</span>
+        <p class="mb-0">
+          <span class="text-muted">{{ news.description }}</span>
+          <br />
+          <a class="text-decoration-none mt-2" href="{{ news.permalink | relative_url }}">
+            Read More
+            <i class="fa fa-chevron-right"></i>
+          </a>
+        </p>
+      </div>
     </div>
-    {% endif -%}
-    {% endif %}
-    {% endfor -%}
-
-    {% if include.limit and total>maxCount %}
-    <div class="text-center py-3">
-        <a href="/news" style="width:200px" class="btn btn-success">
-            <i class="fas fa-arrow-alt-circle-right me-2"></i>View More News
-        </a>
-    </div>
-    {% endif %}
+  </div>
+</div>
+{% endif -%} {% endif %} {% endfor -%} {% if include.limit and total>maxCount %}
+<div class="text-center py-3">
+  <a href="/news" style="width: 200px" class="btn btn-success">
+    <i class="fas fa-arrow-alt-circle-right me-2"></i>
+    View More News
+  </a>
+</div>
+{% endif %}

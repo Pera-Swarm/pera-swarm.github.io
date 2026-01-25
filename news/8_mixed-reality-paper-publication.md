@@ -18,17 +18,18 @@ published_date: 2023-10-04
 
 resources: true
 resource_list:
-    - {text: 'Research Paper - IEEE Access', url: 'https://doi.org/10.1109/ACCESS.2023.3317434' }
-    - {text: 'Project Page - pera-swarm.ce.pdn.ac.lk', url: 'https://pera-swarm.ce.pdn.ac.lk/projects/mr-environment-for-swarm-robotics-simulations/' }
+  - { text: "Research Paper - IEEE Access", url: "https://doi.org/10.1109/ACCESS.2023.3317434" }
+  - {
+      text: "Project Page - pera-swarm.ce.pdn.ac.lk",
+      url: "https://pera-swarm.ce.pdn.ac.lk/projects/mr-environment-for-swarm-robotics-simulations/",
+    }
 
 gallery: false
 gallery_images:
-    - {url: '#', caption: ''}
-
-
+  - { url: "#", caption: "" }
 ---
 
-Mixed Reality based Swarm Robot Simulation Framework is one of the main outcomes of the Pera-Swarm project, and the first paper publication under the project is now published in [IEEE Access, vol. 11, 2023](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639) (*Q1 Journal in Computer Science*, 2023).
+Mixed Reality based Swarm Robot Simulation Framework is one of the main outcomes of the Pera-Swarm project, and the first paper publication under the project is now published in [IEEE Access, vol. 11, 2023](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639) (_Q1 Journal in Computer Science_, 2023).
 
 <div class="container row pt-3 pb-5">
     <div class="col-md-8 col-sm-12 col-lg-8 mx-auto">
@@ -75,13 +76,14 @@ Mixed Reality based Swarm Robot Simulation Framework is one of the main outcomes
                 <div class="mt-2 research-tags">{{ tags }}</div>
             </div>
         </div>
-        
+
         <div class="publication-error d-none">
             <div class="text-center alert alert-warning m-2">
                 An error occured while loading the publication information !
             </div>
         </div>
     </div>
+
 </div>
 
 <script>

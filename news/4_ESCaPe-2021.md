@@ -17,13 +17,12 @@ author: Nuwan Jaliyagoda
 published_date: 2021-07-24
 
 video:
-    title: "Presentation: ESCaPe 2021 Symposium - 𝐀𝐜𝐜𝐞𝐥𝐞𝐫𝐚𝐭𝐞𝐝 𝐀𝐈 track"
-    description: ""
-    url: "https://www.youtube.com/embed/cO88sCxr0qo?start=9570"
+  title: "Presentation: ESCaPe 2021 Symposium - 𝐀𝐜𝐜𝐞𝐥𝐞𝐫𝐚𝐭𝐞𝐝 𝐀𝐈 track"
+  description: ""
+  url: "https://www.youtube.com/embed/cO88sCxr0qo?start=9570"
 ---
 
 The project, <a href="{% link projects/pages/5_Mixed_Reality_Simulations.md %}">Mixed Reality Environment for Swarm Robotics Simulations</a> was presented in the ESCaPe 2021 - Engineering Students’ Conference at Peradeniya, and received the **"Best Research Presentation"** award.
-
 
 <div class="container row pt-3 pb-5">
 <div class="col-md-8 col-sm-12 col-lg-8 mx-auto">

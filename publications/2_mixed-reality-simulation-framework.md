@@ -21,17 +21,19 @@ source_code: https://github.com/Pera-Swarm/
 
 authors: true
 authors_list:
-    - {name: 'Dilshani Karunarathna', profile: 'https://people.ce.pdn.ac.lk/students/e15/173/'}
-    - {name: 'Nuwan Jaliyagoda', profile: 'https://people.ce.pdn.ac.lk/students/e15/140/'}
-    - {name: 'Ganindu Jayalath', profile: 'https://people.ce.pdn.ac.lk/students/e15/142/'}
-    - {name: 'Janaka Alawatugoda', profile: 'https://people.ce.pdn.ac.lk/staff/academic/janaka-alawatugoda/'}
-    - {name: 'Isuru Nawinne', profile: 'https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/'}
-    - {name: 'Roshan Ragel', profile: 'https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/'}
+  - { name: "Dilshani Karunarathna", profile: "https://people.ce.pdn.ac.lk/students/e15/173/" }
+  - { name: "Nuwan Jaliyagoda", profile: "https://people.ce.pdn.ac.lk/students/e15/140/" }
+  - { name: "Ganindu Jayalath", profile: "https://people.ce.pdn.ac.lk/students/e15/142/" }
+  - {
+      name: "Janaka Alawatugoda",
+      profile: "https://people.ce.pdn.ac.lk/staff/academic/janaka-alawatugoda/",
+    }
+  - { name: "Isuru Nawinne", profile: "https://people.ce.pdn.ac.lk/staff/academic/isuru-nawinne/" }
+  - { name: "Roshan Ragel", profile: "https://people.ce.pdn.ac.lk/staff/academic/roshan-ragel/" }
 
 resources: true
 resource_list:
-    - {text: 'Pera Swarm - Website', url: 'https://pera-swarm.ce.pdn.ac.lk/' }
-
+  - { text: "Pera Swarm - Website", url: "https://pera-swarm.ce.pdn.ac.lk/" }
 ---
 
 ### Abstract
