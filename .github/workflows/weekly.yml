@@ -1,4 +1,4 @@
-name: Update Data
+name: Scheduled Run - Weekly
 
 on:
   schedule:
