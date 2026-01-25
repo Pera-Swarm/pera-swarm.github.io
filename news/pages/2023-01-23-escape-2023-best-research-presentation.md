@@ -2,16 +2,16 @@
 layout: page_news
 title: ESCaPe 2023 - Best Research Presentation Award
 id: 31
-description: ''
+description: ""
 permalink: /news/escape-2023-best-research-presentation/
 parent: News
 navbar_active: News
 nav_order: 1
 thumb: /news/images/17693545433_thumb.jpg
-link_url: '#'
-link_caption: ''
+link_url: "#"
+link_caption: ""
 author: Nuwan Jaliyagoda
-published_date: '2023-01-23'
+published_date: "2023-01-23"
 updated_at: 2026-01-25 15:22:07+00:00
 gallery: false
 gallery_images: []

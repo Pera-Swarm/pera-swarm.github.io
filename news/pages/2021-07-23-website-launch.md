@@ -1,17 +1,17 @@
 ---
 layout: page_news
-title: 'Website Launch: pera-swarm.ce.pdn.ac.lk'
+title: "Website Launch: pera-swarm.ce.pdn.ac.lk"
 id: 27
-description: ''
+description: ""
 permalink: /news/website-launch/
 parent: News
 navbar_active: News
 nav_order: 1
 thumb: /news/images/17687550348_thumb.jpg
-link_url: '#'
-link_caption: ''
+link_url: "#"
+link_caption: ""
 author: Nuwan Jaliyagoda
-published_date: '2021-07-23'
+published_date: "2021-07-23"
 updated_at: 2026-01-18 16:49:17+00:00
 gallery: false
 gallery_images: []

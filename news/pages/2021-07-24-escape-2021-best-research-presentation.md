@@ -2,16 +2,16 @@
 layout: page_news
 title: ESCaPe 2021 - Best Research Presentation Award
 id: 28
-description: ''
+description: ""
 permalink: /news/escape-2021-best-research-presentation/
 parent: News
 navbar_active: News
 nav_order: 1
 thumb: /news/images/17687551574_thumb.jpg
-link_url: '#'
-link_caption: ''
+link_url: "#"
+link_caption: ""
 author: Nuwan Jaliyagoda
-published_date: '2021-07-24'
+published_date: "2021-07-24"
 updated_at: 2026-01-18 16:51:43+00:00
 gallery: false
 gallery_images: []

@@ -3,7 +3,7 @@ layout: page_news
 title: Research Works on Mixed-Reality based Swarm Simulation has now published in
   the IEEE Access Journal
 id: 33
-description: ''
+description: ""
 permalink: /news/mixed-reality-simulation-framework/
 parent: News
 navbar_active: News
@@ -12,7 +12,7 @@ thumb: /news/images/17693548756_thumb.jpg
 link_url: https://pera-swarm.ce.pdn.ac.lk/projects/mr-environment-for-swarm-robotics-simulations/
 link_caption: Project Page
 author: Nuwan Jaliyagoda
-published_date: '2023-10-04'
+published_date: "2023-10-04"
 updated_at: 2026-01-25 16:35:37+00:00
 gallery: false
 gallery_images: []
