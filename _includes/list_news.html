@@ -21,7 +21,7 @@
         <h5>{{ news.title }}</h5>
         <span>{{ news.published_date }}</span>
         <p class="mb-0">
-          <span class="text-muted">{{ news.description }}</span>
+          <span class="text-muted">{{ news.content | strip_html | truncate: 180, '...' }}</span>
           <br />
           <a class="text-decoration-none mt-2" href="{{ news.permalink | relative_url }}">
             Read More

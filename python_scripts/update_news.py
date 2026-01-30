@@ -45,7 +45,7 @@ def get_news(url: str):
     return news_dict
 
 
-def save_news_page(details: dict, file_url: str):
+def save_news_page(details: dict, file_url: str, nav_order: int = 1):
     """Persist a single news item as a markdown file with front matter."""
 
     content = (details.get("description") or "").strip()
@@ -54,11 +54,10 @@ def save_news_page(details: dict, file_url: str):
         "layout": "page_news",
         "title": (details.get("title") or "").strip(),
         "id": details.get("id", -1),
-        "description": "",
         "permalink": f"/news/{details.get('url') or 'unknown'}/",
         "parent": "News",
         "navbar_active": "News",
-        "nav_order": 1,
+        "nav_order": nav_order,
         "thumb": download_image(details.get("image"), "/news/images"),
         "link_url": (details.get("link_url") or "#").strip() or "#",
         "link_caption": (details.get("link_caption") or "").strip(),
@@ -95,11 +94,13 @@ def main():
     news_items = get_news(api_url)
 
     print("Step 3: Updating news...")
-    for _, news_details in news_items.items():
+    order = 1
+    for _, news_details in reversed(list(news_items.items())):
         print(f" - {news_details['title']}")
         file_name = f"{news_details['published_at']}-{news_details['url']}.md"
         file_path = os.path.join(post_directory, file_name)
-        save_news_page(news_details, file_path)
+        save_news_page(news_details, file_path, order)
+        order += 1
 
 
 if __name__ == "__main__":

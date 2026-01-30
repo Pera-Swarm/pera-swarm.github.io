@@ -4,8 +4,8 @@ on:
   # push:
 
   schedule:
-    # At 18:45 UTC on everyday (12.15 mid night in Sri Lanka)
-    - cron: "15 18 * * *"
+    # At 18:45 UTC every day (12.15 mid night in Sri Lanka)
+    - cron: "45 18 * * *"
 
   # Enables a button on Actions tab
   workflow_dispatch:
