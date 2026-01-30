@@ -84,14 +84,18 @@ def save_news_page(details: dict, file_url: str, nav_order: int = 1):
 
 
 def main():
-    print("Step 1: Clean-up...")
+    print("Step 1: Fetching news...")
+    news_items = get_news(api_url)
+
+    if len(news_items) == 0:
+        print("No news items found. Skipping the update process.")
+        raise SystemExit(1)
+
+    print("Step 2: Clean-up...")
     delete_folder(image_directory)
     delete_folder(post_directory)
     os.makedirs(image_directory, exist_ok=True)
     os.makedirs(post_directory, exist_ok=True)
-
-    print("Step 2: Fetching news...")
-    news_items = get_news(api_url)
 
     print("Step 3: Updating news...")
     order = 1
