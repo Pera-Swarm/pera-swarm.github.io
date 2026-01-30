@@ -1,39 +1,43 @@
-## Welcome to GitHub Pages
+# PeraSwarm
 
-You can use the [editor on GitHub](https://github.com/Pera-Swarm/Pera-Swarm.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+[![Scheduled Build - Daily](https://github.com/Pera-Swarm/pera-swarm.github.io/actions/workflows/daily.yml/badge.svg)](https://github.com/Pera-Swarm/pera-swarm.github.io/actions/workflows/daily.yml)
+[![Scheduled Build - Weekly](https://github.com/Pera-Swarm/pera-swarm.github.io/actions/workflows/weekly.yml/badge.svg)](https://github.com/Pera-Swarm/pera-swarm.github.io/actions/workflows/weekly.yml)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This repository hosts the PeraSwarm website and provides documentation, updates, and resources about the project.
 
-### Markdown
+## Getting Started
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Prerequisites:
 
-```markdown
-Syntax highlighted code block
+- Ruby (version 2.7.0 or higher)
+- Bundler gem
+- Jekyll
 
-# Header 1
+To build and run the website locally, follow these steps:
 
-## Header 2
+1. Clone the repository:
 
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+git clone https://github.com/Pera-Swarm/pera-swarm.github.io
+cd pera-swarm.github.io
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+1. Install the required dependencies:
 
-### Jekyll Themes
+```bash
+make install
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Pera-Swarm/Pera-Swarm.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+1. Start the local development server:
 
-### Support or Contact
+```bash
+make serve
+```
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+This will start a local server at `http://localhost:4000`, where you can view the website. It is already configured to watch for changes and will automatically reload the site when files are modified.
+
+Additionally, the below commands can be used to build the site without serving it:
+
+```bash
+make build
+```
