@@ -2,11 +2,10 @@
 layout: page_news
 title: Obstacle Bots for Swarm Robots
 id: 26
-description: ""
 permalink: /news/presentation-obstacle-bots-for-swarm-robots/
 parent: News
 navbar_active: News
-nav_order: 1
+nav_order: 2
 thumb: /news/images/17687548965_thumb.jpg
 link_url: https://pera-swarm.ce.pdn.ac.lk/projects/obstacle-bots-for-swarm-robots/
 link_caption: Project Details

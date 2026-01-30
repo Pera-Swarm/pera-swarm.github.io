@@ -2,11 +2,10 @@
 layout: page_news
 title: "Website Launch: pera-swarm.ce.pdn.ac.lk"
 id: 27
-description: ""
 permalink: /news/website-launch/
 parent: News
 navbar_active: News
-nav_order: 1
+nav_order: 3
 thumb: /news/images/17687550348_thumb.jpg
 link_url: "#"
 link_caption: ""

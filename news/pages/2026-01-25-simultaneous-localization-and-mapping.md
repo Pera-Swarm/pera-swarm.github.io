@@ -2,11 +2,10 @@
 layout: page_news
 title: Research Works on Simultaneous Localization has been presented on SCSE - 2025
 id: 35
-description: ""
 permalink: /news/simultaneous-localization-and-mapping/
 parent: News
 navbar_active: News
-nav_order: 1
+nav_order: 10
 thumb: /news/images/17693564666_thumb.jpg
 link_url: https://pera-swarm.ce.pdn.ac.lk/projects/simultaneous-localization-and-mapping-in-mixed-reality-environment/
 link_caption: Project Page

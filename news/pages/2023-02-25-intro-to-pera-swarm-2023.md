@@ -2,11 +2,10 @@
 layout: page_news
 title: Workshop - Introduction to Pera-Swarm
 id: 32
-description: ""
 permalink: /news/intro-to-pera-swarm-2023/
 parent: News
 navbar_active: News
-nav_order: 1
+nav_order: 7
 thumb: /news/images/17693546606_thumb.jpeg
 link_url: "#"
 link_caption: ""

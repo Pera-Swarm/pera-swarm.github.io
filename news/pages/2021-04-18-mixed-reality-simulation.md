@@ -2,7 +2,6 @@
 layout: page_news
 title: Mixed Reality based Simulation Platform for Swarm Robotic
 id: 25
-description: ""
 permalink: /news/mixed-reality-simulation/
 parent: News
 navbar_active: News

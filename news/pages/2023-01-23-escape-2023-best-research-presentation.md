@@ -2,11 +2,10 @@
 layout: page_news
 title: ESCaPe 2023 - Best Research Presentation Award
 id: 31
-description: ""
 permalink: /news/escape-2023-best-research-presentation/
 parent: News
 navbar_active: News
-nav_order: 1
+nav_order: 6
 thumb: /news/images/17693545433_thumb.jpg
 link_url: "#"
 link_caption: ""
