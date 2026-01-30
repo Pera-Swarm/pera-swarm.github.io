@@ -1,14 +1,17 @@
-name: Scheduled Run - Weekly
+name: Scheduled Run - Daily
 
 on:
-  schedule:
-    # At 18:30 UTC on Sunday (12.00 mid night in Sri Lanka)
-    - cron: "30 18 * * 0"
+  # push:
 
+  schedule:
+    # At 18:45 UTC every day (12.15 mid night in Sri Lanka)
+    - cron: "45 18 * * *"
+
+  # Enables a button on Actions tab
   workflow_dispatch:
 
 jobs:
-  build:
+  run:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -23,19 +26,19 @@ jobs:
           package-manager-cache: false
 
       - name: Set up Python 3.13
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: 3.13
 
       - name: Install Python Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests PyYAML
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Run the Python script
+      - name: "Update News"
+        working-directory: ./python_scripts/
         run: |
-          cd ./python_scripts/
-          python update.py
+          python update_news.py
 
       - name: Format files
         run: |
@@ -49,5 +52,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add --all
-          git commit -m "Dynamic data updated" || echo "No changes to commit"
+          git commit -m "Daily Update by GitHub Actions" || echo "No changes to commit"
           git push
