@@ -1,0 +1,180 @@
+<div id="announcements-container" class="p-0 w-100"></div>
+<script>
+  (function () {
+    if (typeof window.jQuery === "undefined") {
+      return;
+    }
+
+    var $ = window.jQuery;
+    var API_URL = "https://portal.ce.pdn.ac.lk/api/announcements/v2/pera-swarm";
+    var COOKIE_NAME = "announcements";
+    var CACHE_VALID_MS = 30 * 60 * 1000;
+    var COOKIE_TTL_MS = 30 * 60 * 1000;
+    var TYPE_CLASS = {
+      info: "alert-info",
+      danger: "alert-danger",
+      warning: "alert-warning",
+      success: "alert-success",
+    };
+    var TYPE_ICON = {
+      info: '<i class="fa fa-info-circle me-2" aria-hidden="true"></i><span class="visually-hidden">Info:</span>',
+      danger:
+        '<i class="fa fa-exclamation-triangle me-2" aria-hidden="true"></i><span class="visually-hidden">Danger:</span>',
+      warning:
+        '<i class="fa fa-exclamation-triangle me-2" aria-hidden="true"></i><span class="visually-hidden">Warning:</span>',
+      success:
+        '<i class="fa fa-check-circle me-2" aria-hidden="true"></i><span class="visually-hidden">Success:</span>',
+    };
+
+    function nowMs() {
+      return Date.now ? Date.now() : new Date().getTime();
+    }
+
+    function parseDate(value) {
+      var date = new Date(value);
+      if (isNaN(date.getTime())) {
+        return null;
+      }
+      return date;
+    }
+
+    function getCookie(name) {
+      var nameEq = name + "=";
+      var parts = document.cookie.split(";");
+      for (var i = 0; i < parts.length; i += 1) {
+        var part = parts[i].trim();
+        if (part.indexOf(nameEq) === 0) {
+          return decodeURIComponent(part.substring(nameEq.length));
+        }
+      }
+      return null;
+    }
+
+    function setCookie(name, value, ttlMs) {
+      var expires = new Date(nowMs() + ttlMs).toUTCString();
+      document.cookie =
+        name + `=${encodeURIComponent(value)}; expires=${expires}; path=/; SameSite=Lax; Secure`;
+    }
+
+    function clearCookie(name) {
+      document.cookie =
+        name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; SameSite=Lax; Secure";
+    }
+
+    function readCache() {
+      var raw = getCookie(COOKIE_NAME);
+      if (!raw) {
+        return null;
+      }
+      try {
+        var parsed = JSON.parse(raw);
+        if (!parsed || typeof parsed !== "object" || typeof parsed.fetched_at !== "number") {
+          return null;
+        }
+        if (nowMs() - parsed.fetched_at > CACHE_VALID_MS) {
+          // Expired, clear it
+          clearCookie(COOKIE_NAME);
+          return null;
+        }
+        return parsed;
+      } catch (err) {
+        // Invalid, clear it
+        clearCookie(COOKIE_NAME);
+        return null;
+      }
+    }
+
+    function normalizeItems(payload) {
+      if (!payload || !Array.isArray(payload.data)) {
+        return [];
+      }
+      return payload.data;
+    }
+
+    function render(payload) {
+      var items = normalizeItems(payload);
+      if (!items.length) {
+        return;
+      }
+      var now = new Date();
+      const html = items
+        .filter(function (item) {
+          // Filter out invalid items
+          if (!item || typeof item !== "object") {
+            return false;
+          }
+
+          if (!TYPE_CLASS[item.type]) {
+            return false;
+          }
+
+          if (typeof item.message !== "string" || item.message.length === 0) {
+            return false;
+          }
+          return true;
+        })
+        .filter(function (item) {
+          // Filter by date time
+          var startsAt = parseDate(item.starts_at);
+          var endsAt = parseDate(item.ends_at);
+          if (!startsAt || !endsAt) {
+            return false;
+          }
+
+          if (now < startsAt || now > endsAt) {
+            return false;
+          }
+
+          var area = item.area;
+          if (area !== "both" && area !== "frontend") {
+            return false;
+          }
+
+          return true;
+        })
+        .map(function (item) {
+          // Escape message content to avoid unsafe HTML
+          const message = $("<div>").text(item.message).html();
+          return `<div class="alert ${TYPE_CLASS[item.type]} w-100 mb-0 rounded-0 py-2 d-flex align-items-center" role="alert">${TYPE_ICON[item.type]}<div>${message}</div></div>`;
+        })
+        .join("");
+      if (!html) {
+        return;
+      }
+      $("#announcements-container").html(html);
+    }
+
+    $(function () {
+      var cached = readCache();
+      if (cached && cached.response) {
+        render(cached.response);
+        return;
+      }
+
+      $.ajax({
+        url: API_URL,
+        method: "GET",
+        dataType: "json",
+        timeout: 10000,
+      })
+        .done(function (response) {
+          if (!response || !Array.isArray(response.data)) {
+            return;
+          }
+          setCookie(
+            COOKIE_NAME,
+            JSON.stringify({
+              url: API_URL,
+              fetched_at: nowMs(),
+              response: response,
+            }),
+            COOKIE_TTL_MS
+          );
+          render(response);
+        })
+        .fail(function () {
+          return;
+        });
+    });
+  })();
+</script>

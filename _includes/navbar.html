@@ -1,3 +1,6 @@
+<!-- Announcement Display -->
+{%- if include.announcements != false -%} {% include announcements.html %} {%- endif -%}
+<!-- Navbar -->
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container px-5">
     {% if page.layout != "home" -%}
