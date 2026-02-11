@@ -53,11 +53,12 @@
     function setCookie(name, value, ttlMs) {
       var expires = new Date(nowMs() + ttlMs).toUTCString();
       document.cookie =
-        name + "=" + encodeURIComponent(value) + "; expires=" + expires + "; path=/; SameSite=Lax";
+        name + `=${encodeURIComponent(value)}; expires=${expires}; path=/; SameSite=Lax; Secure`;
     }
 
     function clearCookie(name) {
-      document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; SameSite=Lax";
+      document.cookie =
+        name + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; SameSite=Lax; Secure";
     }
 
     function readCache() {
