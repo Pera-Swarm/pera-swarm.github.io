@@ -81,7 +81,7 @@ Those files will be automatically updated by the Python script, `python_scripts/
 
 ## Announcements
 
-Site-wide announcements are rendered via the Jekyll include at `_includes/announcements.html`, which is included at the top of all layouts. The include fetches announcements from `https://portal.ce.pdn.ac.lk/api/announcements/v2/pera-swarm`, renders Bootstrap alerts, and filters by `starts_at`/`ends_at` (inclusive) plus `area` set to `both` or `frontend`.
+Site-wide announcements are rendered via the Jekyll include at `_includes/announcements.html`. Most layouts display announcements through the shared navbar include, while some minimal layouts (such as blank or home-style layouts) include `announcements.html` directly at the top of the page. Each layout should include announcements exactly once (either via the navbar or directly) to avoid duplicate alerts. The include fetches announcements from `https://portal.ce.pdn.ac.lk/api/announcements/v2/pera-swarm`, renders Bootstrap alerts, and filters by `starts_at`/`ends_at` (inclusive) plus `area` set to `both` or `frontend`.
 
 Caching behavior:
 

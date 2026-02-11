@@ -68,17 +68,17 @@
       }
       try {
         var parsed = JSON.parse(raw);
-        if (!parsed || typeof parsed !== "object") {
-          return null;
-        }
-        if (typeof parsed.fetched_at !== "number") {
+        if (!parsed || typeof parsed !== "object" || typeof parsed.fetched_at !== "number") {
           return null;
         }
         if (nowMs() - parsed.fetched_at > CACHE_VALID_MS) {
+          // Expired, clear it
+          clearCookie(COOKIE_NAME);
           return null;
         }
         return parsed;
       } catch (err) {
+        // Invalid, clear it
         clearCookie(COOKIE_NAME);
         return null;
       }
@@ -133,7 +133,9 @@
           return true;
         })
         .map(function (item) {
-          return `<div class="alert ${TYPE_CLASS[item.type]} w-100 mb-0 rounded-0 py-2 d-flex align-items-center" role="alert">${TYPE_ICON[item.type]}<div>${item.message}</div></div>`;
+          // Escape message content to avoid unsafe HTML
+          const message = $("<div>").text(item.message).html();
+          return `<div class="alert ${TYPE_CLASS[item.type]} w-100 mb-0 rounded-0 py-2 d-flex align-items-center" role="alert">${TYPE_ICON[item.type]}<div>${message}</div></div>`;
         })
         .join("");
       if (!html) {
