@@ -14,6 +14,7 @@ layout: wrappers_table
 </head>
 
 <body>
+    {% include announcements.html %}
     <header class="blog-header pb-1">
         <div class="container">
             <div class="row flex-nowrap0 align-items-center">
@@ -67,8 +68,7 @@ layout: wrappers_table
     </div>
 
     {% include navbar.html %}
-
-    <div class="container vh-75">
+        <div class="container vh-75">
         <div class="row">
             <div class="container col-sm-12 col-md-10 col-lg-10 mx-auto mt-3 py-2">
                 {{ content }}

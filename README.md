@@ -41,3 +41,27 @@ Additionally, the below commands can be used to build the site without serving i
 ```bash
 make build
 ```
+
+## Projects
+
+## News
+
+## Publications
+
+## Announcements
+
+Site-wide announcements are rendered via the Jekyll include at `_includes/announcements.html`, which is included at the top of all layouts. The include fetches announcements from `https://portal.ce.pdn.ac.lk/api/announcements/v2/pera-swarm`, renders Bootstrap alerts, and filters by `starts_at`/`ends_at` (inclusive) plus `area` set to `both` or `frontend`.
+
+Caching behavior:
+
+- Cookie name: `announcements`
+- Cache validity: 30 minutes based on `fetched_at`
+- Cookie expiration: 30 minutes
+
+If the cookie is missing or invalid (including JSON parse errors), the include re-fetches the API. Invalid responses or failed requests render nothing and do not break page rendering.
+
+Security and compliance notes:
+
+- Rate-limits: client-side cache prevents repeated fetches within 30 minutes and reduces load on the API.
+- Input validation: only renders announcements with valid `type`, `message`, `starts_at`, and `ends_at` fields.
+- Secret management: no secrets are stored or required by the include.
