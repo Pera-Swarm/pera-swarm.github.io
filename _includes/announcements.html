@@ -16,6 +16,15 @@
       warning: "alert-warning",
       success: "alert-success",
     };
+    var TYPE_ICON = {
+      info: '<i class="fa fa-info-circle me-2" aria-hidden="true"></i><span class="visually-hidden">Info:</span>',
+      danger:
+        '<i class="fa fa-exclamation-triangle me-2" aria-hidden="true"></i><span class="visually-hidden">Danger:</span>',
+      warning:
+        '<i class="fa fa-exclamation-triangle me-2" aria-hidden="true"></i><span class="visually-hidden">Warning:</span>',
+      success:
+        '<i class="fa fa-check-circle me-2" aria-hidden="true"></i><span class="visually-hidden">Success:</span>',
+    };
 
     function nowMs() {
       return Date.now ? Date.now() : new Date().getTime();
@@ -123,7 +132,7 @@
           return true;
         })
         .map(function (item) {
-          return `<div class="alert ${TYPE_CLASS[item.type]} w-100 mb-0 rounded-0 py-2" role="alert">${item.message}</div>`;
+          return `<div class="alert ${TYPE_CLASS[item.type]} w-100 mb-0 rounded-0 py-2 d-flex align-items-center" role="alert">${TYPE_ICON[item.type]}<div>${item.message}</div></div>`;
         })
         .join("");
       if (!html) {
