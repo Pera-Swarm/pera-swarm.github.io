@@ -61,7 +61,7 @@ def save_news_page(details: dict, file_url: str, nav_order: int = 1):
         "thumb": download_image(details.get("image"), "/news/images"),
         "link_url": (details.get("link_url") or "#").strip() or "#",
         "link_caption": (details.get("link_caption") or "").strip(),
-        "author": (details.get("author") or "").strip(),
+        "author": (details.get("author", {}).get("name") or "").strip(),
         "published_date": (details.get("published_at") or "").strip(),
         "updated_at": get_updated_at((details.get("updated_at") or "").strip()),
         "gallery": gallery_enabled,
