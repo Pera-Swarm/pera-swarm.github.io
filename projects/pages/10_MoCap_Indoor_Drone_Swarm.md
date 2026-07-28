@@ -18,9 +18,10 @@ gallery: false
 gallery_images:
   - { url: "#", caption: "" }
 
-resources: false
+resources: true
 resource_list:
-  - { text: "Page", url: "#" }
+  - { text: "Download for Windows (x64)", url: "https://d19306u9suswz7.cloudfront.net/latest/DroneSwarm-Windows-x64.exe" }
+  - { text: "Download for Ubuntu (x64)", url: "https://d19306u9suswz7.cloudfront.net/latest/latest/DroneSwarm-Ubuntu-x64.tar.gz" }
 ---
 
 This project develops an indoor testbed for coordinated drone-swarm experiments using a motion-capture (MoCap) system. The MoCap system provides precise position and orientation measurements for each drone, enabling the swarm to operate safely and consistently in a controlled indoor environment where GPS is unavailable.
