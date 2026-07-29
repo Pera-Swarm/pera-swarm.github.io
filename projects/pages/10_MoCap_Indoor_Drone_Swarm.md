@@ -12,7 +12,7 @@ thumb: /projects/thumbs/drones.png
 link_url: https://cepdnaclk.github.io/e21-3yp-Drone-Swarm/
 link_caption: Project Page
 
-api_url: https://api.ce.pdn.ac.lk/projects/v1/3yp/E21/Drone-Swarm
+api_url: https://api.ce.pdn.ac.lk/projects/v1/3yp/E21/Drone-Swarm/
 
 gallery: false
 gallery_images:
@@ -20,8 +20,14 @@ gallery_images:
 
 resources: true
 resource_list:
-  - { text: "Download for Windows (x64)", url: "https://d19306u9suswz7.cloudfront.net/latest/DroneSwarm-Windows-x64.exe" }
-  - { text: "Download for Ubuntu (x64)", url: "https://d19306u9suswz7.cloudfront.net/latest/latest/DroneSwarm-Ubuntu-x64.tar.gz" }
+  - {
+      text: "Download for Windows (x64)",
+      url: "https://d19306u9suswz7.cloudfront.net/latest/DroneSwarm-Windows-x64.exe",
+    }
+  - {
+      text: "Download for Ubuntu (x64)",
+      url: "https://d19306u9suswz7.cloudfront.net/latest/latest/DroneSwarm-Ubuntu-x64.tar.gz",
+    }
 ---
 
 This project develops an indoor testbed for coordinated drone-swarm experiments using a motion-capture (MoCap) system. The MoCap system provides precise position and orientation measurements for each drone, enabling the swarm to operate safely and consistently in a controlled indoor environment where GPS is unavailable.
