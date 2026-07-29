@@ -7,7 +7,7 @@ parent: Projects
 navbar_active: Projects
 nav_order: 10
 
-thumb: /projects/thumbs/blank.jpg
+thumb: /projects/thumbs/drones.png
 
 link_url: https://cepdnaclk.github.io/e21-3yp-Drone-Swarm/
 link_caption: Project Page
